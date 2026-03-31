@@ -7,10 +7,12 @@ interface UserAnswer {
 
 interface Props {
   answers: UserAnswer[]
+  isBookmarked: (id: string) => boolean
+  onToggleBookmark: (id: string) => void
   onRestart: () => void
 }
 
-export default function ResultScreen({ answers, onRestart }: Props) {
+export default function ResultScreen({ answers, isBookmarked, onToggleBookmark, onRestart }: Props) {
   const score = answers.filter((a) => a.userAnswer === a.question.answer).length
   const total = answers.length
   const percentage = Math.round((score / total) * 100)
@@ -34,12 +36,23 @@ export default function ResultScreen({ answers, onRestart }: Props) {
         <div className="space-y-4 mb-8">
           {answers.map(({ question, userAnswer }, i) => {
             const isCorrect = userAnswer === question.answer
+            const bookmarked = isBookmarked(question.id)
             return (
               <div key={i} className="bg-white rounded-2xl shadow-sm p-5 border border-gray-100">
                 <div className="flex items-center justify-between mb-2">
-                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Question {i + 1}</p>
-                  <span className="text-xs font-mono bg-gray-100 text-gray-400 px-2 py-0.5 rounded">{question.id}</span>
+                  <div className="flex items-center gap-2">
+                    <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Question {i + 1}</p>
+                    <span className="text-xs font-mono bg-gray-100 text-gray-400 px-2 py-0.5 rounded">{question.id}</span>
+                  </div>
+                  <button
+                    onClick={() => onToggleBookmark(question.id)}
+                    className="text-xl leading-none transition-transform active:scale-90"
+                    title={bookmarked ? 'Remove bookmark' : 'Bookmark this question'}
+                  >
+                    {bookmarked ? '🔖' : '🏷️'}
+                  </button>
                 </div>
+
                 <p className="text-gray-800 font-medium mb-3">{question.question}</p>
 
                 {question.image && (

@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react'
 import questionsData from './questions.json'
 import { Question } from './types'
+import { useBookmarks } from './useBookmarks'
 import QuizScreen from './components/QuizScreen'
 import ResultScreen from './components/ResultScreen'
 import StartScreen from './components/StartScreen'
@@ -24,6 +25,7 @@ export default function App() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<UserAnswer[]>([])
+  const { bookmarks, toggle, isBookmarked } = useBookmarks()
 
   const startQuiz = useCallback((count: number) => {
     setQuestions(shuffle(allQuestions).slice(0, count))
@@ -31,6 +33,14 @@ export default function App() {
     setAnswers([])
     setAppState('quiz')
   }, [])
+
+  const startBookmarked = useCallback(() => {
+    const pool = shuffle(allQuestions.filter((q) => bookmarks.has(q.id)))
+    setQuestions(pool)
+    setCurrentIndex(0)
+    setAnswers([])
+    setAppState('quiz')
+  }, [bookmarks])
 
   const handleAnswer = useCallback((userAnswer: boolean) => {
     const question = questions[currentIndex]
@@ -48,7 +58,14 @@ export default function App() {
   }, [])
 
   if (appState === 'start') {
-    return <StartScreen totalAvailable={allQuestions.length} onStart={startQuiz} />
+    return (
+      <StartScreen
+        totalAvailable={allQuestions.length}
+        bookmarkCount={bookmarks.size}
+        onStart={startQuiz}
+        onStartBookmarked={startBookmarked}
+      />
+    )
   }
 
   if (appState === 'quiz') {
@@ -62,5 +79,12 @@ export default function App() {
     )
   }
 
-  return <ResultScreen answers={answers} onRestart={restart} />
+  return (
+    <ResultScreen
+      answers={answers}
+      isBookmarked={isBookmarked}
+      onToggleBookmark={toggle}
+      onRestart={restart}
+    />
+  )
 }
