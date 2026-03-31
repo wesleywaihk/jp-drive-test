@@ -68,7 +68,7 @@ export default function ResultScreen({ answers, onRestart }: Props) {
 
                 <div className="bg-blue-50 rounded-lg px-3 py-2">
                   <p className="text-xs font-semibold text-blue-600 mb-1">Explanation</p>
-                  <p className="text-sm text-gray-700">{question.description}</p>
+                  <p className="text-lg text-gray-700">{question.description}</p>
                 </div>
               </div>
             )

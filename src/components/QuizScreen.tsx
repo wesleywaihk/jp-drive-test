@@ -108,7 +108,7 @@ export default function QuizScreen({ question, current, total, onAnswer }: Props
                 </p>
               )}
               <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Explanation</p>
-              <p className="text-sm text-gray-700">{question.description}</p>
+              <p className="text-lg text-gray-700">{question.description}</p>
             </div>
 
             <button
