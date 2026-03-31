@@ -183,5 +183,35 @@
     "question": "When passing through an intersection with a flashing yellow light, you must proceed slowly.",
     "answer": false,
     "description": "At a flashing yellow light, you only need to proceed while paying careful attention to other traffic. There is no obligation to slow down — unlike a flashing red light, which requires a full stop."
+  },
+
+  {
+    "id": "Q031",
+    "question": "On this road with this sign, mopeds and light vehicles are not allowed to enter.",
+    "image": "img/no-entry-vehicles.avif",
+    "answer": true,
+    "description": "\"No entry for vehicles\" is being indicated, so it is as per the question."
+  },
+
+  {
+    "id": "Q032",
+    "question": "As I approached a crosswalk without traffic lights, it was clear that no pedestrians were crossing, so I passed through the crosswalk without slowing down.",
+    "answer": true,
+    "description": "If it is clear that no pedestrians are present, you may proceed without stopping."
+  },
+
+  {
+    "id": "Q033",
+    "question": "Overtaking is prohibited within intersections and within 30 meters before them, but you are allowed to overtake if you are traveling on a priority road.",
+    "answer": true,
+    "description": "This question asks about the exceptions to the rule prohibiting overtaking near intersections. Vehicles are generally not allowed to overtake within intersections or within 30 meters before them. This is because intersections are high-risk areas for accidents, and lane changes or speed changes increase danger. However, there is an exception: overtaking is permitted if your vehicle is traveling on a priority road."
+  },
+
+  {
+    "id": "Q034",
+    "question": "This sign indicates that you must make a complete stop just before the stop line (or just before the intersection if there is no stop line) and must not obstruct the passage of vehicles traveling on the intersecting road.",
+    "image": "img/stop.avif",
+    "answer": true,
+    "description": "As stated in the question."
   }
 ]
