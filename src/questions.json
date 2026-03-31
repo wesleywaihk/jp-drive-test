@@ -70,7 +70,7 @@
   {
     "id": "Q012",
     "question": "When the traffic light turns green, it is not your duty to start immediately without checking the situation ahead. You must always confirm that it is safe to proceed so as not to cause trouble or danger to other vehicles.",
-    "answer": false,
+    "answer": true,
     "description": "When the traffic light turns green, a green light means 'you may proceed,' not 'you must proceed.' You are required to check for safety before moving. This is a classic trap — even when following the signal, the fundamental rule is to confirm safety with your own eyes before proceeding."
   },
   {
