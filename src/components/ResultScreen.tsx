@@ -45,7 +45,7 @@ export default function ResultScreen({ answers, onRestart }: Props) {
                 {question.image && (
                   <div className="mb-3 rounded-xl overflow-hidden bg-gray-100">
                     <img
-                      src={question.image}
+                      src={import.meta.env.BASE_URL + question.image}
                       alt="Question illustration"
                       className="w-full object-contain max-h-40"
                     />

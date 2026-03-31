@@ -2,7 +2,7 @@
   {
     "id": "Q001",
     "question": "This sign indicates a no right turn.",
-    "image": "/img/no-crossing.avif",
+    "image": "img/no-crossing.avif",
     "answer": false,
     "description": "This sign actually indicates no crossing. A no right turn sign has a different design with an arrow pointing right with a red circle and slash."
   },
@@ -51,7 +51,7 @@
   {
     "id": "Q009",
     "question": "On roads with this sign, motorcycles can pass at any time as long as there are no buses nearby.",
-    "image": "/img/bus-only-road.avif",
+    "image": "img/bus-only-road.avif",
     "answer": false,
     "description": "Vehicles allowed to pass on bus-priority roads are specified: small special vehicles, motorized bicycles, and light vehicles. Motorcycles are not freely permitted regardless of whether buses are present."
   },
@@ -76,7 +76,7 @@
   {
     "id": "Q013",
     "question": "In the area with this sign, only regular automobiles are allowed to pass through the track bed.",
-    "image": "/img/car-on-track.avif",
+    "image": "img/car-on-track.avif",
     "answer": false,
     "description": "The illustration only shows ordinary passenger car illustrations, so it's easy to misunderstand, but it indicates that all automobiles (not just regular passenger cars) can pass through the track bed."
   },
@@ -107,7 +107,7 @@
   {
     "id": "Q018",
     "question": "When there is a sign like the one in the picture at an intersection, cars and mopeds can turn left while paying attention to other traffic, even if the traffic light ahead is red or yellow.",
-    "image": "/img/left-turn-permitted.avif",
+    "image": "img/left-turn-permitted.avif",
     "answer": true,
     "description": "This is a 'Left Turn Permitted' sign. Vehicles may turn left regardless of the signal color, as long as they pay attention to other traffic and pedestrians."
   },
@@ -126,7 +126,7 @@
   {
     "id": "Q021",
     "question": "This sign indicates a road closure for vehicles, and cars cannot pass.",
-    "image": "/img/no-entry-vehicles.avif",
+    "image": "img/no-entry-vehicles.avif",
     "answer": false,
     "description": "This sign means 'No Entry for Vehicles,' not a road closure (通行止め). These are different signs — a no-entry sign prohibits entry from one direction, while a road closure sign prohibits passage entirely."
   },
