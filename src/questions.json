@@ -1,0 +1,187 @@
+[
+  {
+    "id": "Q001",
+    "question": "This sign indicates a no right turn.",
+    "image": "/img/no-crossing.avif",
+    "answer": false,
+    "description": "This sign actually indicates no crossing. A no right turn sign has a different design with an arrow pointing right with a red circle and slash."
+  },
+  {
+    "id": "Q002",
+    "question": "When driving a four-wheeled vehicle, the front and back position of the seat should be adjusted so that the knees are fully extended when the clutch pedal is fully depressed.",
+    "answer": false,
+    "description": "When adjusting the seat position using the clutch, do not adjust it with the leg fully extended; adjust it so that the knee is slightly bent."
+  },
+  {
+    "id": "Q003",
+    "question": "When passing alongside a school/kindergarten bus that is stopped for children/toddlers to get on or off, if you can maintain a safe distance between your vehicle and the bus, you may pass without slowing down.",
+    "answer": false,
+    "description": "Even if a safe distance can be maintained, you must still proceed at a reduced speed."
+  },
+  {
+    "id": "Q004",
+    "question": "When an emergency vehicle approaches, outside of intersections, in principle, it is sufficient to pull over to the left side of the road; it is not always necessary to come to a complete stop.",
+    "answer": true,
+    "description": "When an emergency vehicle (such as a police car, ambulance, or fire truck) is approaching with its siren on, other vehicles have a duty to yield the right of way. Outside of intersections, drivers are expected to pull over to the left side of the road so as not to obstruct the emergency vehicle. Coming to a complete stop is not always required — if the road is wide enough and the vehicle can safely pull to the left, that is sufficient."
+  },
+  {
+    "id": "Q005",
+    "question": "There are four types of main traffic signs: regulatory signs, supplementary signs, warning signs, and guide signs.",
+    "answer": false,
+    "description": "There are four types: regulatory, instruction, warning, and guide signs. The correct four types do not include supplementary signs as a main category."
+  },
+  {
+    "id": "Q006",
+    "question": "When passing beside pedestrians or bicycles, you must always slow down.",
+    "answer": false,
+    "description": "When passing near pedestrians or bicycles, you must either maintain a safe distance or proceed at a reduced speed — either action is acceptable. If you are able to maintain a safe distance, there is no obligation to slow down."
+  },
+  {
+    "id": "Q007",
+    "question": "An automobile with a gross vehicle weight of 3,000 kg can be driven with an ordinary driver's license.",
+    "answer": true,
+    "description": "According to Japan's Road Traffic Act, a standard ordinary license allows driving vehicles with a gross weight under 3,500 kg, maximum loading capacity under 2,000 kg, and seating capacity of 10 or fewer. A vehicle with a gross weight of 3,000 kg falls within this limit and can be driven with an ordinary license."
+  },
+  {
+    "id": "Q008",
+    "question": "At an intersection, when the traffic light in your direction is flashing red, you must always come to a temporary stop, check for safety, and then proceed.",
+    "answer": true,
+    "description": "As stated in the question. A flashing red light requires a full temporary stop, a safety check, and then you may proceed — similar to a stop sign."
+  },
+  {
+    "id": "Q009",
+    "question": "On roads with this sign, motorcycles can pass at any time as long as there are no buses nearby.",
+    "image": "/img/bus-only-road.avif",
+    "answer": false,
+    "description": "Vehicles allowed to pass on bus-priority roads are specified: small special vehicles, motorized bicycles, and light vehicles. Motorcycles are not freely permitted regardless of whether buses are present."
+  },
+  {
+    "id": "Q010",
+    "question": "You must slow down near the top of uphill slopes and on steep downhill slopes, but there is no obligation to slow down while going up a steep uphill slope.",
+    "answer": true,
+    "description": "Steep uphill slopes are excluded from slow-driving areas. However, for no-stopping/parking areas, steep uphill slopes are included — make sure to remember this distinction."
+  },
+  {
+    "id": "Q011",
+    "question": "Overtaking is prohibited on steep slopes, whether ascending or descending.",
+    "answer": false,
+    "description": "Only the top of an uphill slope and steep downhill slopes are considered no-overtaking zones. Ascending a steep slope is not a no-overtaking zone. For no-parking/no-stopping zones however, any steep slope (uphill or downhill) is included — remember the difference between these two types of areas."
+  },
+  {
+    "id": "Q012",
+    "question": "When the traffic light turns green, it is not your duty to start immediately without checking the situation ahead. You must always confirm that it is safe to proceed so as not to cause trouble or danger to other vehicles.",
+    "answer": false,
+    "description": "When the traffic light turns green, a green light means 'you may proceed,' not 'you must proceed.' You are required to check for safety before moving. This is a classic trap — even when following the signal, the fundamental rule is to confirm safety with your own eyes before proceeding."
+  },
+  {
+    "id": "Q013",
+    "question": "In the area with this sign, only regular automobiles are allowed to pass through the track bed.",
+    "image": "/img/car-on-track.avif",
+    "answer": false,
+    "description": "The illustration only shows ordinary passenger car illustrations, so it's easy to misunderstand, but it indicates that all automobiles (not just regular passenger cars) can pass through the track bed."
+  },
+  {
+    "id": "Q014",
+    "question": "As a rule, vehicles are not allowed to drive through safety zones, but they may enter them if it is unavoidable in order to avoid danger.",
+    "answer": false,
+    "description": "A safety zone is an area established to protect pedestrians, especially those getting on or off streetcars. Under Articles 2 and 17 of the Road Traffic Act, vehicles must not enter or pass through safety zones under any circumstances. There are no exceptions — encroaching, stopping, or parking in a safety zone is always a violation."
+  },
+  {
+    "id": "Q015",
+    "question": "When the 'Tramway Passage Permitted' sign is installed, not only automobiles but also mopeds and light vehicles may travel within the tramway.",
+    "answer": false,
+    "description": "The 'Tramway Passage Permitted' sign applies only to automobiles. Mopeds and light vehicles (such as bicycles) are not allowed to pass through tramways even when this sign is present, due to the high risk of collision with trams."
+  },
+  {
+    "id": "Q016",
+    "question": "When an emergency vehicle approaches an intersection or its vicinity, it is required to avoid the intersection, pull over to the left side of the road, and stop temporarily.",
+    "answer": true,
+    "description": "When an emergency vehicle approaches with siren and red lights, drivers near intersections must avoid the intersection, pull over to the left, and stop temporarily. Since emergency vehicles may go straight, turn right, or left, remaining inside the intersection would obstruct their passage."
+  },
+  {
+    "id": "Q017",
+    "question": "While driving a standard passenger car on a road with a priority lane designated for vehicles like route buses, I used the priority lane to make a left turn.",
+    "answer": true,
+    "description": "On roads with designated priority lanes, automobiles other than the specified vehicles are also allowed to use the lane when turning."
+  },
+  {
+    "id": "Q018",
+    "question": "When there is a sign like the one in the picture at an intersection, cars and mopeds can turn left while paying attention to other traffic, even if the traffic light ahead is red or yellow.",
+    "image": "/img/left-turn-permitted.avif",
+    "answer": true,
+    "description": "This is a 'Left Turn Permitted' sign. Vehicles may turn left regardless of the signal color, as long as they pay attention to other traffic and pedestrians."
+  },
+  {
+    "id": "Q019",
+    "question": "The braking distance is the combined distance of the reaction distance and the stopping distance.",
+    "answer": false,
+    "description": "The total stopping distance is the sum of the reaction distance and the braking distance. Braking distance alone refers only to the distance traveled after the brakes take effect until the vehicle stops — it does not include the reaction distance."
+  },
+  {
+    "id": "Q020",
+    "question": "At a tram stop with a safety zone, if the tram is stopped and no passengers are boarding or alighting, vehicles may pass through without reducing speed.",
+    "answer": false,
+    "description": "Even when no passengers appear to be boarding or alighting, someone might step out unexpectedly. When a safety zone exists, vehicles may pass but must slow down. Passing without reducing speed is not permitted."
+  },
+  {
+    "id": "Q021",
+    "question": "This sign indicates a road closure for vehicles, and cars cannot pass.",
+    "image": "/img/no-entry-vehicles.avif",
+    "answer": false,
+    "description": "This sign means 'No Entry for Vehicles,' not a road closure (通行止め). These are different signs — a no-entry sign prohibits entry from one direction, while a road closure sign prohibits passage entirely."
+  },
+  {
+    "id": "Q022",
+    "question": "When crossing a sidewalk or similar area, you must always stop even if there are no pedestrians.",
+    "answer": true,
+    "description": "When a vehicle crosses a sidewalk or roadside strip, it must always stop and confirm safety — even if no pedestrians are visible. Sidewalks are pedestrian-priority spaces and children or cyclists may appear suddenly, so stopping to confirm is mandatory."
+  },
+  {
+    "id": "Q023",
+    "question": "Inner wheel differential refers to the fact that the front wheels pass inside the rear wheels when the car turns.",
+    "answer": false,
+    "description": "Off-tracking (内輪差) refers to the phenomenon where, when a vehicle turns, the rear wheels follow a path that is on the inside of the front wheels' path — not the other way around."
+  },
+  {
+    "id": "Q024",
+    "question": "The distance a vehicle travels from the moment the driver feels danger and applies the brakes until the vehicle comes to a complete stop is called the stopping distance.",
+    "answer": false,
+    "description": "The distance from the moment the brakes begin to take effect until the vehicle comes to a complete stop is called the braking distance (制動距離). The stopping distance (停止距離) includes both the reaction distance and the braking distance."
+  },
+  {
+    "id": "Q025",
+    "question": "Roads that have a center line or traffic lanes extending into an intersection are called 'priority roads'.",
+    "answer": true,
+    "description": "As stated in the question. Roads with a center line or marked lanes that continue through an intersection are designated priority roads, and vehicles on them have right of way over vehicles entering from non-priority roads."
+  },
+  {
+    "id": "Q026",
+    "question": "At locations where a 'Slow' (徐行) sign is posted, you must drive slowly regardless of the traffic conditions.",
+    "answer": true,
+    "description": "A 徐行 (slow) sign requires driving at a speed that allows immediate stopping — generally 10 km/h or less. This applies regardless of traffic conditions because such signs are placed in areas with particularly high risk, such as poor visibility zones and school areas."
+  },
+  {
+    "id": "Q027",
+    "question": "When a car turns right from a one-way street, it must first move as close as possible to the center of the road beforehand and then pass through the inner area of the intersection.",
+    "answer": false,
+    "description": "When turning right from a one-way road, you should position your vehicle as close as possible to the right edge of the roadway — not toward the center. This is different from turning right on a two-way road."
+  },
+  {
+    "id": "Q028",
+    "question": "At a tram stop without a safety zone, if the tram is stopped and no passengers are boarding or alighting, you may proceed slowly even if the distance from the tram is not sufficient.",
+    "answer": false,
+    "description": "At tram stops without a safety zone, passengers board and alight directly on the roadway, making the area especially hazardous. You may only proceed slowly if there is a distance of at least 1.5 meters between your vehicle and the tram. Insufficient distance is not permitted regardless of passenger activity."
+  },
+  {
+    "id": "Q029",
+    "question": "When an emergency vehicle approaches in a location other than at or near an intersection, you must slow down.",
+    "answer": false,
+    "description": "Outside of intersections, the correct action is to move to the left side of the road to yield the right of way — not simply to slow down. Slowing down alone is insufficient; you must pull over."
+  },
+  {
+    "id": "Q030",
+    "question": "When passing through an intersection with a flashing yellow light, you must proceed slowly.",
+    "answer": false,
+    "description": "At a flashing yellow light, you only need to proceed while paying careful attention to other traffic. There is no obligation to slow down — unlike a flashing red light, which requires a full stop."
+  }
+]
