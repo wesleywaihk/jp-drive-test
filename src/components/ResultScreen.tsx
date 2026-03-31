@@ -1,4 +1,5 @@
 import { Question } from '../types'
+import { BookmarkLevel } from '../useBookmarks'
 
 interface UserAnswer {
   question: Question
@@ -7,12 +8,15 @@ interface UserAnswer {
 
 interface Props {
   answers: UserAnswer[]
-  isBookmarked: (id: string) => boolean
-  onToggleBookmark: (id: string) => void
+  getLevel: (id: string) => BookmarkLevel
+  onCycleBookmark: (id: string) => void
   onRestart: () => void
 }
 
-export default function ResultScreen({ answers, isBookmarked, onToggleBookmark, onRestart }: Props) {
+const BOOKMARK_ICON: Record<BookmarkLevel, string> = { 0: '🏷️', 1: '🔖', 2: '⭐' }
+const BOOKMARK_TITLE: Record<BookmarkLevel, string> = { 0: 'Bookmark', 1: 'Mark as very important', 2: 'Remove bookmark' }
+
+export default function ResultScreen({ answers, getLevel, onCycleBookmark, onRestart }: Props) {
   const score = answers.filter((a) => a.userAnswer === a.question.answer).length
   const total = answers.length
   const percentage = Math.round((score / total) * 100)
@@ -36,7 +40,7 @@ export default function ResultScreen({ answers, isBookmarked, onToggleBookmark, 
         <div className="space-y-4 mb-8">
           {answers.map(({ question, userAnswer }, i) => {
             const isCorrect = userAnswer === question.answer
-            const bookmarked = isBookmarked(question.id)
+            const level = getLevel(question.id)
             return (
               <div key={i} className="bg-white rounded-2xl shadow-sm p-5 border border-gray-100">
                 <div className="flex items-center justify-between mb-2">
@@ -45,11 +49,11 @@ export default function ResultScreen({ answers, isBookmarked, onToggleBookmark, 
                     <span className="text-xs font-mono bg-gray-100 text-gray-400 px-2 py-0.5 rounded">{question.id}</span>
                   </div>
                   <button
-                    onClick={() => onToggleBookmark(question.id)}
+                    onClick={() => onCycleBookmark(question.id)}
                     className="text-xl leading-none transition-transform active:scale-90"
-                    title={bookmarked ? 'Remove bookmark' : 'Bookmark this question'}
+                    title={BOOKMARK_TITLE[level]}
                   >
-                    {bookmarked ? '🔖' : '🏷️'}
+                    {BOOKMARK_ICON[level]}
                   </button>
                 </div>
 

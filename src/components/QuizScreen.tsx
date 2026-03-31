@@ -1,18 +1,25 @@
 import { useState } from 'react'
 import { Question } from '../types'
+import { BookmarkLevel } from '../useBookmarks'
 
 interface Props {
   question: Question
   current: number
   total: number
   onAnswer: (answer: boolean) => void
+  getLevel: (id: string) => BookmarkLevel
+  onCycleBookmark: (id: string) => void
 }
 
-export default function QuizScreen({ question, current, total, onAnswer }: Props) {
+const BOOKMARK_ICON: Record<BookmarkLevel, string> = { 0: '🏷️', 1: '🔖', 2: '⭐' }
+const BOOKMARK_TITLE: Record<BookmarkLevel, string> = { 0: 'Bookmark', 1: 'Mark as very important', 2: 'Remove bookmark' }
+
+export default function QuizScreen({ question, current, total, onAnswer, getLevel, onCycleBookmark }: Props) {
   const [selected, setSelected] = useState<boolean | null>(null)
   const progress = (current / total) * 100
 
   const isCorrect = selected === question.answer
+  const level = getLevel(question.id)
 
   function handleSelect(value: boolean) {
     if (selected !== null) return
@@ -99,9 +106,18 @@ export default function QuizScreen({ question, current, total, onAnswer }: Props
         {selected !== null && (
           <div className="space-y-3">
             <div className={`rounded-2xl p-4 ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
-              <p className={`font-bold text-lg mb-1 ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
-                {isCorrect ? '⭕ Correct!' : '❌ Incorrect'}
-              </p>
+              <div className="flex items-center justify-between mb-1">
+                <p className={`font-bold text-lg ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+                  {isCorrect ? '⭕ Correct!' : '❌ Incorrect'}
+                </p>
+                <button
+                  onClick={() => onCycleBookmark(question.id)}
+                  className="text-2xl leading-none transition-transform active:scale-90"
+                  title={BOOKMARK_TITLE[level]}
+                >
+                  {BOOKMARK_ICON[level]}
+                </button>
+              </div>
               {!isCorrect && (
                 <p className="text-sm text-gray-600 mb-2">
                   Correct answer: <span className="font-semibold">{question.answer ? 'True ⭕' : 'False ✕'}</span>

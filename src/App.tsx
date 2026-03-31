@@ -5,9 +5,11 @@ import { useBookmarks } from './useBookmarks'
 import QuizScreen from './components/QuizScreen'
 import ResultScreen from './components/ResultScreen'
 import StartScreen from './components/StartScreen'
+import BookmarkScreen from './components/BookmarkScreen'
+import QuestionsScreen from './components/QuestionsScreen'
 
 type UserAnswer = { question: Question; userAnswer: boolean }
-type AppState = 'start' | 'quiz' | 'result'
+type AppState = 'start' | 'quiz' | 'result' | 'bookmarks' | 'questions'
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -25,7 +27,7 @@ export default function App() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<UserAnswer[]>([])
-  const { bookmarks, toggle, isBookmarked } = useBookmarks()
+  const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks()
 
   const startQuiz = useCallback((count: number) => {
     setQuestions(shuffle(allQuestions).slice(0, count))
@@ -34,13 +36,15 @@ export default function App() {
     setAppState('quiz')
   }, [])
 
-  const startBookmarked = useCallback(() => {
-    const pool = shuffle(allQuestions.filter((q) => bookmarks.has(q.id)))
-    setQuestions(pool)
+  const startBookmarked = useCallback((level?: 2) => {
+    const pool = level
+      ? allQuestions.filter((q) => getLevel(q.id) === level)
+      : allQuestions.filter((q) => getLevel(q.id) >= 1)
+    setQuestions(shuffle(pool))
     setCurrentIndex(0)
     setAnswers([])
     setAppState('quiz')
-  }, [bookmarks])
+  }, [getLevel])
 
   const handleAnswer = useCallback((userAnswer: boolean) => {
     const question = questions[currentIndex]
@@ -57,13 +61,40 @@ export default function App() {
     setAppState('start')
   }, [])
 
+  if (appState === 'questions') {
+    return (
+      <QuestionsScreen
+        questions={allQuestions}
+        getLevel={getLevel}
+        onCycleBookmark={cycle}
+        onBack={() => setAppState('start')}
+      />
+    )
+  }
+
+  if (appState === 'bookmarks') {
+    return (
+      <BookmarkScreen
+        questions={allQuestions}
+        getLevel={getLevel}
+        onCycleBookmark={cycle}
+        onRemoveBookmark={remove}
+        onBack={() => setAppState('start')}
+      />
+    )
+  }
+
   if (appState === 'start') {
     return (
       <StartScreen
         totalAvailable={allQuestions.length}
-        bookmarkCount={bookmarks.size}
+        totalBookmarked={totalBookmarked}
+        importantCount={countByLevel(2)}
         onStart={startQuiz}
-        onStartBookmarked={startBookmarked}
+        onStartBookmarked={() => startBookmarked()}
+        onStartImportant={() => startBookmarked(2)}
+        onViewBookmarks={() => setAppState('bookmarks')}
+        onViewQuestions={() => setAppState('questions')}
       />
     )
   }
@@ -75,6 +106,8 @@ export default function App() {
         current={currentIndex + 1}
         total={questions.length}
         onAnswer={handleAnswer}
+        getLevel={getLevel}
+        onCycleBookmark={cycle}
       />
     )
   }
@@ -82,8 +115,8 @@ export default function App() {
   return (
     <ResultScreen
       answers={answers}
-      isBookmarked={isBookmarked}
-      onToggleBookmark={toggle}
+      getLevel={getLevel}
+      onCycleBookmark={cycle}
       onRestart={restart}
     />
   )

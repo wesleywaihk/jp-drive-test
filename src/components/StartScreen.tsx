@@ -1,11 +1,15 @@
 interface Props {
   totalAvailable: number
-  bookmarkCount: number
+  totalBookmarked: number
+  importantCount: number
   onStart: (count: number) => void
   onStartBookmarked: () => void
+  onStartImportant: () => void
+  onViewBookmarks: () => void
+  onViewQuestions: () => void
 }
 
-export default function StartScreen({ totalAvailable, bookmarkCount, onStart, onStartBookmarked }: Props) {
+export default function StartScreen({ totalAvailable, totalBookmarked, importantCount, onStart, onStartBookmarked, onStartImportant, onViewBookmarks, onViewQuestions }: Props) {
   const options = [5, 10, 15, totalAvailable].filter((n, i, arr) => n <= totalAvailable && arr.indexOf(n) === i)
 
   return (
@@ -28,14 +32,39 @@ export default function StartScreen({ totalAvailable, bookmarkCount, onStart, on
           ))}
         </div>
 
-        {bookmarkCount > 0 && (
-          <button
-            onClick={onStartBookmarked}
-            className="w-full bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-gray-900 font-semibold py-4 rounded-xl text-lg transition-colors"
-          >
-            🔖 Bookmarked ({bookmarkCount})
-          </button>
+        {totalBookmarked > 0 && (
+          <div className="space-y-3 mb-3">
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                onClick={onStartBookmarked}
+                className="bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-gray-900 font-semibold py-4 rounded-xl text-lg transition-colors"
+              >
+                🔖 ({totalBookmarked})
+              </button>
+              {importantCount > 0 ? (
+                <button
+                  onClick={onStartImportant}
+                  className="bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white font-semibold py-4 rounded-xl text-lg transition-colors"
+                >
+                  ⭐ ({importantCount})
+                </button>
+              ) : <div />}
+            </div>
+            <button
+              onClick={onViewBookmarks}
+              className="w-full border-2 border-gray-200 hover:border-gray-300 text-gray-600 font-semibold py-3 rounded-xl text-base transition-colors"
+            >
+              View Bookmark List
+            </button>
+          </div>
         )}
+
+        <button
+          onClick={onViewQuestions}
+          className="w-full border-2 border-gray-200 hover:border-gray-300 text-gray-600 font-semibold py-3 rounded-xl text-base transition-colors"
+        >
+          All Questions
+        </button>
       </div>
     </div>
   )
