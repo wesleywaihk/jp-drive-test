@@ -286,7 +286,7 @@
   {
     "id": "Q046",
     "question": "Always drive slowly when passing pedestrians or bicycles.",
-    "answer": true,
+    "answer": false,
     "description": "When passing pedestrians or cyclists, you should either maintain a safe distance or slow down. If you can maintain a safe distance, you are not required to slow down."
   },
   {
