@@ -292,7 +292,7 @@
   {
     "id": "Q047",
     "question": "When passing near a child walking alone, you must not only slow down but also always make a temporary stop.",
-    "answer": true,
+    "answer": false,
     "description": "When passing by a child walking alone, you must either come to a complete stop or proceed at a reduced speed to ensure safe passage."
   },
   {
