@@ -214,28 +214,74 @@
     "answer": true,
     "description": "As stated in the question."
   },
-
+  {
+    "id": "Q035",
+    "question": "This sign indicates the presence of a safety zone.",
+    "image": "img/safty-zone.avif",
+    "answer": true,
+    "description": "As stated in the question."
+  },
+  {
+    "id": "Q036",
+    "question": "When passing by a safety zone, you must slow down regardless of whether or not there are any pedestrians present.",
+    "answer": false,
+    "description": "If there are no pedestrians near the safety island, slowing down is not required."
+  },
+  {
+    "id": "Q037",
+    "question": "When driving a four-wheeled vehicle, the seat should be adjusted so that the knees are fully extended when the clutch pedal is fully depressed.",
+    "answer": false,
+    "description": "The correct adjustment is with the knee slightly bent, not fully extended."
+  },
+  {
+    "id": "Q038",
+    "question": "Overtaking is prohibited at intersections and within 30 meters of them, so overtaking immediately after passing the intersection is allowed.",
+    "answer": true,
+    "description": "The no-overtaking zone includes the intersection and 30 meters before it, not after it."
+  },
+  {
+    "id": "Q039",
+    "question": "When driving in a route bus priority lane and a route bus approaches, you may either exit the lane or maintain a sufficient distance so as not to obstruct the bus.",
+    "answer": false,
+    "description": "The correct action is to promptly exit the priority lane. Maintaining distance applies to trams, not buses."
+  },
+  {
+    "id": "Q040",
+    "question": "When the traffic light turns yellow, under no circumstances should you proceed past the stop line.",
+    "answer": false,
+    "description": "Yellow means stop, but if stopping suddenly is dangerous, you may proceed."
+  },
+  {
+    "id": "Q041",
+    "question": "This sign indicates a 'No Stopping Zone'.",
+    "image": "img/safty-zone-ground.avif",
+    "answer": false,
+    "description": "The sign shown indicates a Safety Zone, not a No Stopping Zone."
+  },
+  {
+    "id": "Q042",
+    "question": "At an intersection with a flashing yellow light, you may proceed while paying attention to other traffic.",
+    "answer": true,
+    "description": "Flashing yellow means proceed with caution."
+  },
   {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
     "answer": false,
     "description": "The correct four types are: regulatory, instruction, warning, and guide signs."
   },
-
   {
     "id": "S002",
     "question": "The four main types of traffic signs are regulatory signs, instruction signs, caution signs, and guide signs.",
     "answer": false,
     "description": "The correct four types are: regulatory, instruction, warning, and guide signs. 'Caution signs' is not an official category."
   },
-
   {
     "id": "S003",
     "question": "Japan classifies traffic signs into four groups: regulatory signs, instruction signs, warning signs, and guide signs.",
     "answer": true,
     "description": "These are the official four categories."
   },
-
   {
     "id": "S004",
     "question": "Regulatory signs, instruction signs, warning signs, and guide signs make up the four main types of traffic signs.",
