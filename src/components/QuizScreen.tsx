@@ -53,7 +53,6 @@ export default function QuizScreen({ question, current, total, onAnswer, getLeve
         <div className="bg-white rounded-2xl shadow-md p-6 mb-4">
           <div className="flex items-center justify-between mb-3">
             <p className="text-xs font-semibold text-red-600 uppercase tracking-wide">Question</p>
-            <span className="text-xs font-mono bg-gray-100 text-gray-500 px-2 py-0.5 rounded">{question.id}</span>
           </div>
           <p className="text-gray-800 text-lg leading-relaxed">{question.question}</p>
 
@@ -123,7 +122,7 @@ export default function QuizScreen({ question, current, total, onAnswer, getLeve
                   Correct answer: <span className="font-semibold">{question.answer ? 'True ⭕' : 'False ✕'}</span>
                 </p>
               )}
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Explanation</p>
+              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Explanation <span className="font-mono text-gray-400 normal-case">({question.id})</span></p>
               <p className="text-lg text-gray-700">{question.description}</p>
             </div>
 

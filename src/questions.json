@@ -245,7 +245,6 @@
   {
     "id": "S005",
     "question": "The four main types of traffic signs are regulatory signs, instruction signs, warning signs, and guide signs.",
-    "image": "img/sign_types.avif",
     "answer": true,
     "description": "All four listed categories are correct."
   }
