@@ -293,5 +293,47 @@
     "question": "The four main types of traffic signs are regulatory signs, instruction signs, warning signs, and guide signs.",
     "answer": true,
     "description": "All four listed categories are correct."
+  },
+  {
+    "id": "S006",
+    "question": "Stopping distance is the total of the reaction distance and the braking distance.",
+    "answer": true,
+    "description": "Correct: stopping distance = reaction distance + braking distance."
+  },
+  {
+    "id": "S007",
+    "question": "Braking distance is the sum of the reaction distance and the stopping distance.",
+    "answer": false,
+    "description": "Incorrect. Correct formula: stopping distance = reaction distance + braking distance."
+  },
+  {
+    "id": "S008",
+    "question": "Reaction distance is calculated by adding the braking distance to the stopping distance.",
+    "answer": false,
+    "description": "Incorrect. Reaction distance is only the distance traveled before braking begins. Correct formula: stopping distance = reaction distance + braking distance."
+  },
+  {
+    "id": "S009",
+    "question": "Stopping distance is the distance traveled after the brakes take effect.",
+    "answer": false,
+    "description": "Incorrect. That describes braking distance. Correct formula: stopping distance = reaction distance + braking distance."
+  },
+  {
+    "id": "S010",
+    "question": "The total stopping distance includes the distance traveled before braking begins and the distance traveled after braking begins.",
+    "answer": true,
+    "description": "Correct: reaction distance (before braking) + braking distance (after braking)."
+  },
+  {
+    "id": "S011",
+    "question": "Reaction distance and stopping distance together make up the braking distance.",
+    "answer": false,
+    "description": "Incorrect. Correct formula: stopping distance = reaction distance + braking distance."
+  },
+  {
+    "id": "S012",
+    "question": "Stopping distance is the distance traveled before the driver reacts.",
+    "answer": false,
+    "description": "Incorrect. That describes reaction distance. Correct formula: stopping distance = reaction distance + braking distance."
   }
 ]
