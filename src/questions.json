@@ -213,5 +213,40 @@
     "image": "img/stop.avif",
     "answer": true,
     "description": "As stated in the question."
+  },
+
+  {
+    "id": "S001",
+    "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
+    "answer": false,
+    "description": "The correct four types are: regulatory, instruction, warning, and guide signs."
+  },
+
+  {
+    "id": "S002",
+    "question": "The four main types of traffic signs are regulatory signs, instruction signs, caution signs, and guide signs.",
+    "answer": false,
+    "description": "The correct four types are: regulatory, instruction, warning, and guide signs. 'Caution signs' is not an official category."
+  },
+
+  {
+    "id": "S003",
+    "question": "Japan classifies traffic signs into four groups: regulatory signs, instruction signs, warning signs, and guide signs.",
+    "answer": true,
+    "description": "These are the official four categories."
+  },
+
+  {
+    "id": "S004",
+    "question": "Regulatory signs, instruction signs, warning signs, and guide signs make up the four main types of traffic signs.",
+    "answer": true,
+    "description": "All four listed categories are correct."
+  },
+  {
+    "id": "S005",
+    "question": "The four main types of traffic signs are regulatory signs, instruction signs, warning signs, and guide signs.",
+    "image": "img/sign_types.avif",
+    "answer": true,
+    "description": "All four listed categories are correct."
   }
 ]
