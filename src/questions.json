@@ -278,6 +278,24 @@
     "description": "It indicates 'Road Closed'."
   },
   {
+    "id": "Q045",
+    "question": "A safety zone is, in principle, a place where vehicles are not allowed to pass.",
+    "answer": true,
+    "description": "A safety zone is an area established to protect pedestrians, especially those getting on and off streetcars. For this reason, the Road Traffic Act (Articles 2 and 17) stipulates that “vehicles must not enter or pass through a safety zone.” In principle, vehicles are prohibited from driving through safety zones. It is also a violation to extend into the zone, or to stop or park in it."
+  },
+  {
+    "id": "Q046",
+    "question": "Always drive slowly when passing pedestrians or bicycles.",
+    "answer": true,
+    "description": "When passing pedestrians or cyclists, you should either maintain a safe distance or slow down. If you can maintain a safe distance, you are not required to slow down."
+  },
+  {
+    "id": "Q047",
+    "question": "When passing near a child walking alone, you must not only slow down but also always make a temporary stop.",
+    "answer": true,
+    "description": "When passing by a child walking alone, you must either come to a complete stop or proceed at a reduced speed to ensure safe passage."
+  },
+  {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
     "answer": false,
