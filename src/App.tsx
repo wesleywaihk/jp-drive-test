@@ -108,6 +108,7 @@ export default function App() {
         onAnswer={handleAnswer}
         getLevel={getLevel}
         onCycleBookmark={cycle}
+        onQuit={restart}
       />
     )
   }

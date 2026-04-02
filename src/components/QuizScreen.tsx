@@ -9,12 +9,13 @@ interface Props {
   onAnswer: (answer: boolean) => void
   getLevel: (id: string) => BookmarkLevel
   onCycleBookmark: (id: string) => void
+  onQuit: () => void
 }
 
 const BOOKMARK_ICON: Record<BookmarkLevel, string> = { 0: '🏷️', 1: '🔖', 2: '⭐' }
 const BOOKMARK_TITLE: Record<BookmarkLevel, string> = { 0: 'Bookmark', 1: 'Mark as very important', 2: 'Remove bookmark' }
 
-export default function QuizScreen({ question, current, total, onAnswer, getLevel, onCycleBookmark }: Props) {
+export default function QuizScreen({ question, current, total, onAnswer, getLevel, onCycleBookmark, onQuit }: Props) {
   const [selected, setSelected] = useState<boolean | null>(null)
   const progress = (current / total) * 100
 
@@ -38,7 +39,15 @@ export default function QuizScreen({ question, current, total, onAnswer, getLeve
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <span className="text-sm font-medium text-gray-500">Question {current} of {total}</span>
-          <span className="text-sm font-medium text-red-600">{Math.round(progress)}%</span>
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-medium text-red-600">{Math.round(progress)}%</span>
+            <button
+              onClick={onQuit}
+              className="text-sm font-medium text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              Quit
+            </button>
+          </div>
         </div>
 
         {/* Progress bar */}
