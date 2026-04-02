@@ -265,6 +265,19 @@
     "description": "Flashing yellow means proceed with caution."
   },
   {
+    "id": "Q043",
+    "question": "On a wide road with a left-side width of 6 meters or more, you may overtake by protruding into the right side of the road if there is no 'no overtaking' sign.",
+    "answer": false,
+    "description": "On wide roads where the left lane is 6 meters or more, you should be able to overtake without encroaching into the dangerous oncoming lane, so you must not move into the right side to overtake."
+  },
+  {
+    "id": "Q044",
+    "question": "This sign means no entry for vehicles.",
+    "image": "img/road-closed.avif",
+    "answer": false,
+    "description": "It indicates 'Road Closed'."
+  },
+  {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
     "answer": false,
