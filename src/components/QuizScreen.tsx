@@ -132,7 +132,7 @@ export default function QuizScreen({ question, current, total, onAnswer, getLeve
                 </p>
               )}
               <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">Explanation <span className="font-mono text-gray-400 normal-case">({question.id})</span></p>
-              <p className="text-lg text-gray-700">{question.description}</p>
+              <p className="text-lg text-gray-700" dangerouslySetInnerHTML={{ __html: question.description }} />
             </div>
 
             <button

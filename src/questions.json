@@ -321,6 +321,39 @@
     "answer": true,
     "description": "The key point of this question is the rule regarding overtaking in tunnels and whether traffic lanes are marked. In tunnels without marked traffic lanes, overtaking is prohibited. This restriction exists because tunnels are narrow, dark, have limited visibility, and offer no escape routes. However, as an exception, overtaking is allowed in tunnels that do have marked traffic lanes."
   },
+
+  {
+    "id": "Q052",
+    "question": "This sign indicates that the road ahead is closed to traffic.",
+    "image": "img/road-closed.avif",
+    "answer": true,
+    "description": "As the question states."
+  },
+  {
+    "id": "Q053",
+    "question": "Road markings refer to lines, symbols, and letters indicated on the road surface by paint, road studs, etc., and there are two types: regulatory markings and warning markings.",
+    "answer": false,
+    "description": "There are two types: regulatory signs and instruction signs."
+  },
+  {
+    "id": "Q054",
+    "question": "Even at an intersection where visibility to the left and right is poor, if traffic signals are installed, there is no legal requirement to slow down.",
+    "answer": true,
+    "description": "The correct answer is “True.” At intersections controlled by traffic signals, drivers are not legally required to slow down, even if visibility to the left and right is limited. Many people assume that “poor visibility at an intersection = slow down,” but the key point in this rule is that the requirement depends on whether a traffic signal is present. However, “no legal obligation to slow down” does not mean you may proceed without caution. Even when the signal is green, there is still a possibility that a vehicle or pedestrian may ignore the signal and enter the intersection. At intersections where buildings, parked vehicles, or other obstacles severely restrict visibility, entering without slowing down can still lead to a collision. In other words, although the law does not require reduced speed at signal-controlled intersections, drivers must use judgment and reduce speed when necessary in real-world driving conditions."
+  },
+  {
+    "id": "Q055",
+    "question": "When driving within a streetcar track area, if a streetcar approaches from behind, you may continue driving if there is enough distance.",
+    "answer": true,
+    "description": "The correct answer is “True.”<br/><br/>The key point here is understanding whether it is a violation for cars to drive within the streetcar track area, and what must be done if a streetcar approaches. The section of the road with rails is called the “track area (軌道敷).” As a rule, vehicles are not allowed to drive here, but exceptions exist—such as when permitted by road signs or markings.<br/><br/>If a car is driving in the track area and a streetcar approaches from behind, the law allows the car to continue as long as it does not obstruct the streetcar’s movement. The driver may either leave the track area or maintain a sufficient distance ahead of the streetcar.<br/><br/>It is important to note that the rule is different for buses. On priority lanes for route buses, when a bus approaches from behind, cars must immediately leave the lane. Maintaining distance is not an option. Remembering this difference between trams and buses is essential."
+  },
+  {
+    "id": "Q056",
+    "question": "In locations where overtaking is prohibited by traffic signs, overtaking bicycles is also prohibited.",
+    "answer": false,
+    "description": "This question asks about the treatment of bicycles in areas where overtaking is prohibited. Vehicles are not allowed to change lanes or pass other motor vehicles or motorized bicycles in no-overtaking zones. However, this means that light vehicles, such as bicycles, can be overtaken even in these areas."
+  },
+
   {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
