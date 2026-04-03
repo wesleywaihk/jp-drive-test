@@ -295,6 +295,32 @@
     "answer": false,
     "description": "When passing by a child walking alone, you must either come to a complete stop or proceed at a reduced speed to ensure safe passage."
   },
+
+  {
+    "id": "Q048",
+    "question": "When making a right or left turn, you must always slow down.",
+    "answer": true,
+    "description": "According to the Road Traffic Act, drivers are required to slow down when turning right or left at an intersection. This is necessary because intersections involve many potential hazards, such as pedestrians, bicycles, oncoming vehicles, and changing traffic signals. In particular, when turning left, slowing down helps prevent accidents involving bicycles and pedestrians being caught in the turn."
+  },
+  {
+    "id": "Q049",
+    "question": "When approaching a kindergarten or school bus that has stopped for children to get on or off, you must slow down and pass alongside it while ensuring safety.",
+    "answer": false,
+    "description": "When a kindergarten or school bus is stopped for children to get on or off, drivers approaching from behind are required to come to a complete stop and confirm safety before proceeding. In other words, \"just slowing down and passing is a violation.\" Since these buses carry small children, there is a high risk that they may suddenly run out from in front of or behind the bus, and merely slowing down is not enough. Passing without fully confirming safety is extremely dangerous."
+  },
+  {
+    "id": "Q050",
+    "question": "This sign indicates a prohibition on the passage of regular freight vehicles.",
+    "image": "img/no-entry-large-freight-vehicles.avif",
+    "answer": false,
+    "description": "Road sign for 'No Entry for Large Freight Vehicles'. It indicates no entry for freight vehicles with a total weight of 8 tons or more and a maximum load capacity of 5 tons or more, including large special vehicles."
+  },
+  {
+    "id": "Q051",
+    "question": "In tunnels without marked traffic lanes, overtaking is generally prohibited, even if there is no oncoming traffic.",
+    "answer": true,
+    "description": "The key point of this question is the rule regarding overtaking in tunnels and whether traffic lanes are marked. In tunnels without marked traffic lanes, overtaking is prohibited. This restriction exists because tunnels are narrow, dark, have limited visibility, and offer no escape routes. However, as an exception, overtaking is allowed in tunnels that do have marked traffic lanes."
+  },
   {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
