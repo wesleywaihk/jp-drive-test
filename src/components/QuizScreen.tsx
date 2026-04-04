@@ -10,12 +10,13 @@ interface Props {
   getLevel: (id: string) => BookmarkLevel
   onCycleBookmark: (id: string) => void
   onQuit: () => void
+  timeLeft?: number
 }
 
 const BOOKMARK_ICON: Record<BookmarkLevel, string> = { 0: '🏷️', 1: '🔖', 2: '⭐' }
 const BOOKMARK_TITLE: Record<BookmarkLevel, string> = { 0: 'Bookmark', 1: 'Mark as very important', 2: 'Remove bookmark' }
 
-export default function QuizScreen({ question, current, total, onAnswer, getLevel, onCycleBookmark, onQuit }: Props) {
+export default function QuizScreen({ question, current, total, onAnswer, getLevel, onCycleBookmark, onQuit, timeLeft }: Props) {
   const [selected, setSelected] = useState<boolean | null>(null)
   const progress = (current / total) * 100
 
@@ -40,6 +41,11 @@ export default function QuizScreen({ question, current, total, onAnswer, getLeve
         <div className="flex items-center justify-between mb-4">
           <span className="text-sm font-medium text-gray-500">Question {current} of {total}</span>
           <div className="flex items-center gap-3">
+            {timeLeft !== undefined && (
+              <span className={`text-sm font-mono font-bold tabular-nums ${timeLeft <= 60 ? 'text-red-600 animate-pulse' : timeLeft <= 300 ? 'text-orange-500' : 'text-gray-600'}`}>
+                ⏱ {Math.floor(timeLeft / 60).toString().padStart(2, '0')}:{(timeLeft % 60).toString().padStart(2, '0')}
+              </span>
+            )}
             <span className="text-sm font-medium text-red-600">{Math.round(progress)}%</span>
             <button
               onClick={onQuit}

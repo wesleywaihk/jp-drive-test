@@ -11,12 +11,13 @@ interface Props {
   getLevel: (id: string) => BookmarkLevel
   onCycleBookmark: (id: string) => void
   onRestart: () => void
+  timesUp?: boolean
 }
 
 const BOOKMARK_ICON: Record<BookmarkLevel, string> = { 0: '🏷️', 1: '🔖', 2: '⭐' }
 const BOOKMARK_TITLE: Record<BookmarkLevel, string> = { 0: 'Bookmark', 1: 'Mark as very important', 2: 'Remove bookmark' }
 
-export default function ResultScreen({ answers, getLevel, onCycleBookmark, onRestart }: Props) {
+export default function ResultScreen({ answers, getLevel, onCycleBookmark, onRestart, timesUp }: Props) {
   const score = answers.filter((a) => a.userAnswer === a.question.answer).length
   const total = answers.length
   const percentage = Math.round((score / total) * 100)
@@ -26,6 +27,12 @@ export default function ResultScreen({ answers, getLevel, onCycleBookmark, onRes
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-lg mx-auto">
+        {timesUp && (
+          <div className="bg-orange-100 border border-orange-300 text-orange-700 font-semibold text-sm rounded-xl px-4 py-3 mb-4 text-center">
+            ⏱ Time's up — exam ended automatically
+          </div>
+        )}
+
         {/* Score card */}
         <div className={`rounded-2xl shadow-md p-8 text-center mb-6 ${passed ? 'bg-green-500' : 'bg-red-500'}`}>
           <div className="text-5xl mb-3">{passed ? '🎉' : '📚'}</div>

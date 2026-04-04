@@ -373,11 +373,36 @@
   },
   {
     "id": "Q060",
-    "question": "",
+    "question": "Vehicles behind a stopped nursery or school bus are prohibited from passing alongside it until the bus starts moving.",
     "answer": false,
     "description": "This question asks about the obligations of drivers toward nursery and school buses. Just because a nursery or school bus is stopped does not mean that passing alongside it is completely prohibited. In other words, there is no obligation to wait until the bus starts moving. Therefore, the answer to this question is false.<br/><br/>When a school or nursery bus is stopped for children to get on or off, following vehicles must pass slowly or stop temporarily while ensuring safety. This is because children getting off the bus often cross suddenly in front of or behind the bus, creating a high risk of accidents."
   },
-
+  {
+    "id": "Q061",
+    "question": "If you have an ordinary driver’s license, you can drive a truck with a maximum payload of 3 tons.",
+    "answer": false,
+    "description": "nder Japan’s Road Traffic Act, the conditions for vehicles that can be driven with an ordinary (Class 1) driver’s license are as follows: the vehicle’s gross weight must be less than 3,500 kg, the maximum payload must be less than 2,000 kg, and the seating capacity must be 10 people or fewer (including the driver). A vehicle with a maximum payload of 3,000 kg does not meet the \"less than 2,000 kg\" requirement, so it cannot be driven with an ordinary license. Therefore, the answer to this question is false."
+  },
+  {
+    "id": "Q062",
+    "question": "This sign prohibits the crossing of cars, but does not prohibit the crossing of motorized bicycles.",
+    "image": "img/no-crossing.avif",
+    "answer": false,
+    "description": "It is a sign prohibiting the crossing of 'cars', so motorized bicycles, which are 'cars', should not cross either."
+  },
+  {
+    "id": "Q063",
+    "question": "This sign indicates that the section of road ahead, where it intersects with the current road, is a priority road.",
+    "image": "img/priority-road.avif",
+    "answer": false,
+    "description": "In this case, it indicates that the road being traveled is the priority road."
+  },
+  {
+    "id": "Q064",
+    "question": "When planning to change course, turn, or reverse, signal first and check the rearview mirror to ensure safety.",
+    "answer": false,
+    "description": "Check your surroundings before signaling."
+  },
   {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",

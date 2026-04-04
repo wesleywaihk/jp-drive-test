@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import questionsData from './questions.json'
 import { Question } from './types'
 import { useBookmarks } from './useBookmarks'
@@ -27,7 +27,25 @@ export default function App() {
   const [questions, setQuestions] = useState<Question[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<UserAnswer[]>([])
+  const [isMock, setIsMock] = useState(false)
+  const [timeLeft, setTimeLeft] = useState(0)
+  const [timesUp, setTimesUp] = useState(false)
   const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks()
+
+  useEffect(() => {
+    if (appState !== 'quiz' || !isMock) return
+    const id = setInterval(() => {
+      setTimeLeft(t => {
+        if (t <= 1) {
+          setTimesUp(true)
+          setAppState('result')
+          return 0
+        }
+        return t - 1
+      })
+    }, 1000)
+    return () => clearInterval(id)
+  }, [appState, isMock])
 
   const startQuiz = useCallback((count: number) => {
     setQuestions(shuffle(allQuestions).slice(0, count))
@@ -57,7 +75,20 @@ export default function App() {
     }
   }, [questions, currentIndex, answers])
 
+  const startMock = useCallback(() => {
+    setQuestions(shuffle(allQuestions).slice(0, 50))
+    setCurrentIndex(0)
+    setAnswers([])
+    setIsMock(true)
+    setTimesUp(false)
+    setTimeLeft(30 * 60)
+    setAppState('quiz')
+  }, [])
+
   const restart = useCallback(() => {
+    setIsMock(false)
+    setTimesUp(false)
+    setTimeLeft(0)
     setAppState('start')
   }, [])
 
@@ -91,6 +122,7 @@ export default function App() {
         totalBookmarked={totalBookmarked}
         importantCount={countByLevel(2)}
         onStart={startQuiz}
+        onStartMock={startMock}
         onStartBookmarked={() => startBookmarked()}
         onStartImportant={() => startBookmarked(2)}
         onViewBookmarks={() => setAppState('bookmarks')}
@@ -109,6 +141,7 @@ export default function App() {
         getLevel={getLevel}
         onCycleBookmark={cycle}
         onQuit={restart}
+        timeLeft={isMock ? timeLeft : undefined}
       />
     )
   }
@@ -119,6 +152,7 @@ export default function App() {
       getLevel={getLevel}
       onCycleBookmark={cycle}
       onRestart={restart}
+      timesUp={timesUp}
     />
   )
 }
