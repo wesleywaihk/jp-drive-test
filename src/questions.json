@@ -354,7 +354,7 @@
     "description": "This question asks about the treatment of bicycles in areas where overtaking is prohibited. Vehicles are not allowed to change lanes or pass other motor vehicles or motorized bicycles in no-overtaking zones. However, this means that light vehicles, such as bicycles, can be overtaken even in these areas."
   },
   {
-    "id": "Q0567",
+    "id": "Q057",
     "question": "When passing each other (in opposite directions) where there is an obstacle, the vehicle that has the obstacle ahead in its own path has priority and can proceed [first].",
     "answer": false,
     "description": "When passing each other at a location with an obstacle, the correct action is for the vehicle facing an obstacle in its path to wait."
