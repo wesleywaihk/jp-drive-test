@@ -24,7 +24,7 @@ export default function BookmarkScreen({ questions, getLevel, onCycleBookmark, o
   const bookmarked = questions
     .map((q) => ({ question: q, level: getLevel(q.id) }))
     .filter((e) => e.level >= 1)
-    .sort((a, b) => b.level - a.level)
+    .sort((a, b) => a.question.id.localeCompare(b.question.id, undefined, { numeric: true }))
 
   function handleConfirmRemove() {
     if (confirmId) onRemoveBookmark(confirmId)
