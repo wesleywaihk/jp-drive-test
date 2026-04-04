@@ -474,5 +474,41 @@
     "question": "Stopping distance is the distance traveled before the driver reacts.",
     "answer": false,
     "description": "Incorrect. That describes reaction distance. Correct formula: stopping distance = reaction distance + braking distance."
+  },
+  {
+    "id": "S013",
+    "question": "With an ordinary driver’s license, you may drive a vehicle with a gross vehicle weight of 3,800 kg as long as the maximum payload is under 2,000 kg.",
+    "answer": false,
+    "description": "Even if the maximum payload is under 2,000 kg, the gross vehicle weight must also be less than 3,500 kg. A vehicle weighing 3,800 kg exceeds this limit, so it cannot be driven with an ordinary license."
+  },
+  {
+    "id": "S014",
+    "question": "A vehicle with a maximum payload of 1,500 kg and seating for 12 people can be driven with an ordinary driver’s license.",
+    "answer": false,
+    "description": "Although the payload is within the limit, the seating capacity must be 10 people or fewer (including the driver). A 12‑seat vehicle exceeds this limit."
+  },
+  {
+    "id": "S015",
+    "question": "If a truck has a gross vehicle weight of 3,400 kg and a maximum payload of 1,900 kg, it can be driven with an ordinary license.",
+    "answer": true,
+    "description": "Both conditions are satisfied: gross vehicle weight under 3,500 kg and maximum payload under 2,000 kg. Therefore, it can be driven with an ordinary license."
+  },
+  {
+    "id": "S016",
+    "question": "A truck with a maximum payload of exactly 2,000 kg can be driven with an ordinary driver’s license.",
+    "answer": false,
+    "description": "The legal requirement is 'less than 2,000 kg.' A payload of exactly 2,000 kg does not meet this condition."
+  },
+  {
+    "id": "S017",
+    "question": "Even if a vehicle’s gross weight is under 3,500 kg, it cannot be driven with an ordinary license if the maximum payload exceeds 2,000 kg.",
+    "answer": true,
+    "description": "Both conditions must be satisfied. If the maximum payload is 2,000 kg or more, the vehicle cannot be driven with an ordinary license."
+  },
+  {
+    "id": "S018",
+    "question": "A vehicle with seating for 10 people, a gross weight of 3,600 kg, and a payload of 1,000 kg can be driven with an ordinary license.",
+    "answer": false,
+    "description": "Although the seating capacity and payload meet the requirements, the gross vehicle weight must be less than 3,500 kg. A weight of 3,600 kg exceeds the limit."
   }
 ]
