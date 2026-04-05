@@ -392,7 +392,7 @@
   },
   {
     "id": "Q063",
-    "question": "This sign indicates that the section of road ahead, where it intersects with the current road, is a priority road.",
+    "question": "This sign indicates that the road ahead, which intersects the road you are on, is a \"priority road.",
     "image": "img/priority-road.avif",
     "answer": false,
     "description": "In this case, it indicates that the road being traveled is the priority road."
