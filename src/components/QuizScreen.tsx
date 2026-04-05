@@ -11,12 +11,13 @@ interface Props {
   onCycleBookmark: (id: string) => void
   onQuit: () => void
   timeLeft?: number
+  isMock?: boolean
 }
 
 const BOOKMARK_ICON: Record<BookmarkLevel, string> = { 0: '🏷️', 1: '🔖', 2: '⭐' }
 const BOOKMARK_TITLE: Record<BookmarkLevel, string> = { 0: 'Bookmark', 1: 'Mark as very important', 2: 'Remove bookmark' }
 
-export default function QuizScreen({ question, current, total, onAnswer, getLevel, onCycleBookmark, onQuit, timeLeft }: Props) {
+export default function QuizScreen({ question, current, total, onAnswer, getLevel, onCycleBookmark, onQuit, timeLeft, isMock }: Props) {
   const [selected, setSelected] = useState<boolean | null>(null)
   const progress = (current / total) * 100
 
@@ -25,6 +26,10 @@ export default function QuizScreen({ question, current, total, onAnswer, getLeve
 
   function handleSelect(value: boolean) {
     if (selected !== null) return
+    if (isMock) {
+      onAnswer(value)
+      return
+    }
     setSelected(value)
   }
 
@@ -117,7 +122,7 @@ export default function QuizScreen({ question, current, total, onAnswer, getLeve
         </div>
 
         {/* Answer feedback */}
-        {selected !== null && (
+        {selected !== null && !isMock && (
           <div className="space-y-3">
             <div className={`rounded-2xl p-4 ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`}>
               <div className="flex items-center justify-between mb-1">

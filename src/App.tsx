@@ -142,6 +142,7 @@ export default function App() {
         onCycleBookmark={cycle}
         onQuit={restart}
         timeLeft={isMock ? timeLeft : undefined}
+        isMock={isMock}
       />
     )
   }
