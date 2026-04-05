@@ -404,6 +404,12 @@
     "description": "Check your surroundings before signaling."
   },
   {
+    "id": "Q065",
+    "question": "The timing for signaling a lane change should be approximately 3 seconds before you intend to perform the maneuver.",
+    "answer": true,
+    "description": "As stated in the question."
+  },
+  {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
     "answer": false,
