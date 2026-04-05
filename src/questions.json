@@ -145,7 +145,7 @@
   {
     "id": "Q024",
     "question": "The distance a vehicle travels from the moment the driver feels danger and applies the brakes until the vehicle comes to a complete stop is called the stopping distance.",
-    "answer": false,
+    "answer": true,
     "description": "The distance from the moment the brakes begin to take effect until the vehicle comes to a complete stop is called the braking distance (制動距離). The stopping distance (停止距離) includes both the reaction distance and the braking distance."
   },
   {
