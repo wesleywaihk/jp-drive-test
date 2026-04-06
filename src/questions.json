@@ -439,5 +439,27 @@
     "answer": true,
     "description": "As stated in the question.",
     "createdDate": "2026-04-06"
+  },
+  {
+    "id": "Q071",
+    "question": "This sign means that vehicles with a cargo weight exceeding 5.5 tons are not allowed to pass.",
+    "image": "img/5_5t.avif.avif",
+    "answer": false,
+    "description": "This indicates that vehicles with a total weight exceeding 5.5 tons are not allowed to pass, regardless of the weight of the cargo.",
+    "createdDate": "2026-04-06"
+  },
+  {
+    "id": "Q072",
+    "question": "When approaching a kindergarten or school bus that has stopped for children to get on or off, you must slow down and pass alongside it while ensuring safety.",
+    "answer": false,
+    "description": "When a kindergarten or school bus is stopped for children to get on or off, drivers approaching from behind are required to come to a complete stop and confirm safety before proceeding. In other words, 'just slowing down and passing is a violation.' Since these buses carry small children, there is a high risk that they may suddenly run out from in front of or behind the bus, and merely slowing down is not enough. Passing without fully confirming safety is extremely dangerous.",
+    "createdDate": "2026-04-06"
+  },
+  {
+    "id": "Q073",
+    "question": "When an emergency vehicle approaches on a one-way road, you must always move to the left side of the road and yield the right-of-way.",
+    "answer": false,
+    "description": "On a one-way street, as an exception, it is permissible to move to the right to yield the right of way.",
+    "createdDate": "2026-04-06"
   }
 ]
