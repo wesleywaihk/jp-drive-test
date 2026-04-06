@@ -72,7 +72,7 @@ export default function StartScreen({ totalAvailable, totalBookmarked, important
           onClick={onViewQuestions}
           className="w-full border-2 border-gray-200 hover:border-gray-300 text-gray-600 font-semibold py-3 rounded-xl text-base transition-colors"
         >
-          All Questions
+          All Questions ({totalAvailable})
         </button>
       </div>
     </div>
