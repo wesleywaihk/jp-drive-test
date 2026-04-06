@@ -84,12 +84,6 @@
     "description": "Although the payload is within the limit, the seating capacity must be 10 people or fewer (including the driver). A 12‑seat vehicle exceeds this limit."
   },
   {
-    "id": "S015",
-    "question": "If a truck has a gross vehicle weight of 3,400 kg and a maximum payload of 1,900 kg, it can be driven with an ordinary license.",
-    "answer": true,
-    "description": "Both conditions are satisfied: gross vehicle weight under 3,500 kg and maximum payload under 2,000 kg. Therefore, it can be driven with an ordinary license."
-  },
-  {
     "id": "S016",
     "question": "A truck with a maximum payload of exactly 2,000 kg can be driven with an ordinary driver's license.",
     "answer": false,
