@@ -435,6 +435,7 @@
   {
     "id": "Q070",
     "question": "Any vehicle can use the road with this sign, but if a bus approaches, cars must quickly leave the area. (This excludes small special vehicles, mopeds, and light vehicles.)",
+    "image": "img/bus-first.avif",
     "answer": true,
     "description": "As stated in the question.",
     "createdDate": "2026-04-06"
