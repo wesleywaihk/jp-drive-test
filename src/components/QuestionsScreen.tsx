@@ -24,6 +24,14 @@ const PAGE_SIZE = 20;
 
 type Tab = "normal" | "special";
 
+function getStateFromHash(): { tab: Tab; page: number } {
+  const query = window.location.hash.split('?')[1] || ''
+  const params = new URLSearchParams(query)
+  const tab = params.get('tab') === 'special' ? 'special' : 'normal'
+  const page = parseInt(params.get('page') || '1', 10)
+  return { tab, page: isNaN(page) || page < 1 ? 1 : page }
+}
+
 function Pagination({
   page,
   total,
@@ -36,7 +44,7 @@ function Pagination({
   const totalPages = Math.ceil(total / PAGE_SIZE);
   if (totalPages <= 1) return null;
   return (
-    <div className="flex items-center justify-center gap-2 mt-6">
+    <div className="flex items-center justify-center gap-2 my-4">
       <button
         onClick={() => onPage(page - 1)}
         disabled={page === 1}
@@ -127,19 +135,29 @@ export default function QuestionsScreen({
   onCycleBookmark,
   onBack,
 }: Props) {
-  const [activeTab, setActiveTab] = useState<Tab>("normal");
-  const [normalPage, setNormalPage] = useState(1);
-  const [specialPage, setSpecialPage] = useState(1);
+  const initial = getStateFromHash()
+  const [activeTab, setActiveTab] = useState<Tab>(initial.tab);
+  const [page, setPage] = useState(initial.page);
 
   const questions = activeTab === "normal" ? normalQuestions : specialQuestions;
-  const page = activeTab === "normal" ? normalPage : specialPage;
-  const setPage = activeTab === "normal" ? setNormalPage : setSpecialPage;
 
   const start = (page - 1) * PAGE_SIZE;
   const pageQuestions = questions.slice(start, start + PAGE_SIZE);
 
+  function updateHash(tab: Tab, p: number) {
+    const params = new URLSearchParams({ tab, page: String(p) })
+    history.replaceState(null, '', '#questions?' + params.toString())
+  }
+
   function handleTabChange(tab: Tab) {
     setActiveTab(tab);
+    setPage(1);
+    updateHash(tab, 1);
+  }
+
+  function handlePage(p: number) {
+    setPage(p);
+    updateHash(activeTab, p);
   }
 
   return (
@@ -161,7 +179,7 @@ export default function QuestionsScreen({
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-1 bg-gray-100 rounded-xl p-1 mb-6">
+        <div className="flex gap-1 bg-gray-100 rounded-xl p-1 mb-4">
           <button
             onClick={() => handleTabChange("normal")}
             className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-colors ${
@@ -190,6 +208,8 @@ export default function QuestionsScreen({
           </button>
         </div>
 
+        <Pagination page={page} total={questions.length} onPage={handlePage} />
+
         {/* Question cards */}
         <div className="space-y-4">
           {pageQuestions.map((question, i) => (
@@ -203,7 +223,7 @@ export default function QuestionsScreen({
           ))}
         </div>
 
-        <Pagination page={page} total={questions.length} onPage={setPage} />
+        <Pagination page={page} total={questions.length} onPage={handlePage} />
       </div>
     </div>
   );

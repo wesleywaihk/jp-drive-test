@@ -30,6 +30,12 @@ const LEVEL_COLOR: Record<1 | 2, string> = {
 };
 const PAGE_SIZE = 30;
 
+function getPageFromHash(): number {
+  const query = window.location.hash.split('?')[1] || ''
+  const p = parseInt(new URLSearchParams(query).get('page') || '1', 10)
+  return isNaN(p) || p < 1 ? 1 : p
+}
+
 function Pagination({
   page,
   total,
@@ -42,7 +48,7 @@ function Pagination({
   const totalPages = Math.ceil(total / PAGE_SIZE);
   if (totalPages <= 1) return null;
   return (
-    <div className="flex items-center justify-center gap-2 mt-6">
+    <div className="flex items-center justify-center gap-2 my-4">
       <button
         onClick={() => onPage(page - 1)}
         disabled={page === 1}
@@ -72,7 +78,7 @@ export default function BookmarkScreen({
   onBack,
 }: Props) {
   const [confirmId, setConfirmId] = useState<string | null>(null);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(() => getPageFromHash());
 
   const bookmarked = questions
     .map((q) => ({ question: q, level: getLevel(q.id) }))
@@ -86,7 +92,11 @@ export default function BookmarkScreen({
     setConfirmId(null);
   }
 
-  // If removal causes current page to be empty, go back one page
+  function handlePage(p: number) {
+    history.replaceState(null, '', '#bookmarks?page=' + p)
+    setPage(p)
+  }
+
   const totalPages = Math.ceil(bookmarked.length / PAGE_SIZE);
   const safePage = Math.min(page, Math.max(1, totalPages));
 
@@ -125,6 +135,12 @@ export default function BookmarkScreen({
           </div>
         ) : (
           <>
+            <Pagination
+              page={safePage}
+              total={bookmarked.length}
+              onPage={handlePage}
+            />
+
             <div className="space-y-4">
               {pageItems.map(({ question, level }) => (
                 <div
@@ -202,7 +218,7 @@ export default function BookmarkScreen({
             <Pagination
               page={safePage}
               total={bookmarked.length}
-              onPage={setPage}
+              onPage={handlePage}
             />
           </>
         )}

@@ -21,12 +21,19 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
+function getRouteFromHash(): AppState {
+  const hash = window.location.hash.slice(1).split('?')[0]
+  if (hash === 'bookmarks') return 'bookmarks'
+  if (hash === 'questions') return 'questions'
+  return 'start'
+}
+
 const normalQuestions = questionsData as Question[]
 const specialQuestions = specialQuestionsData as Question[]
 const allQuestions = [...normalQuestions, ...specialQuestions]
 
 export default function App() {
-  const [appState, setAppState] = useState<AppState>('start')
+  const [appState, setAppState] = useState<AppState>(() => getRouteFromHash())
   const [questions, setQuestions] = useState<Question[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<UserAnswer[]>([])
@@ -34,6 +41,18 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState(0)
   const [timesUp, setTimesUp] = useState(false)
   const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks()
+
+  useEffect(() => {
+    const handler = () => {
+      const route = getRouteFromHash()
+      setAppState(prev => {
+        if (prev === 'quiz' || prev === 'result') return prev
+        return route
+      })
+    }
+    window.addEventListener('hashchange', handler)
+    return () => window.removeEventListener('hashchange', handler)
+  }, [])
 
   useEffect(() => {
     if (appState !== 'quiz' || !isMock) return
@@ -92,6 +111,22 @@ export default function App() {
     setIsMock(false)
     setTimesUp(false)
     setTimeLeft(0)
+    window.location.hash = ''
+    setAppState('start')
+  }, [])
+
+  const goToBookmarks = useCallback(() => {
+    window.location.hash = 'bookmarks'
+    setAppState('bookmarks')
+  }, [])
+
+  const goToQuestions = useCallback(() => {
+    window.location.hash = 'questions'
+    setAppState('questions')
+  }, [])
+
+  const goBack = useCallback(() => {
+    window.location.hash = ''
     setAppState('start')
   }, [])
 
@@ -102,7 +137,7 @@ export default function App() {
         specialQuestions={specialQuestions}
         getLevel={getLevel}
         onCycleBookmark={cycle}
-        onBack={() => setAppState('start')}
+        onBack={goBack}
       />
     )
   }
@@ -114,7 +149,7 @@ export default function App() {
         getLevel={getLevel}
         onCycleBookmark={cycle}
         onRemoveBookmark={remove}
-        onBack={() => setAppState('start')}
+        onBack={goBack}
       />
     )
   }
@@ -129,8 +164,8 @@ export default function App() {
         onStartMock={startMock}
         onStartBookmarked={() => startBookmarked()}
         onStartImportant={() => startBookmarked(2)}
-        onViewBookmarks={() => setAppState('bookmarks')}
-        onViewQuestions={() => setAppState('questions')}
+        onViewBookmarks={goToBookmarks}
+        onViewQuestions={goToQuestions}
       />
     )
   }
