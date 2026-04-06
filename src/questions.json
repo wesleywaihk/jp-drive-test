@@ -184,7 +184,6 @@
     "answer": false,
     "description": "At a flashing yellow light, you only need to proceed while paying careful attention to other traffic. There is no obligation to slow down — unlike a flashing red light, which requires a full stop."
   },
-
   {
     "id": "Q031",
     "question": "On this road with this sign, mopeds and light vehicles are not allowed to enter.",
@@ -192,21 +191,18 @@
     "answer": true,
     "description": "\"No entry for vehicles\" is being indicated, so it is as per the question."
   },
-
   {
     "id": "Q032",
     "question": "As I approached a crosswalk without traffic lights, it was clear that no pedestrians were crossing, so I passed through the crosswalk without slowing down.",
     "answer": true,
     "description": "If it is clear that no pedestrians are present, you may proceed without stopping."
   },
-
   {
     "id": "Q033",
     "question": "Overtaking is prohibited within intersections and within 30 meters before them, but you are allowed to overtake if you are traveling on a priority road.",
     "answer": true,
     "description": "This question asks about the exceptions to the rule prohibiting overtaking near intersections. Vehicles are generally not allowed to overtake within intersections or within 30 meters before them. This is because intersections are high-risk areas for accidents, and lane changes or speed changes increase danger. However, there is an exception: overtaking is permitted if your vehicle is traveling on a priority road."
   },
-
   {
     "id": "Q034",
     "question": "This sign indicates that you must make a complete stop just before the stop line (or just before the intersection if there is no stop line) and must not obstruct the passage of vehicles traveling on the intersecting road.",
@@ -295,7 +291,6 @@
     "answer": false,
     "description": "When passing by a child walking alone, you must either come to a complete stop or proceed at a reduced speed to ensure safe passage."
   },
-
   {
     "id": "Q048",
     "question": "When making a right or left turn, you must always slow down.",
@@ -321,7 +316,6 @@
     "answer": true,
     "description": "The key point of this question is the rule regarding overtaking in tunnels and whether traffic lanes are marked. In tunnels without marked traffic lanes, overtaking is prohibited. This restriction exists because tunnels are narrow, dark, have limited visibility, and offer no escape routes. However, as an exception, overtaking is allowed in tunnels that do have marked traffic lanes."
   },
-
   {
     "id": "Q052",
     "question": "This sign indicates that the road ahead is closed to traffic.",
@@ -430,6 +424,7 @@
   {
     "id": "Q069",
     "question": "The road with this sign is a bus-only lane, so regular cars and motorized bicycles must avoid and bypass this lane.",
+    "image": "img/bus-only-road.avif",
     "answer": false,
     "description": "The motorized bicycle in question is allowed to pass."
   },
@@ -438,101 +433,5 @@
     "question": "Any vehicle can use the road with this sign, but if a bus approaches, cars must quickly leave the area. (This excludes small special vehicles, mopeds, and light vehicles.)",
     "answer": true,
     "description": "As stated in the question."
-  },
-  {
-    "id": "S001",
-    "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
-    "answer": false,
-    "description": "The correct four types are: regulatory, instruction, warning, and guide signs."
-  },
-  {
-    "id": "S002",
-    "question": "The four main types of traffic signs are regulatory signs, instruction signs, caution signs, and guide signs.",
-    "answer": false,
-    "description": "The correct four types are: regulatory, instruction, warning, and guide signs. 'Caution signs' is not an official category."
-  },
-  {
-    "id": "S003",
-    "question": "Japan classifies traffic signs into four groups: regulatory signs, instruction signs, warning signs, and guide signs.",
-    "answer": true,
-    "description": "These are the official four categories."
-  },
-  {
-    "id": "S006",
-    "question": "Stopping distance is the total of the reaction distance and the braking distance.",
-    "answer": true,
-    "description": "Correct: stopping distance = reaction distance + braking distance."
-  },
-  {
-    "id": "S007",
-    "question": "Braking distance is the sum of the reaction distance and the stopping distance.",
-    "answer": false,
-    "description": "Incorrect. Correct formula: stopping distance = reaction distance + braking distance."
-  },
-  {
-    "id": "S008",
-    "question": "Reaction distance is calculated by adding the braking distance to the stopping distance.",
-    "answer": false,
-    "description": "Incorrect. Reaction distance is only the distance traveled before braking begins. Correct formula: stopping distance = reaction distance + braking distance."
-  },
-  {
-    "id": "S009",
-    "question": "Stopping distance is the distance traveled after the brakes take effect.",
-    "answer": false,
-    "description": "Incorrect. That describes braking distance. Correct formula: stopping distance = reaction distance + braking distance."
-  },
-  {
-    "id": "S010",
-    "question": "The total stopping distance includes the distance traveled before braking begins and the distance traveled after braking begins.",
-    "answer": true,
-    "description": "Correct: reaction distance (before braking) + braking distance (after braking)."
-  },
-  {
-    "id": "S011",
-    "question": "Reaction distance and stopping distance together make up the braking distance.",
-    "answer": false,
-    "description": "Incorrect. Correct formula: stopping distance = reaction distance + braking distance."
-  },
-  {
-    "id": "S012",
-    "question": "Stopping distance is the distance traveled before the driver reacts.",
-    "answer": false,
-    "description": "Incorrect. That describes reaction distance. Correct formula: stopping distance = reaction distance + braking distance."
-  },
-  {
-    "id": "S013",
-    "question": "With an ordinary driver’s license, you may drive a vehicle with a gross vehicle weight of 3,800 kg as long as the maximum payload is under 2,000 kg.",
-    "answer": false,
-    "description": "Even if the maximum payload is under 2,000 kg, the gross vehicle weight must also be less than 3,500 kg. A vehicle weighing 3,800 kg exceeds this limit, so it cannot be driven with an ordinary license."
-  },
-  {
-    "id": "S014",
-    "question": "A vehicle with a maximum payload of 1,500 kg and seating for 12 people can be driven with an ordinary driver’s license.",
-    "answer": false,
-    "description": "Although the payload is within the limit, the seating capacity must be 10 people or fewer (including the driver). A 12‑seat vehicle exceeds this limit."
-  },
-  {
-    "id": "S015",
-    "question": "If a truck has a gross vehicle weight of 3,400 kg and a maximum payload of 1,900 kg, it can be driven with an ordinary license.",
-    "answer": true,
-    "description": "Both conditions are satisfied: gross vehicle weight under 3,500 kg and maximum payload under 2,000 kg. Therefore, it can be driven with an ordinary license."
-  },
-  {
-    "id": "S016",
-    "question": "A truck with a maximum payload of exactly 2,000 kg can be driven with an ordinary driver’s license.",
-    "answer": false,
-    "description": "The legal requirement is 'less than 2,000 kg.' A payload of exactly 2,000 kg does not meet this condition."
-  },
-  {
-    "id": "S017",
-    "question": "Even if a vehicle’s gross weight is under 3,500 kg, it cannot be driven with an ordinary license if the maximum payload exceeds 2,000 kg.",
-    "answer": true,
-    "description": "Both conditions must be satisfied. If the maximum payload is 2,000 kg or more, the vehicle cannot be driven with an ordinary license."
-  },
-  {
-    "id": "S018",
-    "question": "A vehicle with seating for 10 people, a gross weight of 3,600 kg, and a payload of 1,000 kg can be driven with an ordinary license.",
-    "answer": false,
-    "description": "Although the seating capacity and payload meet the requirements, the gross vehicle weight must be less than 3,500 kg. A weight of 3,600 kg exceeds the limit."
   }
 ]

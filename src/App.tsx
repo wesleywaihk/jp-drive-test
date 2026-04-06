@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect } from 'react'
 import questionsData from './questions.json'
+import specialQuestionsData from './special-questions.json'
 import { Question } from './types'
 import { useBookmarks } from './useBookmarks'
 import QuizScreen from './components/QuizScreen'
@@ -20,7 +21,9 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-const allQuestions = questionsData as Question[]
+const normalQuestions = questionsData as Question[]
+const specialQuestions = specialQuestionsData as Question[]
+const allQuestions = [...normalQuestions, ...specialQuestions]
 
 export default function App() {
   const [appState, setAppState] = useState<AppState>('start')
@@ -95,7 +98,8 @@ export default function App() {
   if (appState === 'questions') {
     return (
       <QuestionsScreen
-        questions={allQuestions}
+        normalQuestions={normalQuestions}
+        specialQuestions={specialQuestions}
         getLevel={getLevel}
         onCycleBookmark={cycle}
         onBack={() => setAppState('start')}
