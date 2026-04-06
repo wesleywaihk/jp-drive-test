@@ -77,6 +77,7 @@ function QuestionCard({
           <span className="text-xs text-gray-400 font-medium">#{index}</span>
           <span className="text-xs font-mono bg-gray-100 text-gray-400 px-2 py-0.5 rounded">
             {question.id}
+            {question.createdDate && <> ({question.createdDate})</>}
           </span>
         </div>
         <button

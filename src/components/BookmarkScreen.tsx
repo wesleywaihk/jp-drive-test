@@ -136,6 +136,7 @@ export default function BookmarkScreen({
                     <div className="flex items-center gap-2">
                       <span className="text-xs font-mono bg-gray-100 text-gray-400 px-2 py-0.5 rounded">
                         {question.id}
+                        {question.createdDate && <> ({question.createdDate})</>}
                       </span>
                       <span
                         className={`text-xs font-semibold px-2 py-0.5 rounded-full ${level === 2 ? "bg-orange-100 text-orange-600" : "bg-yellow-100 text-yellow-700"}`}

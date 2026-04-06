@@ -4,4 +4,5 @@ export interface Question {
   image?: string
   answer: boolean
   description: string
+  createdDate?: string
 }

@@ -407,31 +407,36 @@
     "id": "Q066",
     "question": "You may overtake a motorized bicycle on steep downhill slopes or near the crest of uphill slopes.",
     "answer": false,
-    "description": "In no-overtaking zones, you must not change lanes or pass alongside other vehicles, including cars and motorized bicycles, to overtake them."
+    "description": "In no-overtaking zones, you must not change lanes or pass alongside other vehicles, including cars and motorized bicycles, to overtake them.",
+    "createdDate": "2026-04-06"
   },
   {
     "id": "Q067",
     "question": "A flare has an expiration date of 3 years.",
     "answer": false,
-    "description": "The effective expiration period of a pyrotechnic flare is set at four years from the date of manufacture under the JIS standards."
+    "description": "The effective expiration period of a pyrotechnic flare is set at four years from the date of manufacture under the JIS standards.",
+    "createdDate": "2026-04-06"
   },
   {
     "id": "Q068",
     "question": "Overtaking is prohibited near bends in the road only when visibility is poor.",
     "answer": false,
-    "description": "Overtaking is prohibited near curves, regardless of whether visibility is good or poor."
+    "description": "Overtaking is prohibited near curves, regardless of whether visibility is good or poor.",
+    "createdDate": "2026-04-06"
   },
   {
     "id": "Q069",
     "question": "The road with this sign is a bus-only lane, so regular cars and motorized bicycles must avoid and bypass this lane.",
     "image": "img/bus-only-road.avif",
     "answer": false,
-    "description": "The motorized bicycle in question is allowed to pass."
+    "description": "The motorized bicycle in question is allowed to pass.",
+    "createdDate": "2026-04-06"
   },
   {
     "id": "Q070",
     "question": "Any vehicle can use the road with this sign, but if a bus approaches, cars must quickly leave the area. (This excludes small special vehicles, mopeds, and light vehicles.)",
     "answer": true,
-    "description": "As stated in the question."
+    "description": "As stated in the question.",
+    "createdDate": "2026-04-06"
   }
 ]
