@@ -410,6 +410,18 @@
     "description": "As stated in the question."
   },
   {
+    "id": "Q066",
+    "question": "You may overtake a motorized bicycle on steep downhill slopes or near the crest of uphill slopes.",
+    "answer": false,
+    "description": "In no-overtaking zones, you must not change lanes or pass alongside other vehicles, including cars and motorized bicycles, to overtake them."
+  },
+  {
+    "id": "Q067",
+    "question": "A flare has an expiration date of 3 years.",
+    "answer": false,
+    "description": "The effective expiration period of a pyrotechnic flare is set at four years from the date of manufacture under the JIS standards."
+  },
+  {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
     "answer": false,
