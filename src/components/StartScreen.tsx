@@ -11,7 +11,7 @@ interface Props {
 }
 
 export default function StartScreen({ totalAvailable, totalBookmarked, importantCount, onStart, onStartMock, onStartBookmarked, onStartImportant, onViewBookmarks, onViewQuestions }: Props) {
-  const options = [5, 10, 15, totalAvailable].filter((n, i, arr) => n <= totalAvailable && arr.indexOf(n) === i)
+  const options = [5, 10, 15, 25].filter((n, i, arr) => n <= totalAvailable && arr.indexOf(n) === i)
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-600 to-red-800 flex items-center justify-center p-4">
@@ -36,7 +36,7 @@ export default function StartScreen({ totalAvailable, totalBookmarked, important
               onClick={() => onStart(n)}
               className="bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-semibold py-4 rounded-xl text-lg transition-colors"
             >
-              {n === totalAvailable ? `All (${n})` : `${n} Questions`}
+              {`${n} Questions`}
             </button>
           ))}
         </div>
