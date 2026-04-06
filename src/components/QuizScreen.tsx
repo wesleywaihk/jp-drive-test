@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Question } from "../types";
 import { BookmarkLevel } from "../useBookmarks";
+import QuestionIdBadge from "./QuestionIdBadge";
 
 interface Props {
   question: Question;
@@ -185,10 +186,7 @@ export default function QuizScreen({
               )}
               <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
                 Explanation{" "}
-                <span className="font-mono text-gray-400 normal-case">
-                  ({question.id}
-                  {question.createdDate && <> {question.createdDate}</>})
-                </span>
+                <QuestionIdBadge question={question} />
               </p>
               <p
                 className="text-lg text-gray-700"

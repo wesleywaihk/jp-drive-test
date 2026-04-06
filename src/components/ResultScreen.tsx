@@ -1,5 +1,6 @@
 import { Question } from "../types";
 import { BookmarkLevel } from "../useBookmarks";
+import QuestionIdBadge from "./QuestionIdBadge";
 
 interface UserAnswer {
   question: Question;
@@ -78,10 +79,7 @@ export default function ResultScreen({
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">
                       Question {i + 1}
                     </p>
-                    <span className="text-xs font-mono bg-gray-100 text-gray-400 px-2 py-0.5 rounded">
-                      {question.id}
-                      {question.createdDate && <> ({question.createdDate})</>}
-                    </span>
+                    <QuestionIdBadge question={question} />
                   </div>
                   <button
                     onClick={() => onCycleBookmark(question.id)}
