@@ -461,5 +461,19 @@
     "answer": false,
     "description": "On a one-way street, as an exception, it is permissible to move to the right to yield the right of way.",
     "createdDate": "2026-04-06"
+  },
+  {
+    "id": "Q074",
+    "question": "In a tunnel without designated traffic lanes, overtaking any vehicle is not permitted under any circumstances.",
+    "answer": true,
+    "description": "The key point of this question is the rule regarding overtaking in tunnels and whether designated traffic lanes are present. In tunnels without traffic lanes, overtaking is prohibited. This is because tunnels are narrow, dark, have limited visibility, and offer no escape routes. However, as an exception, overtaking is allowed in tunnels that do have designated traffic lanes.",
+    "createdDate": "2026-04-07"
+  },
+  {
+    "id": "Q075",
+    "question": "A green light means go ahead.",
+    "answer": false,
+    "description": "A green traffic light means “You may proceed.” In other words, it only gives permission to go, and you must confirm it is safe before proceeding.<br/><br/>Examples of situations where you should not proceed include when the intersection is congested and you would have to stop in the middle, or when pedestrians have not yet finished crossing.",
+    "createdDate": "2026-04-07"
   }
 ]
