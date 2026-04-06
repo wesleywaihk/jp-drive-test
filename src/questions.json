@@ -381,7 +381,7 @@
     "id": "Q061",
     "question": "If you have an ordinary driver’s license, you can drive a truck with a maximum payload of 3 tons.",
     "answer": false,
-    "description": "nder Japan’s Road Traffic Act, the conditions for vehicles that can be driven with an ordinary (Class 1) driver’s license are as follows: the vehicle’s gross weight must be less than 3,500 kg, the maximum payload must be less than 2,000 kg, and the seating capacity must be 10 people or fewer (including the driver). A vehicle with a maximum payload of 3,000 kg does not meet the \"less than 2,000 kg\" requirement, so it cannot be driven with an ordinary license. Therefore, the answer to this question is false."
+    "description": "Under Japan’s Road Traffic Act, the conditions for vehicles that can be driven with an ordinary (Class 1) driver’s license are as follows: the vehicle’s gross weight must be less than 3,500 kg, the maximum payload must be less than 2,000 kg, and the seating capacity must be 10 people or fewer (including the driver). A vehicle with a maximum payload of 3,000 kg does not meet the \"less than 2,000 kg\" requirement, so it cannot be driven with an ordinary license. Therefore, the answer to this question is false."
   },
   {
     "id": "Q062",
@@ -422,6 +422,24 @@
     "description": "The effective expiration period of a pyrotechnic flare is set at four years from the date of manufacture under the JIS standards."
   },
   {
+    "id": "Q068",
+    "question": "Overtaking is prohibited near bends in the road only when visibility is poor.",
+    "answer": false,
+    "description": "Overtaking is prohibited near curves, regardless of whether visibility is good or poor."
+  },
+  {
+    "id": "Q069",
+    "question": "The road with this sign is a bus-only lane, so regular cars and motorized bicycles must avoid and bypass this lane.",
+    "answer": false,
+    "description": "The motorized bicycle in question is allowed to pass."
+  },
+  {
+    "id": "Q070",
+    "question": "Any vehicle can use the road with this sign, but if a bus approaches, cars must quickly leave the area. (This excludes small special vehicles, mopeds, and light vehicles.)",
+    "answer": true,
+    "description": "As stated in the question."
+  },
+  {
     "id": "S001",
     "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
     "answer": false,
@@ -438,18 +456,6 @@
     "question": "Japan classifies traffic signs into four groups: regulatory signs, instruction signs, warning signs, and guide signs.",
     "answer": true,
     "description": "These are the official four categories."
-  },
-  {
-    "id": "S004",
-    "question": "Regulatory signs, instruction signs, warning signs, and guide signs make up the four main types of traffic signs.",
-    "answer": true,
-    "description": "All four listed categories are correct."
-  },
-  {
-    "id": "S005",
-    "question": "The four main types of traffic signs are regulatory signs, instruction signs, warning signs, and guide signs.",
-    "answer": true,
-    "description": "All four listed categories are correct."
   },
   {
     "id": "S006",
