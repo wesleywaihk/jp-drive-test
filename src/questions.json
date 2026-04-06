@@ -443,7 +443,7 @@
   {
     "id": "Q071",
     "question": "This sign means that vehicles with a cargo weight exceeding 5.5 tons are not allowed to pass.",
-    "image": "img/5_5t.avif.avif",
+    "image": "img/5_5t.avif",
     "answer": false,
     "description": "This indicates that vehicles with a total weight exceeding 5.5 tons are not allowed to pass, regardless of the weight of the cargo.",
     "createdDate": "2026-04-06"
