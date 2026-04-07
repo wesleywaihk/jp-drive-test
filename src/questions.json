@@ -483,5 +483,21 @@
     "answer": true,
     "description": "It's as the question says.",
     "createdDate": "2026-04-07"
+  },
+  {
+    "id": "Q077",
+    "question": "This sign indicates that the road ahead is closed to entry.",
+    "image": "img/closed-to-vehicles.avif",
+    "answer": false,
+    "description": "Indicates a road closed to vehicles.",
+    "createdDate": "2026-04-07"
+  },
+  {
+    "id": "Q078",
+    "question": "This sign indicates that the intersection ahead is a priority road.",
+    "image": "img/ahead-priority-road.avif",
+    "answer": true,
+    "description": "That's the question.",
+    "createdDate": "2026-04-07"
   }
 ]
