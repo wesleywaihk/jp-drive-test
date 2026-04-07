@@ -475,5 +475,13 @@
     "answer": false,
     "description": "A green traffic light means “You may proceed.” In other words, it only gives permission to go, and you must confirm it is safe before proceeding.<br/><br/>Examples of situations where you should not proceed include when the intersection is congested and you would have to stop in the middle, or when pedestrians have not yet finished crossing.",
     "createdDate": "2026-04-07"
+  },
+  {
+    "id": "Q076",
+    "question": "Drove through with a truck with a maximum load capacity of 3 tons where this sign is present.",
+    "image": "img/no-entry-large-freight-vehicles.avif",
+    "answer": true,
+    "description": "It's as the question says.",
+    "createdDate": "2026-04-07"
   }
 ]
