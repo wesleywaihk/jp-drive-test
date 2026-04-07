@@ -13,6 +13,7 @@ interface Props {
   onCycleBookmark: (id: string) => void;
   onRestart: () => void;
   timesUp?: boolean;
+  restartLabel?: string;
 }
 
 const BOOKMARK_ICON: Record<BookmarkLevel, string> = {
@@ -32,6 +33,7 @@ export default function ResultScreen({
   onCycleBookmark,
   onRestart,
   timesUp,
+  restartLabel = 'Try Again',
 }: Props) {
   const score = answers.filter(
     (a) => a.userAnswer === a.question.answer,
@@ -141,7 +143,7 @@ export default function ResultScreen({
           onClick={onRestart}
           className="w-full bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-bold py-4 rounded-2xl text-lg shadow-md transition-colors"
         >
-          Try Again
+          {restartLabel}
         </button>
       </div>
     </div>

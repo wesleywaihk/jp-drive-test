@@ -2,15 +2,17 @@ interface Props {
   totalAvailable: number
   totalBookmarked: number
   importantCount: number
+  historyCount: number
   onStart: (count: number) => void
   onStartMock: () => void
   onStartBookmarked: () => void
   onStartImportant: () => void
   onViewBookmarks: () => void
   onViewQuestions: () => void
+  onViewHistory: () => void
 }
 
-export default function StartScreen({ totalAvailable, totalBookmarked, importantCount, onStart, onStartMock, onStartBookmarked, onStartImportant, onViewBookmarks, onViewQuestions }: Props) {
+export default function StartScreen({ totalAvailable, totalBookmarked, importantCount, historyCount, onStart, onStartMock, onStartBookmarked, onStartImportant, onViewBookmarks, onViewQuestions, onViewHistory }: Props) {
   const options = [5, 10, 15, 25].filter((n, i, arr) => n <= totalAvailable && arr.indexOf(n) === i)
 
   return (
@@ -68,12 +70,20 @@ export default function StartScreen({ totalAvailable, totalBookmarked, important
           </div>
         )}
 
-        <button
-          onClick={onViewQuestions}
-          className="w-full border-2 border-gray-200 hover:border-gray-300 text-gray-600 font-semibold py-3 rounded-xl text-base transition-colors"
-        >
-          All Questions ({totalAvailable})
-        </button>
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={onViewQuestions}
+            className="border-2 border-gray-200 hover:border-gray-300 text-gray-600 font-semibold py-3 rounded-xl text-base transition-colors"
+          >
+            All Questions ({totalAvailable})
+          </button>
+          <button
+            onClick={onViewHistory}
+            className="border-2 border-gray-200 hover:border-gray-300 text-gray-600 font-semibold py-3 rounded-xl text-base transition-colors"
+          >
+            🕐 History {historyCount > 0 ? `(${historyCount})` : ''}
+          </button>
+        </div>
       </div>
     </div>
   )
