@@ -490,7 +490,7 @@
     "image": "img/closed-to-vehicles.avif",
     "answer": false,
     "description": "Indicates a road closed to vehicles.",
-    "createdDate": "2026-04-07"
+    "createdDate": "2026-04-08"
   },
   {
     "id": "Q078",
@@ -499,5 +499,13 @@
     "answer": true,
     "description": "That's the question.",
     "createdDate": "2026-04-07"
+  },
+  {
+    "id": "Q079",
+    "question": "This sign indicates that vehicles other than two-wheeled motor vehicles are not allowed to pass.",
+    "image": "img/no-car.avif",
+    "answer": true,
+    "description": "As stated in the question.",
+    "createdDate": "2026-04-08"
   }
 ]
