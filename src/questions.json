@@ -507,5 +507,26 @@
     "answer": true,
     "description": "As stated in the question.",
     "createdDate": "2026-04-08"
+  },
+  {
+    "id": "Q080",
+    "question": "When entering a wide road from a narrow road at an intersection where traffic control is not in place, drive slowly so as not to obstruct the progress of vehicles passing on the wide road.",
+    "answer": true,
+    "description": "You must proceed at a reduced speed and must not obstruct the movement of vehicles traveling on the intersecting road.",
+    "createdDate": "2026-04-08"
+  },
+  {
+    "id": "Q081",
+    "question": "When passing alongside a school/kindergarten bus that is stopped for children/toddlers to get on or off, you must stop behind the bus and confirm that it is safe (to proceed).",
+    "answer": false,
+    "description": "Proceed at a reduced speed and pass only after confirming it is safe.",
+    "createdDate": "2026-04-08"
+  },
+  {
+    "id": "Q082",
+    "question": "As I approached a crosswalk without traffic lights, it was clear that no pedestrians were crossing, so I passed through the crosswalk without slowing down.",
+    "answer": true,
+    "description": "If it is clear that no pedestrians are present, you may proceed without stopping.",
+    "createdDate": "2026-04-08"
   }
 ]
