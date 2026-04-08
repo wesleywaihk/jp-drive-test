@@ -54,12 +54,6 @@
     "description": "Incorrect. That describes braking distance. Correct formula: stopping distance = reaction distance + braking distance."
   },
   {
-    "id": "S010",
-    "question": "The total stopping distance includes the distance traveled before braking begins and the distance traveled after braking begins.",
-    "answer": true,
-    "description": "Correct: reaction distance (before braking) + braking distance (after braking)."
-  },
-  {
     "id": "S011",
     "question": "Reaction distance and stopping distance together make up the braking distance.",
     "answer": false,

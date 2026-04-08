@@ -298,12 +298,6 @@
     "description": "According to the Road Traffic Act, drivers are required to slow down when turning right or left at an intersection. This is necessary because intersections involve many potential hazards, such as pedestrians, bicycles, oncoming vehicles, and changing traffic signals. In particular, when turning left, slowing down helps prevent accidents involving bicycles and pedestrians being caught in the turn."
   },
   {
-    "id": "Q049",
-    "question": "When approaching a kindergarten or school bus that has stopped for children to get on or off, you must slow down and pass alongside it while ensuring safety.",
-    "answer": false,
-    "description": "When a kindergarten or school bus is stopped for children to get on or off, drivers approaching from behind are required to come to a complete stop and confirm safety before proceeding. In other words, \"just slowing down and passing is a violation.\" Since these buses carry small children, there is a high risk that they may suddenly run out from in front of or behind the bus, and merely slowing down is not enough. Passing without fully confirming safety is extremely dangerous."
-  },
-  {
     "id": "Q050",
     "question": "This sign indicates a prohibition on the passage of regular freight vehicles.",
     "image": "img/no-entry-large-freight-vehicles.avif",
