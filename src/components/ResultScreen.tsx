@@ -82,6 +82,11 @@ export default function ResultScreen({
                       Question {i + 1}
                     </p>
                     <QuestionIdBadge question={question} />
+                    {question.removed && (
+                      <span className="text-xs font-semibold bg-gray-200 text-gray-500 px-2 py-0.5 rounded line-through">
+                        Removed
+                      </span>
+                    )}
                   </div>
                   <button
                     onClick={() => onCycleBookmark(question.id)}

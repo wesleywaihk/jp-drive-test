@@ -34,7 +34,10 @@ function getRouteFromHash(): AppState {
 const normalQuestions = (questionsData as Question[]).filter(q => !q.removed)
 const specialQuestions = (specialQuestionsData as Question[]).filter(q => !q.removed)
 const allQuestions = [...normalQuestions, ...specialQuestions]
-const questionMap = new Map(allQuestions.map(q => [q.id, q]))
+// Includes removed questions so history detail can still show them
+const allQuestionsForHistory = new Map(
+  [...(questionsData as Question[]), ...(specialQuestionsData as Question[])].map(q => [q.id, q])
+)
 
 export default function App() {
   const [appState, setAppState] = useState<AppState>(() => getRouteFromHash())
@@ -212,7 +215,7 @@ export default function App() {
   if (appState === 'history-detail' && selectedRecord) {
     const reconstructed: UserAnswer[] = selectedRecord.answers
       .map(a => {
-        const question = questionMap.get(a.questionId)
+        const question = allQuestionsForHistory.get(a.questionId)
         if (!question) return null
         return { question, userAnswer: a.userAnswer }
       })
