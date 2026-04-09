@@ -529,5 +529,12 @@
     "answer": true,
     "description": "If it is clear that no pedestrians are present, you may proceed without stopping.",
     "createdDate": "2026-04-08"
+  },
+  {
+    "id": "Q083",
+    "question": "The maximum speed for trucks on general roads is 50 kilometers per hour.",
+    "answer": false,
+    "description": "The speed limit is 60 kilometers per hour.",
+    "createdDate": "2026-04-09"
   }
 ]
