@@ -17,8 +17,10 @@ function save(map: Map<string, BookmarkLevel>) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify([...map]))
 }
 
-export function useBookmarks() {
+export function useBookmarks(activeIds: Set<string>) {
   const [bookmarks, setBookmarks] = useState<Map<string, BookmarkLevel>>(load)
+
+  const activeBookmarks = new Map([...bookmarks].filter(([id]) => activeIds.has(id)))
 
   const cycle = useCallback((id: string) => {
     setBookmarks((prev) => {
@@ -32,12 +34,12 @@ export function useBookmarks() {
     })
   }, [])
 
-  const getLevel = useCallback((id: string): BookmarkLevel => bookmarks.get(id) ?? 0, [bookmarks])
+  const getLevel = useCallback((id: string): BookmarkLevel => activeIds.has(id) ? (bookmarks.get(id) ?? 0) : 0, [bookmarks, activeIds])
 
   const countByLevel = useCallback((level: BookmarkLevel) =>
-    [...bookmarks.values()].filter((v) => v === level).length, [bookmarks])
+    [...activeBookmarks.values()].filter((v) => v === level).length, [activeBookmarks])
 
-  const totalBookmarked = bookmarks.size
+  const totalBookmarked = activeBookmarks.size
 
   const remove = useCallback((id: string) => {
     setBookmarks((prev) => {

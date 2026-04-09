@@ -31,8 +31,8 @@ function getRouteFromHash(): AppState {
   return 'start'
 }
 
-const normalQuestions = questionsData as Question[]
-const specialQuestions = specialQuestionsData as Question[]
+const normalQuestions = (questionsData as Question[]).filter(q => !q.removed)
+const specialQuestions = (specialQuestionsData as Question[]).filter(q => !q.removed)
 const allQuestions = [...normalQuestions, ...specialQuestions]
 const questionMap = new Map(allQuestions.map(q => [q.id, q]))
 
@@ -46,7 +46,8 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState(0)
   const [timesUp, setTimesUp] = useState(false)
   const [selectedRecord, setSelectedRecord] = useState<TestRecord | null>(null)
-  const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks()
+  const activeIds = new Set(allQuestions.map(q => q.id))
+  const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks(activeIds)
   const { records: historyRecords, addRecord } = useHistory()
   const resultSaved = useRef(false)
 

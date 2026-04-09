@@ -5,4 +5,5 @@ export interface Question {
   answer: boolean
   description: string
   createdDate?: string
+  removed?: boolean
 }
