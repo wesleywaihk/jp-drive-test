@@ -536,5 +536,12 @@
     "answer": false,
     "description": "The speed limit is 60 kilometers per hour.",
     "createdDate": "2026-04-09"
+  },
+  {
+    "id": "Q084",
+    "question": "When passing through an intersection with poor visibility to the left and right, you must always slow down, even if you are traveling on a priority road.",
+    "answer": false,
+    "description": "If you are driving on a priority road, the obligation to drive slowly is exempted as an exception.",
+    "createdDate": "2026-04-10"
   }
 ]
