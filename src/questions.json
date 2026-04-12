@@ -558,5 +558,19 @@
     "answer": true,
     "description": "This is a sign for a sharp right turn, so it is as the question states.",
     "createdDate": "2026-04-12"
+  },
+  {
+    "id": "Q087",
+    "question": "The correct seat back angle is best adjusted so that your elbows are slightly bent when you hold the steering wheel.",
+    "answer": true,
+    "description": "As stated in the question, adjusting it this way allows you to operate the steering wheel stably without your back leaving the seat.",
+    "createdDate": "2026-04-13"
+  },
+  {
+    "id": "Q088",
+    "question": "When passing by pedestrians, you do not need to slow down if you leave a safe distance between your vehicle and the pedestrian.",
+    "answer": true,
+    "description": "When passing near pedestrians, you must either maintain a safe distance or proceed at a reduced speed—either action is acceptable.",
+    "createdDate": "2026-04-13"
   }
 ]
