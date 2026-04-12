@@ -543,5 +543,20 @@
     "answer": false,
     "description": "If you are driving on a priority road, the obligation to drive slowly is exempted as an exception.",
     "createdDate": "2026-04-10"
+  },
+  {
+    "id": "Q085",
+    "question": "When slowing down or stopping, it is sufficient to signal only when you are about to slow down or stop.",
+    "answer": true,
+    "description": "As stated in the question. You signal when you are about to take action.",
+    "createdDate": "2026-04-12"
+  },
+  {
+    "id": "Q086",
+    "question": "While riding a motorized bicycle through an intersection with traffic control on a road with three or more lanes in the same direction, I saw this sign and cautiously moved as close as possible to the center of the road, proceeding slowly just inside the center of the intersection.",
+    "image": "img/no-2-step-right-turn.avif",
+    "answer": true,
+    "description": "This is a sign for a sharp right turn, so it is as the question states.",
+    "createdDate": "2026-04-12"
   }
 ]
