@@ -572,5 +572,19 @@
     "answer": true,
     "description": "When passing near pedestrians, you must either maintain a safe distance or proceed at a reduced speed—either action is acceptable.",
     "createdDate": "2026-04-13"
+  },
+  {
+    "id": "Q089",
+    "question": "When there is a school or kindergarten bus and children are getting on and off, a vehicle must slow down to pass the bus while paying attention to children who might suddenly run onto the road.",
+    "answer": true,
+    "description": "This is required to ensure safety for children.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q090",
+    "question": "At an intersection where general mopeds must execute a two-step right turn, general mopeds can execute a right turn when the green arrow points to the right.",
+    "answer": false,
+    "description": "At an intersection where general mopeds must execute a two-step right turn, general mopeds cannot execute a right turn when the green arrow points to the right.",
+    "createdDate": "2026-04-16"
   }
 ]
