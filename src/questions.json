@@ -586,5 +586,42 @@
     "answer": false,
     "description": "At an intersection where general mopeds must execute a two-step right turn, general mopeds cannot execute a right turn when the green arrow points to the right.",
     "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q091",
+    "question": "At a place other than an intersection and where there is no pedestrian crossing, bicycle crossing or railway crossing, vehicles must stop 3 meters before a police officer or traffic warden who is giving a stop signal.",
+    "answer": false,
+    "description": "The position to stop is 1 meter before the police officer or traffic warden.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q092",
+    "question": "In a lane where there is a traffic sign as shown in Figure, regular motor vehicles may proceed at 8:00 p.m.",
+    "image": "img/bus-only-road-7-9.png",
+    "answer": false,
+    "description": "The meaning of the police officer’s hand signal is the same as that of the red light but not the same as that of the arrow signal.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q093",
+    "question": "For traffic proceeding in the direction of the thinner arrow as shown in Figure , the meaning of the police officer’s hand signal and that of the traffic signal are the same.",
+    "image": "img/light-rightr-green-police-hand-righgt.png",
+    "answer": false,
+    "description": "The meaning of the police officer’s hand signal is the same as that of the red light but not the same as that of the arrow signal.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q094",
+    "question": "When there are pedestrians or cyclists ahead, drivers must be prepared to turn the steering wheel to avoid colliding with them in case they behave in an unexpected manner.",
+    "answer": false,
+    "description": "Drivers must not use steering but decrease the vehicle’s speed to avoid an accident.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q095",
+    "question": "If an automatic transmission vehicle’s engine stalls and will not turn over, it can be moved by putting the gear shift in \"D\" and using the starter motor as an emergency measure.",
+    "answer": false,
+    "description": "Automatic transmission vehicles cannot move by using the starter motor.",
+    "createdDate": "2026-04-16"
   }
 ]
