@@ -728,5 +728,12 @@
     "answer": true,
     "description": "Driving without carrying driver’s license and equivalent is a violation of traffic regulations.",
     "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q110",
+    "question": "Overtaking a regular motor vehicle that is attempting to overtake a general moped is not prohibited double overtaking.",
+    "answer": false,
+    "description": "Vehicles are subject to double overtaking, excluding general mopeds.",
+    "createdDate": "2026-04-16"
   }
 ]
