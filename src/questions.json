@@ -684,5 +684,49 @@
     "answer": true,
     "description": "Such actions are prohibited unless these actions are necessary in order to avoid danger.",
     "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q104",
+    "question": "A road where there are traffic signs as shown in the figure is closed to trucks with a maximum loading capacity of 2 tons or more and special heavy equipment.",
+    "image": "img/A305-4.gif",
+    "answer": true,
+    "description": "A road where this traffic sign is displayed is closed to trucks with a maximum loading capacity of 2 tons or more and special heavy equipment.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q105",
+    "question": "When executing a right turn on a one-way street, an automobile must initially approach the right edge of the road and slow down inside the center point of the intersection (following arrow markings, if there are any)(Except roundabout.).",
+    "answer": true,
+    "description": "An automobile is required to proceed this way in order to make a safe and smooth right turn on a one-way street.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q106",
+    "question": "When there is a streetcar stopped on the road, a vehicle may pass it if there are no passengers getting on or off the streetcar in a safety zone.",
+    "answer": false,
+    "description": "A vehicle must slow down in a safety zone where a streetcar is stopped even when there are no passengers getting on or off in the zone.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q107",
+    "question": "Overtaking a vehicle that is attempting to overtake a general moped is double overtaking.",
+    "answer": false,
+    "description": "Overtaking a vehicle ahead that is attempting to overtake a general moped is not double overtaking.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q108",
+    "question": "A vehicle proceeding towards a signal as shown in the figure may proceed straight through and execute a left or right turn.",
+    "image": "img/C001.gif",
+    "answer": false,
+    "description": "Light vehicles or mopeds that use a two-step right turn method must not make a right turn.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q109",
+    "question": "A driver must carry his or her driver’s license or Individual Number Card with driver's license information record (collectively referred to as driver's licenses) while driving. He or she, therefore, must not drive a vehicle on the grounds that they simply forgot to carry it.",
+    "answer": true,
+    "description": "Driving without carrying driver’s license and equivalent is a violation of traffic regulations.",
+    "createdDate": "2026-04-16"
   }
 ]
