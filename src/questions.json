@@ -598,8 +598,8 @@
     "id": "Q092",
     "question": "In a lane where there is a traffic sign as shown in Figure, regular motor vehicles may proceed at 8:00 p.m.",
     "image": "img/bus-only-road-7-9.png",
-    "answer": false,
-    "description": "The meaning of the police officer’s hand signal is the same as that of the red light but not the same as that of the arrow signal.",
+    "answer": true,
+    "description": "This sign indicates that the lane is a bus-only lane from 7:00 a.m. to 9:00 a.m., so regular motor vehicles may proceed at 8:00 p.m.",
     "createdDate": "2026-04-16"
   },
   {
