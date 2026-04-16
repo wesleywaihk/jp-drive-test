@@ -623,5 +623,66 @@
     "answer": false,
     "description": "Automatic transmission vehicles cannot move by using the starter motor.",
     "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q096",
+    "question": "Any type of vehicle must not proceed on a road where there is a traffic sign as shown in the figure.",
+    "image": "img/pedestrian.gif",
+    "answer": false,
+    "description": "Vehicles specifically permitted to proceed, including those that have obtained permission from the chief of police, may proceed.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q097",
+    "question": "At a traffic signal as shown in the figure, automobiles and general mopeds may execute a right turn (unless a two-step right turn is designated for general mopeds).",
+    "image": " img/green-right.gif",
+    "answer": true,
+    "description": "Automobiles may make a right turn. General mopeds may also make a right turn unless a two-step right turn is designated.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q098",
+    "question": "The three keys to driving are: identification, judgment and execution. Among them, execution is especially important and deeply related to causes of an accident.",
+    "answer": false,
+    "description": "Identification and judgment are especially important and deeply related to causes of an accident.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q099",
+    "question": "Where there is a traffic sign as shown in the figure, vehicles must stop immediately before the sign and check for safety.",
+    "image": "img/stop.avif",
+    "answer": false,
+    "description": "The position to stop is immediately before a stop line (or before an intersection where there is no stop line).",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q100",
+    "question": "The pavement marking shown in the figure indicates that there is an intersection ahead.",
+    "image": "img/pedestrian-crossing-bicycle-crossing.gif",
+    "answer": false,
+    "description": "The marking indicates that there is a pedestrian crossing or bicycle crossing ahead.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q101",
+    "question": "In the situation shown in the figure, the vehicle must slow down at the point shown by △.",
+    "image": "img/C108-4.gif",
+    "answer": true,
+    "description": "The vehicle must slow down because traffic on the cross street has right of way.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q102",
+    "question": "On a road where the road and the sidewalks are not separated, vehicles must slow down when passing near a pedestrian.",
+    "answer": false,
+    "description": "Vehicles do not need to slow down when there is enough clearance from a pedestrian.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q103",
+    "question": "Passing too close to or cutting in front of a regular vehicle that is displaying a sign indicating a novice driver, senior driver, learner driver or physically disabled driver is, in principle, prohibited.",
+    "answer": true,
+    "description": "Such actions are prohibited unless these actions are necessary in order to avoid danger.",
+    "createdDate": "2026-04-16"
   }
 ]
