@@ -735,5 +735,41 @@
     "answer": false,
     "description": "Vehicles are subject to double overtaking, excluding general mopeds.",
     "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q111",
+    "question": "When approaching a pedestrian crossing, a vehicle must sufficiently reduce speed to be able to stop immediately before the pedestrian crossing, even when it is clear that there are no people crossing the road.",
+    "answer": false,
+    "description": "When there are apparently no pedestrians, a vehicle does not have to reduce speed so as to be able to stop.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q112",
+    "question": "When a road is congested, vehicles may proceed by crossing the centerline into the right side of the road.",
+    "answer": false,
+    "description": "Traffic congestion does not provide an exception to driving on the left side of the road.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q113",
+    "question": "Using side mirrors allow a driver to visually gauge the distance between his or her vehicle and the vehicle behind better than using a rearview mirror.",
+    "answer": false,
+    "description": "Things look smaller on side mirrors than their actual size, so it is difficult to gauge the distance.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q114",
+    "question": "When a police officer holds his or her arms straight out to the sides horizontally, this has the same meaning as a red light for traffic proceeding in the direction that is parallel to the officer's arms.",
+    "answer": false,
+    "description": "This hand signal has the same meaning as the green light of a traffic signal.",
+    "createdDate": "2026-04-16"
+  },
+  {
+    "id": "Q115",
+    "question": "In the situation shown in the figure, when vehicle X passes on the side of stopped vehicle Y, vehicle X must stop at position A, even when there are no pedestrians.",
+    "image": "img/passing-before-cross.jpg",
+    "answer": true,
+    "description": "As there may be pedestrians walking in front of vehicle Y, vehicle X must stop at position A.",
+    "createdDate": "2026-04-16"
   }
 ]
