@@ -676,7 +676,7 @@
     "question": "On a road where the road and the sidewalks are not separated, vehicles must slow down when passing near a pedestrian.",
     "answer": false,
     "description": "Vehicles do not need to slow down when there is enough clearance from a pedestrian.",
-    "createdDate": "2026-04-16"
+    "createdDate": "2026-04-17"
   },
   {
     "id": "Q103",
@@ -786,13 +786,6 @@
     "image": "img/green-arrow-right.png",
     "answer": true,
     "description": "Automobiles may make a right turn. General mopeds may also make a right turn unless a two-step right turn is designated",
-    "createdDate": "2026-04-17"
-  },
-  {
-    "id": "Q118",
-    "question": "On a road where the road and the sidewalks are not separated, vehicles must Slow down when passing near a pedestrian.",
-    "answer": false,
-    "description": "Vehicles do not need to slow down when there is enough clearance from a pedestrian.",
     "createdDate": "2026-04-17"
   }
 ]
