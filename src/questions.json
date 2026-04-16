@@ -658,7 +658,7 @@
   {
     "id": "Q100",
     "question": "The pavement marking shown in the figure indicates that there is an intersection ahead.",
-    "image": "img/pedestrian-crossing-bicycle-crossing.gif",
+    "image": "img/pedestrian-crossing-bicycle-crossing.png",
     "answer": false,
     "description": "The marking indicates that there is a pedestrian crossing or bicycle crossing ahead.",
     "createdDate": "2026-04-16"
