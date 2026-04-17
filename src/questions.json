@@ -649,6 +649,7 @@
   },
   {
     "id": "Q099",
+    "removed": true,
     "question": "Where there is a traffic sign as shown in the figure, vehicles must stop immediately before the sign and check for safety.",
     "image": "img/stop.avif",
     "answer": false,
@@ -710,8 +711,8 @@
   {
     "id": "Q107",
     "question": "Overtaking a vehicle that is attempting to overtake a general moped is double overtaking.",
-    "answer": false,
-    "description": "Overtaking a vehicle ahead that is attempting to overtake a general moped is not double overtaking.",
+    "answer": true,
+    "description": "Overtaking a vehicle ahead that is attempting to overtake a general moped is double overtaking.",
     "createdDate": "2026-04-16"
   },
   {
