@@ -636,7 +636,7 @@
     "id": "Q097",
     "removed": true,
     "question": "At a traffic signal as shown in the figure, automobiles and general mopeds may execute a right turn (unless a two-step right turn is designated for general mopeds).",
-    "image": "img/green-right.gif",
+    "image": "img/green-arrow-right.png",
     "answer": true,
     "description": "Automobiles may make a right turn. General mopeds may also make a right turn unless a two-step right turn is designated.",
     "createdDate": "2026-04-16"
