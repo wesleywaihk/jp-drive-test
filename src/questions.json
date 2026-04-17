@@ -812,9 +812,52 @@
   },
   {
     "id": "Q121",
-    "question": "The lap belt should be tightly wrapped around the driver’s pelvis rather than the abdomen.  ",
+    "question": "The lap belt should be tightly wrapped around the driver’s pelvis rather than the abdomen.",
     "answer": true,
-    "description": "The lap belt should be tightly wrapped around the driver’s pelvis. Wearing the lap belt around the abdomen may cause internal organ rupture in an accident.  ",
+    "description": "The lap belt should be tightly wrapped around the driver’s pelvis. Wearing the lap belt around the abdomen may cause internal organ rupture in an accident.",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q122",
+    "question": "Even when it looks as though there will be a head-on collision with an oncoming vehicle, the driver should not give up but should try to avoid the vehicle, even if just a little, by using the brake or steering wheel",
+    "answer": true,
+    "description": "A slow speed would result in less damage and increase the possibility of avoiding the collision",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q123",
+    "question": "When intending to overtake on a road with vehicular lanes, a driver must use the vehicular lane immediately to the right of the lane he or she is currently driving in.",
+    "answer": true,
+    "description": "Drivers should overtake in a manner not to disturb other traffic flows.",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q124",
+    "question": "A vehicle must not cross the road or make a U-turn even where there are no \"no U-turn\" or \"nc vehicle crossing\" signs, when it might hinder the normal progress of pedestrians or other vehicles.",
+    "answer": true,
+    "description": "Actions that hinder safe and smooth traffic are prohibited.",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q125",
+    "question": "When the signal ahead is a red light and a green arrow pointing to the left at the same time automobiles and general mopeds may proceed in the direction indicated by the arrow, but specified small mopeds and light vehicles may not proceed.",
+    "answer": false,
+    "description": "Specified small mopeds and light vehicles may also execute a left turn when the green arrow points to the left",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q126",
+    "question": "A general moped executing a two-step right turn must keep its right turn signal on until it has proceeded straight ahead to the place at which it turns right.",
+    "answer": true,
+    "description": "A general moped should inform other traffic early of the two-step right turn.",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q127",
+    "question": "On a road where there is a traffic sign as shown in Figure, mopeds may not proceed but large or regular motorcycles may proceed regardless of engine displacement",
+    "image": "img/car-ind.jpg",
+    "answer": false,
+    "description": "Regular motorcycles with engine displacement of 125 cc or less may not proceed",
     "createdDate": "2026-04-17"
   }
 ]
