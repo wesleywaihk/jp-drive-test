@@ -711,8 +711,8 @@
   {
     "id": "Q107",
     "question": "Overtaking a vehicle that is attempting to overtake a general moped is double overtaking.",
-    "answer": true,
-    "description": "Overtaking a vehicle ahead that is attempting to overtake a general moped is double overtaking.",
+    "answer": false,
+    "description": "Overtaking a vehicle ahead that is attempting to overtake a general moped is not double overtaking.",
     "createdDate": "2026-04-16"
   },
   {
@@ -733,7 +733,7 @@
   {
     "id": "Q110",
     "question": "Overtaking a regular motor vehicle that is attempting to overtake a general moped is not prohibited double overtaking.",
-    "answer": false,
+    "answer": true,
     "description": "Vehicles are subject to double overtaking, excluding general mopeds.",
     "createdDate": "2026-04-16"
   },
@@ -787,6 +787,34 @@
     "image": "img/green-arrow-right.png",
     "answer": true,
     "description": "Automobiles may make a right turn. General mopeds may also make a right turn unless a two-step right turn is designated",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q118",
+    "question": "When a traffic signal ahead is yellow, a vehicle may proceed while paying attention to other traffic.",
+    "answer": false,
+    "description": "A vehicle must stop at the position to stop, but may proceed if the vehicle is not able to stop safely.",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q119",
+    "question": "On a road with two lanes in each direction, regular motor vehicles must proceed in the right hand lane.",
+    "answer": false,
+    "description": "Any type of vehicle, in principle, must proceed in the left-hand lane.",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q120",
+    "question": "When there is a streetcar stopped on the road, a vehicle may pass it if there are no passengers getting on or off the streetcar in a safety zone.",
+    "answer": false,
+    "description": "A vehicle must slow down in a safety zone where a streetcar is stopped even when there are no passengers getting on or off in the zone.",
+    "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q121",
+    "question": "The lap belt should be tightly wrapped around the driver’s pelvis rather than the abdomen.  ",
+    "answer": true,
+    "description": "The lap belt should be tightly wrapped around the driver’s pelvis. Wearing the lap belt around the abdomen may cause internal organ rupture in an accident.  ",
     "createdDate": "2026-04-17"
   }
 ]
