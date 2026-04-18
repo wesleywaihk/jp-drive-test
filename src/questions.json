@@ -892,5 +892,13 @@
     "answer": true,
     "description": "The sign designates that vehicles may park up to 60 minutes between 8:00 a.m. and 8:00 p.m",
     "createdDate": "2026-04-18"
+  },
+  {
+    "id": "Q132",
+    "question": "At an intersection where there is a pavement marking as shown in Figure, an automobile making a right turn must slow down outside the center of the intersection",
+    "image": "img/center-star.jpg",
+    "answer": false,
+    "description": "Vehicles should follow the arrow and slow down inside the center of the intersection and then proceed.",
+    "createdDate": "2026-04-19"
   }
 ]
