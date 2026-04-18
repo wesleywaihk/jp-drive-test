@@ -860,5 +860,29 @@
     "answer": false,
     "description": "Regular motorcycles with engine displacement of 125 cc or less may not proceed",
     "createdDate": "2026-04-17"
+  },
+  {
+    "id": "Q128",
+    "question": "Where there is a traffic sign as shown in Figure on the road, a driver must proceed as indicated by the red arrow",
+    "image": "img/must-left.jpg",
+    "answer": false,
+    "description": "The driver must proceed as the traffic sign designates (on the left side).",
+    "createdDate": "2026-04-18"
+  },
+  {
+    "id": "Q128",
+    "question": "A person who obtains a large vehicle driver's license may drive medium vehicles, quasi-nedium vehicles, regular motor vehicles, specia heavy equipment, special light equipment, and general mopeds in addition to large vehicles",
+
+    "answer": false,
+    "description": "Driving special heavy equipment with a large vehicle license is not allowed.",
+    "createdDate": "2026-04-18"
+  },
+  {
+    "id": "Q129",
+    "question": "The three auxiliary signs shown in Figure express the same meaning.",
+    "image": "img/start-here-stop-here.jpg",
+    "answer": false,
+    "description": "The left sign designates the start while the middle and the right signs designate the end of the traffic regulation.",
+    "createdDate": "2026-04-18"
   }
 ]
