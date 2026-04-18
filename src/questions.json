@@ -871,7 +871,7 @@
   },
   {
     "id": "Q129",
-    "question": "A person who obtains a large vehicle driver's license may drive medium vehicles, quasi-nedium vehicles, regular motor vehicles, specia heavy equipment, special light equipment, and general mopeds in addition to large vehicles",
+    "question": "A person who obtains a large vehicle driver's license may drive medium vehicles, quasi-nedium vehicles, regular motor vehicles, special heavy equipment, special light equipment, and general mopeds in addition to large vehicles",
 
     "answer": false,
     "description": "Driving special heavy equipment with a large vehicle license is not allowed.",
@@ -883,6 +883,14 @@
     "image": "img/start-here-stop-here.jpg",
     "answer": false,
     "description": "The left sign designates the start while the middle and the right signs designate the end of the traffic regulation.",
+    "createdDate": "2026-04-18"
+  },
+  {
+    "id": "Q131",
+    "question": "In a time-limited parking zone where there is a traffic sign as shown in Figure, vehicles are not permitted to park for more than 1 hour between 8:00 a.m. and 8:00 p.m. after the driver has operated a parking meter or been issued a parking ticket",
+    "image": "img/park-8-20-60.jpg",
+    "answer": true,
+    "description": "The sign designates that vehicles may park up to 60 minutes between 8:00 a.m. and 8:00 p.m",
     "createdDate": "2026-04-18"
   }
 ]
