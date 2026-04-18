@@ -900,5 +900,12 @@
     "answer": false,
     "description": "Vehicles should follow the arrow and slow down inside the center of the intersection and then proceed.",
     "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q133",
+    "question": "Automatic transmission vehicles never need to change the position of the gear shift from \"D\" (drive) while driving,even on long or steep downward slopes",
+    "answer": false,
+    "description": "Driving onlong or steep downward slopes would be dangerous unless the position ofthe gear shift is in \"L\"or \"2\"",
+    "createdDate": "2026-04-19"
   }
 ]
