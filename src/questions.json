@@ -871,7 +871,7 @@
   },
   {
     "id": "Q129",
-    "question": "A person who obtains a large vehicle driver's license may drive medium vehicles, quasi-nedium vehicles, regular motor vehicles, special heavy equipment, special light equipment, and general mopeds in addition to large vehicles",
+    "question": "A person who obtains a large vehicle driver's license may drive medium vehicles, semi-mnedium vehicles, regular motor vehicles, special heavy equipment, special light equipment, and general mopeds in addition to large vehicles",
 
     "answer": false,
     "description": "Driving special heavy equipment with a large vehicle license is not allowed.",
@@ -906,6 +906,13 @@
     "question": "Automatic transmission vehicles never need to change the position of the gear shift from \"D\" (drive) while driving,even on long or steep downward slopes",
     "answer": false,
     "description": "Driving onlong or steep downward slopes would be dangerous unless the position ofthe gear shift is in \"L\"or \"2\"",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q134",
+    "question": "Vehicles that cannot reach a speed of 50 km/h or higher because of their construction or performance should not use national expressways.",
+    "answer": true,
+    "description": "The minimum speed limit is 50 km/h, so vehicles that cannot reach the speed limit may not use national expressways.",
     "createdDate": "2026-04-19"
   }
 ]
