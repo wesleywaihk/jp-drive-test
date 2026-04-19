@@ -1028,5 +1028,55 @@
     "answer": true,
     "description": "One should not obey the rules superficially but should ensure safetv for oneself.",
     "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q151",
+    "question": "Drivers and passengers must fasten their seatbelt at any situation.",
+    "answer": false,
+    "description": "While generally mandatory, there are specific exemptions under the Road Traffic Act, such as when backing up, for medical reasons, or for certain emergency/postal delivery tasks.",
+    "createdDate": "2026-04-20"
+  },
+  {
+    "id": "Q152",
+    "question": "When turning right at an uncontrolled intersection with three or more vehicle lanes, general motorized bicycles must use square right turn method.",
+    "answer": false,
+    "description": "General motorized bicycles (mopeds) must use the 'two-stage' (square) right turn method at intersections with three or more lanes ONLY where traffic is controlled by signals or police officers. The rule does not apply to uncontrolled intersections.",
+    "createdDate": "2026-04-20"
+  },
+  {
+    "id": "Q153",
+    "question": "When driving on a steep upgrade or steep downgrade, drivers must slow down.",
+    "answer": false,
+    "description": "According to Article 42, drivers must slow down specifically on steep 'downgrades.' While caution is needed on steep 'upgrades,' slowing down is not a legal requirement mandated by that specific safety rule.",
+    "createdDate": "2026-04-20"
+  },
+  {
+    "id": "Q154",
+    "question": "The road sign in Figure 3 indicates closed to large-sized trucks, specific middle-sized trucks and special heavy equipment.",
+    "image": "img/fig3.jpg",
+    "answer": true,
+    "description": "This sign prohibits the entry of large-sized trucks, specific middle-sized trucks (with a gross vehicle weight of 8 tons or more or a maximum payload of 5 tons or more), and special heavy equipment.",
+    "createdDate": "2026-04-20"
+  },
+  {
+    "id": "Q155",
+    "question": "When the traffic signal turns amber, pedestrians and vehicles are not allowed to proceed but the streetcars are allowed.",
+    "answer": false,
+    "description": "An amber signal means stop; however, vehicles and streetcars may proceed if they are at a point where they cannot stop safely. Streetcars do not have a blanket 'allowance' to proceed over other vehicles.",
+    "createdDate": "2026-04-20"
+  },
+  {
+    "id": "Q156",
+    "question": "All drivers who are age of 70 or older must display a senior driver's sign when driving a regular motor vehicle.",
+    "answer": false,
+    "description": "Drivers aged 70 or older are 'encouraged' (duty to make an effort) to display the sign, but it is not a strict legal requirement. It only becomes a mandatory duty (for those over 75) in specific legislative contexts, but for 'all' over 70, it is False.",
+    "createdDate": "2026-04-20"
+  },
+  {
+    "id": "Q157",
+    "question": "When towing a broken down vehicle by rope or crane, towing license is not required regardless of the total vehicle weight of the broken down vehicle.",
+    "answer": true,
+    "description": "A towing license is required for towing trailers or vehicles exceeding 750kg, but an exception is made under the Road Traffic Act when towing a broken-down vehicle using a rope or crane.",
+    "createdDate": "2026-04-20"
   }
 ]
