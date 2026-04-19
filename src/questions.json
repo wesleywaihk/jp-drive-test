@@ -914,5 +914,47 @@
     "answer": true,
     "description": "The minimum speed limit is 50 km/h, so vehicles that cannot reach the speed limit may not use national expressways.",
     "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q135",
+    "question": "Overtaking is prohibited within 30m before and after a bus stop.",
+    "answer": false,
+    "description": "Overtaking is not prohibited at bus stops. However, parking or stopping is prohibited within 10 meters of a bus stop sign during its hours of operation.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q136",
+    "question": "When a bus signals to pull out from a stop, vehicles behind must not hinder its movement by speeding up or passing.",
+    "answer": true,
+    "description": "When a bus signals to re-enter the flow of traffic, other drivers must not obstruct it, unless doing so would require sudden braking or steering.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q137",
+    "question": "During a flashing red light, pedestrians can proceed while paying attention to the surrounding traffic.",
+    "answer": true,
+    "description": "A flashing red light requires vehicles to stop, but for pedestrians, it carries the same meaning as a flashing yellow light: they may proceed with caution.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q138",
+    "question": "When an emergency vehicle approaches while you are in an intersection, you must exit the intersection and pull over to the left side of the road.",
+    "answer": true,
+    "description": "Drivers must avoid obstructing emergency vehicles. If inside an intersection, you must exit it first and then pull over to the left (or right on one-way streets) and stop.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q139",
+    "question": "When a 'Left Turn Permitted' sign (blue arrow on white background) is posted, you can turn left even if the signal is red, but you must not obstruct pedestrians.",
+    "answer": true,
+    "description": "A 'Left Turn Permitted' sign allows left turns at any time, but drivers must yield to pedestrians and other traffic moving with the green light.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q140",
+    "question": "The method for a motor vehicle to turn right is the same as the 'Two-Step' (Square) right turn method used by motorized bicycles.",
+    "answer": false,
+    "description": "Automobiles must move toward the center of the road to turn right. Only motorized bicycles (50cc or less) are required to use the two-step right turn method at specific intersections.",
+    "createdDate": "2026-04-19"
   }
 ]
