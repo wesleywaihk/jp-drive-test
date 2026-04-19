@@ -956,5 +956,77 @@
     "answer": false,
     "description": "Automobiles must move toward the center of the road to turn right. Only motorized bicycles (50cc or less) are required to use the two-step right turn method at specific intersections.",
     "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q141",
+    "question": "The road sign shown in Fiaure No.1 refers that the road is closed to motor vehicles including motorcycles and general motorized bicycles",
+    "image": "img/fig1.jpg",
+    "answer": true,
+    "description": "This regulatory sign prohibits all motor vehicles, including motorcycles and motorized bicycles (mopeds), from entering or passing through.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q142",
+    "question": "The road sian shown in Figure No.2 indicates \"Closed to all vehicles\".",
+    "image": "img/fig2.jpg",
+    "answer": false,
+    "description": "This is a 'No Entry' sign, which prohibits entry from one direction. The 'Road Closed to All Vehicles' sign is a red circle with a white background and no horizontal bar.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q143",
+    "question": "Vehicles crossing a side walk to enter the road side facilities must slow down when there are pedestrians.",
+    "image": null,
+    "answer": false,
+    "description": "Under traffic law, drivers must come to a complete stop (temporary stop) before crossing a sidewalk, regardless of whether pedestrians are present.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q144",
+    "question": "The special light equipment and general motorized bicycle as well as regular motor vehicle can be driven with regular motor vehicle license.",
+    "image": null,
+    "answer": true,
+    "description": "A standard regular driver's license automatically includes permissions to operate motorized bicycles (50cc or less) and small special equipment.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q145",
+    "question": "When there are three or more vehicle lanes in each direction, the far right lane should be left open for overtaking and vehicles may in any vehicle lane other than the far right hand lane.",
+    "image": null,
+    "answer": false,
+    "description": "Drivers are required to keep the rightmost lane open for overtaking, but they must still distribute themselves according to speed, generally keeping to the leftmost lanes available.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q146",
+    "question": "When making a right turn at an intersection, a driver should anticipate a motorcycle behind the motor vehicles approaching in the opposite direction.",
+    "image": null,
+    "answer": true,
+    "description": "Drivers must be cautious of motorcycles that may be hidden behind oncoming cars to prevent 'right-turn' accidents (the 'Oh-it-was-there' syndrome).",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q147",
+    "question": "When an emergency vehicle is approaching from behind other than on or near the intersection, a driver must oull over to the left hand side of the and vield.",
+    "image": null,
+    "answer": false,
+    "description": "While you must move to the left to clear the path, coming to a complete stop is only legally mandatory at or near intersections.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q148",
+    "question": "The timing of a signal to slow down or stop is 3 seconds before the action.",
+    "image": null,
+    "answer": false,
+    "description": "Signals for slowing down or stopping must be given immediately when the action begins. The '3-second rule' applies to lane changes and turns.",
+    "createdDate": "2026-04-19"
+  },
+  {
+    "id": "Q149",
+    "question": "You must stop before crossing a priority road at the intersection without traffic light.",
+    "image": null,
+    "answer": false,
+    "description": "Vehicles must yield and proceed without obstructing traffic on the priority road, but a full stop is only required if a 'Stop' sign is present.",
+    "createdDate": "2026-04-19"
   }
 ]
