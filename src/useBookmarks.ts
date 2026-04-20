@@ -1,24 +1,31 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
+import { Stage } from './App'
 
 export type BookmarkLevel = 0 | 1 | 2  // 0 = none, 1 = bookmarked, 2 = very important
 
-const STORAGE_KEY = 'jp-quiz-bookmarks'
+function storageKey(stage: Stage) {
+  return `jp-quiz-bookmarks-${stage}`
+}
 
-function load(): Map<string, BookmarkLevel> {
+function load(stage: Stage): Map<string, BookmarkLevel> {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
+    const raw = localStorage.getItem(storageKey(stage))
     return new Map(raw ? JSON.parse(raw) : [])
   } catch {
     return new Map()
   }
 }
 
-function save(map: Map<string, BookmarkLevel>) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify([...map]))
+function save(stage: Stage, map: Map<string, BookmarkLevel>) {
+  localStorage.setItem(storageKey(stage), JSON.stringify([...map]))
 }
 
-export function useBookmarks(activeIds: Set<string>) {
-  const [bookmarks, setBookmarks] = useState<Map<string, BookmarkLevel>>(load)
+export function useBookmarks(activeIds: Set<string>, stage: Stage) {
+  const [bookmarks, setBookmarks] = useState<Map<string, BookmarkLevel>>(() => load(stage))
+
+  useEffect(() => {
+    setBookmarks(load(stage))
+  }, [stage])
 
   const activeBookmarks = new Map([...bookmarks].filter(([id]) => activeIds.has(id)))
 
@@ -29,10 +36,10 @@ export function useBookmarks(activeIds: Set<string>) {
       const nextLevel = ((current + 1) % 3) as BookmarkLevel
       if (nextLevel === 0) next.delete(id)
       else next.set(id, nextLevel)
-      save(next)
+      save(stage, next)
       return next
     })
-  }, [])
+  }, [stage])
 
   const getLevel = useCallback((id: string): BookmarkLevel => activeIds.has(id) ? (bookmarks.get(id) ?? 0) : 0, [bookmarks, activeIds])
 
@@ -45,10 +52,10 @@ export function useBookmarks(activeIds: Set<string>) {
     setBookmarks((prev) => {
       const next = new Map(prev)
       next.delete(id)
-      save(next)
+      save(stage, next)
       return next
     })
-  }, [])
+  }, [stage])
 
   return { cycle, remove, getLevel, countByLevel, totalBookmarked }
 }

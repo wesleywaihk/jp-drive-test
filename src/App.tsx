@@ -50,12 +50,11 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState(0)
   const [timesUp, setTimesUp] = useState(false)
   const [selectedRecord, setSelectedRecord] = useState<TestRecord | null>(null)
-  const allActiveIds = new Set([...stage1Questions, ...stage2Questions].map(q => q.id))
-  const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks(allActiveIds)
-  const { records: historyRecords, addRecord } = useHistory()
-  const resultSaved = useRef(false)
-
   const activeQuestions = stage === 'stage1' ? stage1Questions : stage2Questions
+  const activeIds = new Set(activeQuestions.map(q => q.id))
+  const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks(activeIds, stage)
+  const { records: historyRecords, addRecord } = useHistory(stage)
+  const resultSaved = useRef(false)
 
   useEffect(() => {
     const handler = () => {

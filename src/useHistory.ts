@@ -1,4 +1,5 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useEffect } from 'react'
+import { Stage } from './App'
 
 export type TestType = 'mock' | 'practice' | 'bookmarked' | 'important'
 
@@ -16,12 +17,15 @@ export interface TestRecord {
   answers: AnswerRecord[]
 }
 
-const STORAGE_KEY = 'jp-drive-history'
 const THREE_DAYS_MS = 3 * 24 * 60 * 60 * 1000
 
-function loadRecords(): TestRecord[] {
+function storageKey(stage: Stage) {
+  return `jp-drive-history-${stage}`
+}
+
+function loadRecords(stage: Stage): TestRecord[] {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
+    const raw = localStorage.getItem(storageKey(stage))
     if (!raw) return []
     const records: TestRecord[] = JSON.parse(raw)
     const cutoff = Date.now() - THREE_DAYS_MS
@@ -31,25 +35,31 @@ function loadRecords(): TestRecord[] {
   }
 }
 
-function saveRecords(records: TestRecord[]) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(records))
+function saveRecords(stage: Stage, records: TestRecord[]) {
+  localStorage.setItem(storageKey(stage), JSON.stringify(records))
 }
 
-export function useHistory() {
+export function useHistory(stage: Stage) {
   const [records, setRecords] = useState<TestRecord[]>(() => {
-    const pruned = loadRecords()
-    saveRecords(pruned)
+    const pruned = loadRecords(stage)
+    saveRecords(stage, pruned)
     return pruned
   })
+
+  useEffect(() => {
+    const pruned = loadRecords(stage)
+    saveRecords(stage, pruned)
+    setRecords(pruned)
+  }, [stage])
 
   const addRecord = useCallback((record: Omit<TestRecord, 'id'>) => {
     const newRecord: TestRecord = { id: Date.now().toString(), ...record }
     setRecords(prev => {
       const updated = [newRecord, ...prev]
-      saveRecords(updated)
+      saveRecords(stage, updated)
       return updated
     })
-  }, [])
+  }, [stage])
 
   return { records, addRecord }
 }
