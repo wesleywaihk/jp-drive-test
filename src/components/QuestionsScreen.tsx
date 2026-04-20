@@ -4,8 +4,8 @@ import { BookmarkLevel } from "../useBookmarks";
 import QuestionIdBadge from "./QuestionIdBadge";
 
 interface Props {
-  normalQuestions: Question[];
-  specialQuestions: Question[];
+  stage1Questions: Question[];
+  stage2Questions: Question[];
   getLevel: (id: string) => BookmarkLevel;
   onCycleBookmark: (id: string) => void;
   onBack: () => void;
@@ -23,12 +23,12 @@ const BOOKMARK_TITLE: Record<BookmarkLevel, string> = {
 };
 const PAGE_SIZE = 20;
 
-type Tab = "normal" | "special";
+type Tab = "stage1" | "stage2";
 
 function getStateFromHash(): { tab: Tab; page: number } {
   const query = window.location.hash.split('?')[1] || ''
   const params = new URLSearchParams(query)
-  const tab = params.get('tab') === 'special' ? 'special' : 'normal'
+  const tab = params.get('tab') === 'stage1' ? 'stage1' : 'stage2'
   const page = parseInt(params.get('page') || '1', 10)
   return { tab, page: isNaN(page) || page < 1 ? 1 : page }
 }
@@ -127,8 +127,8 @@ function QuestionCard({
 }
 
 export default function QuestionsScreen({
-  normalQuestions,
-  specialQuestions,
+  stage1Questions,
+  stage2Questions,
   getLevel,
   onCycleBookmark,
   onBack,
@@ -137,7 +137,7 @@ export default function QuestionsScreen({
   const [activeTab, setActiveTab] = useState<Tab>(initial.tab);
   const [page, setPage] = useState(initial.page);
 
-  const questions = activeTab === "normal" ? normalQuestions : specialQuestions;
+  const questions = activeTab === "stage1" ? stage1Questions : stage2Questions;
 
   const start = (page - 1) * PAGE_SIZE;
   const pageQuestions = questions.slice(start, start + PAGE_SIZE);
@@ -179,29 +179,29 @@ export default function QuestionsScreen({
         {/* Tabs */}
         <div className="flex gap-1 bg-gray-100 rounded-xl p-1 mb-4">
           <button
-            onClick={() => handleTabChange("normal")}
+            onClick={() => handleTabChange("stage1")}
             className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-colors ${
-              activeTab === "normal"
+              activeTab === "stage1"
                 ? "bg-white text-gray-800 shadow-sm"
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
-            Normal
+            Stage 1
             <span className="ml-1.5 text-xs font-normal opacity-70">
-              ({normalQuestions.length})
+              ({stage1Questions.length})
             </span>
           </button>
           <button
-            onClick={() => handleTabChange("special")}
+            onClick={() => handleTabChange("stage2")}
             className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-colors ${
-              activeTab === "special"
+              activeTab === "stage2"
                 ? "bg-white text-gray-800 shadow-sm"
                 : "text-gray-500 hover:text-gray-700"
             }`}
           >
-            Special
+            Stage 2
             <span className="ml-1.5 text-xs font-normal opacity-70">
-              ({specialQuestions.length})
+              ({stage2Questions.length})
             </span>
           </button>
         </div>

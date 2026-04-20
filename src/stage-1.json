@@ -1,432 +1,432 @@
 [
   {
-    "id": "Q001",
+    "id": "s1-001",
     "question": "This sign indicates a no right turn.",
     "image": "img/no-crossing.avif",
     "answer": false,
     "description": "This sign actually indicates no crossing. A no right turn sign has a different design with an arrow pointing right with a red circle and slash."
   },
   {
-    "id": "Q002",
+    "id": "s1-002",
     "question": "When driving a four-wheeled vehicle, the front and back position of the seat should be adjusted so that the knees are fully extended when the clutch pedal is fully depressed.",
     "answer": false,
     "description": "When adjusting the seat position using the clutch, do not adjust it with the leg fully extended; adjust it so that the knee is slightly bent."
   },
   {
-    "id": "Q003",
+    "id": "s1-003",
     "question": "When passing alongside a school/kindergarten bus that is stopped for children/toddlers to get on or off, if you can maintain a safe distance between your vehicle and the bus, you may pass without slowing down.",
     "answer": false,
     "description": "Even if a safe distance can be maintained, you must still proceed at a reduced speed."
   },
   {
-    "id": "Q004",
+    "id": "s1-004",
     "question": "When an emergency vehicle approaches, outside of intersections, in principle, it is sufficient to pull over to the left side of the road; it is not always necessary to come to a complete stop.",
     "answer": true,
     "description": "When an emergency vehicle (such as a police car, ambulance, or fire truck) is approaching with its siren on, other vehicles have a duty to yield the right of way. Outside of intersections, drivers are expected to pull over to the left side of the road so as not to obstruct the emergency vehicle. Coming to a complete stop is not always required — if the road is wide enough and the vehicle can safely pull to the left, that is sufficient."
   },
   {
-    "id": "Q005",
+    "id": "s1-005",
     "question": "There are four types of main traffic signs: regulatory signs, supplementary signs, warning signs, and guide signs.",
     "answer": false,
     "description": "There are four types: regulatory, instruction, warning, and guide signs. The correct four types do not include supplementary signs as a main category."
   },
   {
-    "id": "Q006",
+    "id": "s1-006",
     "question": "When passing beside pedestrians or bicycles, you must always slow down.",
     "answer": false,
     "description": "When passing near pedestrians or bicycles, you must either maintain a safe distance or proceed at a reduced speed — either action is acceptable. If you are able to maintain a safe distance, there is no obligation to slow down."
   },
   {
-    "id": "Q007",
+    "id": "s1-007",
     "question": "An automobile with a gross vehicle weight of 3,000 kg can be driven with an ordinary driver's license.",
     "answer": true,
     "description": "According to Japan's Road Traffic Act, a standard ordinary license allows driving vehicles with a gross weight under 3,500 kg, maximum loading capacity under 2,000 kg, and seating capacity of 10 or fewer. A vehicle with a gross weight of 3,000 kg falls within this limit and can be driven with an ordinary license."
   },
   {
-    "id": "Q008",
+    "id": "s1-008",
     "question": "At an intersection, when the traffic light in your direction is flashing red, you must always come to a temporary stop, check for safety, and then proceed.",
     "answer": true,
     "description": "As stated in the question. A flashing red light requires a full temporary stop, a safety check, and then you may proceed — similar to a stop sign."
   },
   {
-    "id": "Q009",
+    "id": "s1-009",
     "question": "On roads with this sign, motorcycles can pass at any time as long as there are no buses nearby.",
     "image": "img/bus-only-road.avif",
     "answer": false,
     "description": "Vehicles allowed to pass on bus-priority roads are specified: small special vehicles, motorized bicycles, and light vehicles. Motorcycles are not freely permitted regardless of whether buses are present."
   },
   {
-    "id": "Q010",
+    "id": "s1-010",
     "question": "You must slow down near the top of uphill slopes and on steep downhill slopes, but there is no obligation to slow down while going up a steep uphill slope.",
     "answer": true,
     "description": "Steep uphill slopes are excluded from slow-driving areas. However, for no-stopping/parking areas, steep uphill slopes are included — make sure to remember this distinction."
   },
   {
-    "id": "Q011",
+    "id": "s1-011",
     "question": "Overtaking is prohibited on steep slopes, whether ascending or descending.",
     "answer": false,
     "description": "Only the top of an uphill slope and steep downhill slopes are considered no-overtaking zones. Ascending a steep slope is not a no-overtaking zone. For no-parking/no-stopping zones however, any steep slope (uphill or downhill) is included — remember the difference between these two types of areas."
   },
   {
-    "id": "Q012",
+    "id": "s1-012",
     "question": "When the traffic light turns green, it is not your duty to start immediately without checking the situation ahead. You must always confirm that it is safe to proceed so as not to cause trouble or danger to other vehicles.",
     "answer": true,
     "description": "When the traffic light turns green, a green light means 'you may proceed,' not 'you must proceed.' You are required to check for safety before moving. This is a classic trap — even when following the signal, the fundamental rule is to confirm safety with your own eyes before proceeding."
   },
   {
-    "id": "Q013",
+    "id": "s1-013",
     "question": "In the area with this sign, only regular automobiles are allowed to pass through the track bed.",
     "image": "img/car-on-track.avif",
     "answer": false,
     "description": "The illustration only shows ordinary passenger car illustrations, so it's easy to misunderstand, but it indicates that all automobiles (not just regular passenger cars) can pass through the track bed."
   },
   {
-    "id": "Q014",
+    "id": "s1-014",
     "question": "As a rule, vehicles are not allowed to drive through safety zones, but they may enter them if it is unavoidable in order to avoid danger.",
     "answer": false,
     "description": "A safety zone is an area established to protect pedestrians, especially those getting on or off streetcars. Under Articles 2 and 17 of the Road Traffic Act, vehicles must not enter or pass through safety zones under any circumstances. There are no exceptions — encroaching, stopping, or parking in a safety zone is always a violation."
   },
   {
-    "id": "Q015",
+    "id": "s1-015",
     "question": "When the 'Tramway Passage Permitted' sign is installed, not only automobiles but also mopeds and light vehicles may travel within the tramway.",
     "answer": false,
     "description": "The 'Tramway Passage Permitted' sign applies only to automobiles. Mopeds and light vehicles (such as bicycles) are not allowed to pass through tramways even when this sign is present, due to the high risk of collision with trams."
   },
   {
-    "id": "Q016",
+    "id": "s1-016",
     "question": "When an emergency vehicle approaches an intersection or its vicinity, it is required to avoid the intersection, pull over to the left side of the road, and stop temporarily.",
     "answer": true,
     "description": "When an emergency vehicle approaches with siren and red lights, drivers near intersections must avoid the intersection, pull over to the left, and stop temporarily. Since emergency vehicles may go straight, turn right, or left, remaining inside the intersection would obstruct their passage."
   },
   {
-    "id": "Q017",
+    "id": "s1-017",
     "question": "While driving a standard passenger car on a road with a priority lane designated for vehicles like route buses, I used the priority lane to make a left turn.",
     "answer": true,
     "description": "On roads with designated priority lanes, automobiles other than the specified vehicles are also allowed to use the lane when turning."
   },
   {
-    "id": "Q018",
+    "id": "s1-018",
     "question": "When there is a sign like the one in the picture at an intersection, cars and mopeds can turn left while paying attention to other traffic, even if the traffic light ahead is red or yellow.",
     "image": "img/left-turn-permitted.avif",
     "answer": true,
     "description": "This is a 'Left Turn Permitted' sign. Vehicles may turn left regardless of the signal color, as long as they pay attention to other traffic and pedestrians."
   },
   {
-    "id": "Q019",
+    "id": "s1-019",
     "question": "The braking distance is the combined distance of the reaction distance and the stopping distance.",
     "answer": false,
     "description": "The total stopping distance is the sum of the reaction distance and the braking distance. Braking distance alone refers only to the distance traveled after the brakes take effect until the vehicle stops — it does not include the reaction distance."
   },
   {
-    "id": "Q020",
+    "id": "s1-020",
     "question": "At a tram stop with a safety zone, if the tram is stopped and no passengers are boarding or alighting, vehicles may pass through without reducing speed.",
     "answer": false,
     "description": "Even when no passengers appear to be boarding or alighting, someone might step out unexpectedly. When a safety zone exists, vehicles may pass but must slow down. Passing without reducing speed is not permitted."
   },
   {
-    "id": "Q021",
+    "id": "s1-021",
     "question": "This sign indicates a road closure for vehicles, and cars cannot pass.",
     "image": "img/no-entry-vehicles.avif",
     "answer": false,
     "description": "This sign means 'No Entry for Vehicles,' not a road closure (通行止め). These are different signs — a no-entry sign prohibits entry from one direction, while a road closure sign prohibits passage entirely."
   },
   {
-    "id": "Q022",
+    "id": "s1-022",
     "question": "When crossing a sidewalk or similar area, you must always stop even if there are no pedestrians.",
     "answer": true,
     "description": "When a vehicle crosses a sidewalk or roadside strip, it must always stop and confirm safety — even if no pedestrians are visible. Sidewalks are pedestrian-priority spaces and children or cyclists may appear suddenly, so stopping to confirm is mandatory."
   },
   {
-    "id": "Q023",
+    "id": "s1-023",
     "question": "Inner wheel differential refers to the fact that the front wheels pass inside the rear wheels when the car turns.",
     "answer": false,
     "description": "Off-tracking (内輪差) refers to the phenomenon where, when a vehicle turns, the rear wheels follow a path that is on the inside of the front wheels' path — not the other way around."
   },
   {
-    "id": "Q024",
+    "id": "s1-024",
     "question": "The distance a vehicle travels from the moment the driver feels danger and applies the brakes until the vehicle comes to a complete stop is called the stopping distance.",
     "answer": true,
     "description": "The distance from the moment the brakes begin to take effect until the vehicle comes to a complete stop is called the braking distance (制動距離). The stopping distance (停止距離) includes both the reaction distance and the braking distance."
   },
   {
-    "id": "Q025",
+    "id": "s1-025",
     "question": "Roads that have a center line or traffic lanes extending into an intersection are called 'priority roads'.",
     "answer": true,
     "description": "As stated in the question. Roads with a center line or marked lanes that continue through an intersection are designated priority roads, and vehicles on them have right of way over vehicles entering from non-priority roads."
   },
   {
-    "id": "Q026",
+    "id": "s1-026",
     "question": "At locations where a 'Slow' (徐行) sign is posted, you must drive slowly regardless of the traffic conditions.",
     "answer": true,
     "description": "A 徐行 (slow) sign requires driving at a speed that allows immediate stopping — generally 10 km/h or less. This applies regardless of traffic conditions because such signs are placed in areas with particularly high risk, such as poor visibility zones and school areas."
   },
   {
-    "id": "Q027",
+    "id": "s1-027",
     "question": "When a car turns right from a one-way street, it must first move as close as possible to the center of the road beforehand and then pass through the inner area of the intersection.",
     "answer": false,
     "description": "When turning right from a one-way road, you should position your vehicle as close as possible to the right edge of the roadway — not toward the center. This is different from turning right on a two-way road."
   },
   {
-    "id": "Q028",
+    "id": "s1-028",
     "question": "At a tram stop without a safety zone, if the tram is stopped and no passengers are boarding or alighting, you may proceed slowly even if the distance from the tram is not sufficient.",
     "answer": false,
     "description": "At tram stops without a safety zone, passengers board and alight directly on the roadway, making the area especially hazardous. You may only proceed slowly if there is a distance of at least 1.5 meters between your vehicle and the tram. Insufficient distance is not permitted regardless of passenger activity."
   },
   {
-    "id": "Q029",
+    "id": "s1-029",
     "question": "When an emergency vehicle approaches in a location other than at or near an intersection, you must slow down.",
     "answer": false,
     "description": "Outside of intersections, the correct action is to move to the left side of the road to yield the right of way — not simply to slow down. Slowing down alone is insufficient; you must pull over."
   },
   {
-    "id": "Q030",
+    "id": "s1-030",
     "question": "When passing through an intersection with a flashing yellow light, you must proceed slowly.",
     "answer": false,
     "description": "At a flashing yellow light, you only need to proceed while paying careful attention to other traffic. There is no obligation to slow down — unlike a flashing red light, which requires a full stop."
   },
   {
-    "id": "Q031",
+    "id": "s1-031",
     "question": "On this road with this sign, mopeds and light vehicles are not allowed to enter.",
     "image": "img/no-entry-vehicles.avif",
     "answer": true,
     "description": "\"No entry for vehicles\" is being indicated, so it is as per the question."
   },
   {
-    "id": "Q032",
+    "id": "s1-032",
     "question": "As I approached a crosswalk without traffic lights, it was clear that no pedestrians were crossing, so I passed through the crosswalk without slowing down.",
     "answer": true,
     "description": "If it is clear that no pedestrians are present, you may proceed without stopping."
   },
   {
-    "id": "Q033",
+    "id": "s1-033",
     "question": "Overtaking is prohibited within intersections and within 30 meters before them, but you are allowed to overtake if you are traveling on a priority road.",
     "answer": true,
     "description": "This question asks about the exceptions to the rule prohibiting overtaking near intersections. Vehicles are generally not allowed to overtake within intersections or within 30 meters before them. This is because intersections are high-risk areas for accidents, and lane changes or speed changes increase danger. However, there is an exception: overtaking is permitted if your vehicle is traveling on a priority road."
   },
   {
-    "id": "Q034",
+    "id": "s1-034",
     "question": "This sign indicates that you must make a complete stop just before the stop line (or just before the intersection if there is no stop line) and must not obstruct the passage of vehicles traveling on the intersecting road.",
     "image": "img/stop.avif",
     "answer": true,
     "description": "As stated in the question."
   },
   {
-    "id": "Q035",
+    "id": "s1-035",
     "question": "This sign indicates the presence of a safety zone.",
     "image": "img/safty-zone.avif",
     "answer": true,
     "description": "As stated in the question."
   },
   {
-    "id": "Q036",
+    "id": "s1-036",
     "question": "When passing by a safety zone, you must slow down regardless of whether or not there are any pedestrians present.",
     "answer": false,
     "description": "If there are no pedestrians near the safety island, slowing down is not required."
   },
   {
-    "id": "Q037",
+    "id": "s1-037",
     "question": "When driving a four-wheeled vehicle, the seat should be adjusted so that the knees are fully extended when the clutch pedal is fully depressed.",
     "answer": false,
     "description": "The correct adjustment is with the knee slightly bent, not fully extended."
   },
   {
-    "id": "Q038",
+    "id": "s1-038",
     "question": "Overtaking is prohibited at intersections and within 30 meters of them, so overtaking immediately after passing the intersection is allowed.",
     "answer": true,
     "description": "The no-overtaking zone includes the intersection and 30 meters before it, not after it."
   },
   {
-    "id": "Q039",
+    "id": "s1-039",
     "question": "When driving in a route bus priority lane and a route bus approaches, you may either exit the lane or maintain a sufficient distance so as not to obstruct the bus.",
     "answer": false,
     "description": "The correct action is to promptly exit the priority lane. Maintaining distance applies to trams, not buses."
   },
   {
-    "id": "Q040",
+    "id": "s1-040",
     "question": "When the traffic light turns yellow, under no circumstances should you proceed past the stop line.",
     "answer": false,
     "description": "Yellow means stop, but if stopping suddenly is dangerous, you may proceed."
   },
   {
-    "id": "Q041",
+    "id": "s1-041",
     "question": "This sign indicates a 'No Stopping Zone'.",
     "image": "img/safty-zone-ground.avif",
     "answer": false,
     "description": "The sign shown indicates a Safety Zone, not a No Stopping Zone."
   },
   {
-    "id": "Q042",
+    "id": "s1-042",
     "question": "At an intersection with a flashing yellow light, you may proceed while paying attention to other traffic.",
     "answer": true,
     "description": "Flashing yellow means proceed with caution."
   },
   {
-    "id": "Q043",
+    "id": "s1-043",
     "question": "On a wide road with a left-side width of 6 meters or more, you may overtake by protruding into the right side of the road if there is no 'no overtaking' sign.",
     "answer": false,
     "description": "On wide roads where the left lane is 6 meters or more, you should be able to overtake without encroaching into the dangerous oncoming lane, so you must not move into the right side to overtake."
   },
   {
-    "id": "Q044",
+    "id": "s1-044",
     "question": "This sign means no entry for vehicles.",
     "image": "img/road-closed.avif",
     "answer": false,
     "description": "It indicates 'Road Closed'."
   },
   {
-    "id": "Q045",
+    "id": "s1-045",
     "question": "A safety zone is, in principle, a place where vehicles are not allowed to pass.",
     "answer": true,
     "description": "A safety zone is an area established to protect pedestrians, especially those getting on and off streetcars. For this reason, the Road Traffic Act (Articles 2 and 17) stipulates that “vehicles must not enter or pass through a safety zone.” In principle, vehicles are prohibited from driving through safety zones. It is also a violation to extend into the zone, or to stop or park in it."
   },
   {
-    "id": "Q046",
+    "id": "s1-046",
     "question": "Always drive slowly when passing pedestrians or bicycles.",
     "answer": false,
     "description": "When passing pedestrians or cyclists, you should either maintain a safe distance or slow down. If you can maintain a safe distance, you are not required to slow down."
   },
   {
-    "id": "Q047",
+    "id": "s1-047",
     "question": "When passing near a child walking alone, you must not only slow down but also always make a temporary stop.",
     "answer": false,
     "description": "When passing by a child walking alone, you must either come to a complete stop or proceed at a reduced speed to ensure safe passage."
   },
   {
-    "id": "Q048",
+    "id": "s1-048",
     "question": "When making a right or left turn, you must always slow down.",
     "answer": true,
     "description": "According to the Road Traffic Act, drivers are required to slow down when turning right or left at an intersection. This is necessary because intersections involve many potential hazards, such as pedestrians, bicycles, oncoming vehicles, and changing traffic signals. In particular, when turning left, slowing down helps prevent accidents involving bicycles and pedestrians being caught in the turn."
   },
   {
-    "id": "Q049",
+    "id": "s1-049",
     "removed": true,
     "question": "When approaching a kindergarten or school bus that has stopped for children to get on or off, you must slow down and pass alongside it while ensuring safety.",
     "answer": false,
     "description": "When a kindergarten or school bus is stopped for children to get on or off, drivers approaching from behind are required to come to a complete stop and confirm safety before proceeding. In other words, \"just slowing down and passing is a violation.\" Since these buses carry small children, there is a high risk that they may suddenly run out from in front of or behind the bus, and merely slowing down is not enough. Passing without fully confirming safety is extremely dangerous."
   },
   {
-    "id": "Q050",
+    "id": "s1-050",
     "question": "This sign indicates a prohibition on the passage of regular freight vehicles.",
     "image": "img/no-entry-large-freight-vehicles.avif",
     "answer": false,
     "description": "Road sign for 'No Entry for Large Freight Vehicles'. It indicates no entry for freight vehicles with a total weight of 8 tons or more and a maximum load capacity of 5 tons or more, including large special vehicles."
   },
   {
-    "id": "Q051",
+    "id": "s1-051",
     "question": "In tunnels without marked traffic lanes, overtaking is generally prohibited, even if there is no oncoming traffic.",
     "answer": true,
     "description": "The key point of this question is the rule regarding overtaking in tunnels and whether traffic lanes are marked. In tunnels without marked traffic lanes, overtaking is prohibited. This restriction exists because tunnels are narrow, dark, have limited visibility, and offer no escape routes. However, as an exception, overtaking is allowed in tunnels that do have marked traffic lanes."
   },
   {
-    "id": "Q052",
+    "id": "s1-052",
     "question": "This sign indicates that the road ahead is closed to traffic.",
     "image": "img/road-closed.avif",
     "answer": true,
     "description": "As the question states."
   },
   {
-    "id": "Q053",
+    "id": "s1-053",
     "question": "Road markings refer to lines, symbols, and letters indicated on the road surface by paint, road studs, etc., and there are two types: regulatory markings and warning markings.",
     "answer": false,
     "description": "There are two types: regulatory markings and instruction markings."
   },
   {
-    "id": "Q054",
+    "id": "s1-054",
     "question": "Even at an intersection where visibility to the left and right is poor, if traffic signals are installed, there is no legal requirement to slow down.",
     "answer": true,
     "description": "The correct answer is “True.” At intersections controlled by traffic signals, drivers are not legally required to slow down, even if visibility to the left and right is limited. Many people assume that “poor visibility at an intersection = slow down,” but the key point in this rule is that the requirement depends on whether a traffic signal is present. However, “no legal obligation to slow down” does not mean you may proceed without caution. Even when the signal is green, there is still a possibility that a vehicle or pedestrian may ignore the signal and enter the intersection. At intersections where buildings, parked vehicles, or other obstacles severely restrict visibility, entering without slowing down can still lead to a collision. In other words, although the law does not require reduced speed at signal-controlled intersections, drivers must use judgment and reduce speed when necessary in real-world driving conditions."
   },
   {
-    "id": "Q055",
+    "id": "s1-055",
     "question": "When driving within a streetcar track area, if a streetcar approaches from behind, you may continue driving if there is enough distance.",
     "answer": true,
     "description": "The correct answer is “True.”<br/><br/>The key point here is understanding whether it is a violation for cars to drive within the streetcar track area, and what must be done if a streetcar approaches. The section of the road with rails is called the “track area (軌道敷).” As a rule, vehicles are not allowed to drive here, but exceptions exist—such as when permitted by road signs or markings.<br/><br/>If a car is driving in the track area and a streetcar approaches from behind, the law allows the car to continue as long as it does not obstruct the streetcar’s movement. The driver may either leave the track area or maintain a sufficient distance ahead of the streetcar.<br/><br/>It is important to note that the rule is different for buses. On priority lanes for route buses, when a bus approaches from behind, cars must immediately leave the lane. Maintaining distance is not an option. Remembering this difference between trams and buses is essential."
   },
   {
-    "id": "Q056",
+    "id": "s1-056",
     "question": "In locations where overtaking is prohibited by traffic signs, overtaking bicycles is also prohibited.",
     "answer": false,
     "description": "This question asks about the treatment of bicycles in areas where overtaking is prohibited. Vehicles are not allowed to change lanes or pass other motor vehicles or motorized bicycles in no-overtaking zones. However, this means that light vehicles, such as bicycles, can be overtaken even in these areas."
   },
   {
-    "id": "Q057",
+    "id": "s1-057",
     "question": "When passing each other (in opposite directions) where there is an obstacle, the vehicle that has the obstacle ahead in its own path has priority and can proceed [first].",
     "answer": false,
     "description": "When passing each other at a location with an obstacle, the correct action is for the vehicle facing an obstacle in its path to wait."
   },
   {
-    "id": "Q058",
+    "id": "s1-058",
     "question": "At an intersection without traffic control, you must never interfere with vehicles approaching from the left, regardless of the situation.",
     "answer": false,
     "description": "This statement may look correct at first glance, but the phrase “regardless of the situation” is wrong. If your vehicle is traveling on a wider road, the vehicle on the wider road has the right of way. Likewise, if your vehicle is on a priority road, the vehicle on the priority road goes first."
   },
   {
-    "id": "Q059",
+    "id": "s1-059",
     "question": "A yellow traffic light, in principle, means that you must stop at the stop line, and it does not grant permission to proceed.",
     "answer": true,
     "description": "The correct answer is “True.” A yellow traffic light basically means you must stop at the stop line.<br/><br/>Many people mistakenly think yellow means “hurry through” or simply “caution,” but in fact, the law requires vehicles and pedestrians to stop at the stop line when the light is yellow. The only exception is if stopping suddenly would be dangerous or impossible."
   },
   {
-    "id": "Q060",
+    "id": "s1-060",
     "question": "Vehicles behind a stopped nursery or school bus are prohibited from passing alongside it until the bus starts moving.",
     "answer": false,
     "description": "This question asks about the obligations of drivers toward nursery and school buses. Just because a nursery or school bus is stopped does not mean that passing alongside it is completely prohibited. In other words, there is no obligation to wait until the bus starts moving. Therefore, the answer to this question is false.<br/><br/>When a school or nursery bus is stopped for children to get on or off, following vehicles must pass slowly or stop temporarily while ensuring safety. This is because children getting off the bus often cross suddenly in front of or behind the bus, creating a high risk of accidents."
   },
   {
-    "id": "Q061",
+    "id": "s1-061",
     "question": "If you have an ordinary driver’s license, you can drive a truck with a maximum payload of 3 tons.",
     "answer": false,
     "description": "Under Japan’s Road Traffic Act, the conditions for vehicles that can be driven with an ordinary (Class 1) driver’s license are as follows: the vehicle’s gross weight must be less than 3,500 kg, the maximum payload must be less than 2,000 kg, and the seating capacity must be 10 people or fewer (including the driver). A vehicle with a maximum payload of 3,000 kg does not meet the \"less than 2,000 kg\" requirement, so it cannot be driven with an ordinary license. Therefore, the answer to this question is false."
   },
   {
-    "id": "Q062",
+    "id": "s1-062",
     "question": "This sign prohibits the crossing of cars, but does not prohibit the crossing of motorized bicycles.",
     "image": "img/no-crossing.avif",
     "answer": false,
     "description": "It is a sign prohibiting the crossing of 'cars', so motorized bicycles, which are 'cars', should not cross either."
   },
   {
-    "id": "Q063",
+    "id": "s1-063",
     "question": "This sign indicates that the road ahead, which intersects the road you are on, is a \"priority road.",
     "image": "img/priority-road.avif",
     "answer": false,
     "description": "In this case, it indicates that the road being traveled is the priority road."
   },
   {
-    "id": "Q064",
+    "id": "s1-064",
     "question": "When planning to change course, turn, or reverse, signal first and check the rearview mirror to ensure safety.",
     "answer": false,
     "description": "Check your surroundings before signaling."
   },
   {
-    "id": "Q065",
+    "id": "s1-065",
     "question": "The timing for signaling a lane change should be approximately 3 seconds before you intend to perform the maneuver.",
     "answer": true,
     "description": "As stated in the question."
   },
   {
-    "id": "Q066",
+    "id": "s1-066",
     "question": "You may overtake a motorized bicycle on steep downhill slopes or near the crest of uphill slopes.",
     "answer": false,
     "description": "In no-overtaking zones, you must not change lanes or pass alongside other vehicles, including cars and motorized bicycles, to overtake them.",
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q067",
+    "id": "s1-067",
     "question": "A flare has an expiration date of 3 years.",
     "answer": false,
     "description": "The effective expiration period of a pyrotechnic flare is set at four years from the date of manufacture under the JIS standards.",
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q068",
+    "id": "s1-068",
     "question": "Overtaking is prohibited near bends in the road only when visibility is poor.",
     "answer": false,
     "description": "Overtaking is prohibited near curves, regardless of whether visibility is good or poor.",
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q069",
+    "id": "s1-069",
     "question": "The road with this sign is a bus-only lane, so regular cars and motorized bicycles must avoid and bypass this lane.",
     "image": "img/bus-only-road.avif",
     "answer": false,
@@ -434,7 +434,7 @@
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q070",
+    "id": "s1-070",
     "question": "Any vehicle can use the road with this sign, but if a bus approaches, cars must quickly leave the area. (This excludes small special vehicles, mopeds, and light vehicles.)",
     "image": "img/bus-first.avif",
     "answer": true,
@@ -442,7 +442,7 @@
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q071",
+    "id": "s1-071",
     "question": "This sign means that vehicles with a cargo weight exceeding 5.5 tons are not allowed to pass.",
     "image": "img/5_5t.avif",
     "answer": false,
@@ -450,35 +450,35 @@
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q072",
+    "id": "s1-072",
     "question": "When approaching a kindergarten or school bus that has stopped for children to get on or off, you must slow down and pass alongside it while ensuring safety.",
     "answer": false,
     "description": "When a kindergarten or school bus is stopped for children to get on or off, drivers approaching from behind are required to come to a complete stop and confirm safety before proceeding. In other words, 'just slowing down and passing is a violation.' Since these buses carry small children, there is a high risk that they may suddenly run out from in front of or behind the bus, and merely slowing down is not enough. Passing without fully confirming safety is extremely dangerous.",
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q073",
+    "id": "s1-073",
     "question": "When an emergency vehicle approaches on a one-way road, you must always move to the left side of the road and yield the right-of-way.",
     "answer": false,
     "description": "On a one-way street, as an exception, it is permissible to move to the right to yield the right of way.",
     "createdDate": "2026-04-06"
   },
   {
-    "id": "Q074",
+    "id": "s1-074",
     "question": "In a tunnel without designated traffic lanes, overtaking any vehicle is not permitted under any circumstances.",
     "answer": true,
     "description": "The key point of this question is the rule regarding overtaking in tunnels and whether designated traffic lanes are present. In tunnels without traffic lanes, overtaking is prohibited. This is because tunnels are narrow, dark, have limited visibility, and offer no escape routes. However, as an exception, overtaking is allowed in tunnels that do have designated traffic lanes.",
     "createdDate": "2026-04-07"
   },
   {
-    "id": "Q075",
+    "id": "s1-075",
     "question": "A green light means go ahead.",
     "answer": false,
     "description": "A green traffic light means “You may proceed.” In other words, it only gives permission to go, and you must confirm it is safe before proceeding.<br/><br/>Examples of situations where you should not proceed include when the intersection is congested and you would have to stop in the middle, or when pedestrians have not yet finished crossing.",
     "createdDate": "2026-04-07"
   },
   {
-    "id": "Q076",
+    "id": "s1-076",
     "question": "Drove through with a truck with a maximum load capacity of 3 tons where this sign is present.",
     "image": "img/no-entry-large-freight-vehicles.avif",
     "answer": true,
@@ -486,7 +486,7 @@
     "createdDate": "2026-04-07"
   },
   {
-    "id": "Q077",
+    "id": "s1-077",
     "question": "This sign indicates that the road ahead is closed to entry.",
     "image": "img/closed-to-vehicles.avif",
     "answer": false,
@@ -494,7 +494,7 @@
     "createdDate": "2026-04-08"
   },
   {
-    "id": "Q078",
+    "id": "s1-078",
     "question": "This sign indicates that the intersection ahead is a priority road.",
     "image": "img/ahead-priority-road.avif",
     "answer": true,
@@ -502,7 +502,7 @@
     "createdDate": "2026-04-07"
   },
   {
-    "id": "Q079",
+    "id": "s1-079",
     "question": "This sign indicates that vehicles other than two-wheeled motor vehicles are not allowed to pass.",
     "image": "img/no-car.avif",
     "answer": true,
@@ -510,49 +510,49 @@
     "createdDate": "2026-04-08"
   },
   {
-    "id": "Q080",
+    "id": "s1-080",
     "question": "When entering a wide road from a narrow road at an intersection where traffic control is not in place, drive slowly so as not to obstruct the progress of vehicles passing on the wide road.",
     "answer": true,
     "description": "You must proceed at a reduced speed and must not obstruct the movement of vehicles traveling on the intersecting road.",
     "createdDate": "2026-04-08"
   },
   {
-    "id": "Q081",
+    "id": "s1-081",
     "question": "When passing alongside a school/kindergarten bus that is stopped for children/toddlers to get on or off, you must stop behind the bus and confirm that it is safe (to proceed).",
     "answer": false,
     "description": "Proceed at a reduced speed and pass only after confirming it is safe.",
     "createdDate": "2026-04-08"
   },
   {
-    "id": "Q082",
+    "id": "s1-082",
     "question": "As I approached a crosswalk without traffic lights, it was clear that no pedestrians were crossing, so I passed through the crosswalk without slowing down.",
     "answer": true,
     "description": "If it is clear that no pedestrians are present, you may proceed without stopping.",
     "createdDate": "2026-04-08"
   },
   {
-    "id": "Q083",
+    "id": "s1-083",
     "question": "The maximum speed for trucks on general roads is 50 kilometers per hour.",
     "answer": false,
     "description": "The speed limit is 60 kilometers per hour.",
     "createdDate": "2026-04-09"
   },
   {
-    "id": "Q084",
+    "id": "s1-084",
     "question": "When passing through an intersection with poor visibility to the left and right, you must always slow down, even if you are traveling on a priority road.",
     "answer": false,
     "description": "If you are driving on a priority road, the obligation to drive slowly is exempted as an exception.",
     "createdDate": "2026-04-10"
   },
   {
-    "id": "Q085",
+    "id": "s1-085",
     "question": "When slowing down or stopping, it is sufficient to signal only when you are about to slow down or stop.",
     "answer": true,
     "description": "As stated in the question. You signal when you are about to take action.",
     "createdDate": "2026-04-12"
   },
   {
-    "id": "Q086",
+    "id": "s1-086",
     "question": "While riding a motorized bicycle through an intersection with traffic control on a road with three or more lanes in the same direction, I saw this sign and cautiously moved as close as possible to the center of the road, proceeding slowly just inside the center of the intersection.",
     "image": "img/no-2-step-right-turn.avif",
     "answer": true,
@@ -560,42 +560,42 @@
     "createdDate": "2026-04-12"
   },
   {
-    "id": "Q087",
+    "id": "s1-087",
     "question": "The correct seat back angle is best adjusted so that your elbows are slightly bent when you hold the steering wheel.",
     "answer": true,
     "description": "As stated in the question, adjusting it this way allows you to operate the steering wheel stably without your back leaving the seat.",
     "createdDate": "2026-04-13"
   },
   {
-    "id": "Q088",
+    "id": "s1-088",
     "question": "When passing by pedestrians, you do not need to slow down if you leave a safe distance between your vehicle and the pedestrian.",
     "answer": true,
     "description": "When passing near pedestrians, you must either maintain a safe distance or proceed at a reduced speed—either action is acceptable.",
     "createdDate": "2026-04-13"
   },
   {
-    "id": "Q089",
+    "id": "s1-089",
     "question": "When there is a school or kindergarten bus and children are getting on and off, a vehicle must slow down to pass the bus while paying attention to children who might suddenly run onto the road.",
     "answer": true,
     "description": "This is required to ensure safety for children.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q090",
+    "id": "s1-090",
     "question": "At an intersection where general mopeds must execute a two-step right turn, general mopeds can execute a right turn when the green arrow points to the right.",
     "answer": false,
     "description": "At an intersection where general mopeds must execute a two-step right turn, general mopeds cannot execute a right turn when the green arrow points to the right.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q091",
+    "id": "s1-091",
     "question": "At a place other than an intersection and where there is no pedestrian crossing, bicycle crossing or railway crossing, vehicles must stop 3 meters before a police officer or traffic warden who is giving a stop signal.",
     "answer": false,
     "description": "The position to stop is 1 meter before the police officer or traffic warden.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q092",
+    "id": "s1-092",
     "question": "In a lane where there is a traffic sign as shown in Figure, regular motor vehicles may proceed at 8:00 p.m.",
     "image": "img/bus-only-road-7-9.png",
     "answer": true,
@@ -603,7 +603,7 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q093",
+    "id": "s1-093",
     "question": "For traffic proceeding in the direction of the thinner arrow as shown in Figure , the meaning of the police officer’s hand signal and that of the traffic signal are the same.",
     "image": "img/light-rightr-green-police-hand-righgt.png",
     "answer": false,
@@ -611,21 +611,21 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q094",
+    "id": "s1-094",
     "question": "When there are pedestrians or cyclists ahead, drivers must be prepared to turn the steering wheel to avoid colliding with them in case they behave in an unexpected manner.",
     "answer": false,
     "description": "Drivers must not use steering but decrease the vehicle’s speed to avoid an accident.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q095",
+    "id": "s1-095",
     "question": "If an automatic transmission vehicle’s engine stalls and will not turn over, it can be moved by putting the gear shift in \"D\" and using the starter motor as an emergency measure.",
     "answer": false,
     "description": "Automatic transmission vehicles cannot move by using the starter motor.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q096",
+    "id": "s1-096",
     "question": "Any type of vehicle must not proceed on a road where there is a traffic sign as shown in the figure.",
     "image": "img/pedestrian.gif",
     "answer": false,
@@ -633,7 +633,7 @@
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q097",
+    "id": "s1-097",
     "removed": true,
     "question": "At a traffic signal as shown in the figure, automobiles and general mopeds may execute a right turn (unless a two-step right turn is designated for general mopeds).",
     "image": "img/green-arrow-right.png",
@@ -642,14 +642,14 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q098",
+    "id": "s1-098",
     "question": "The three keys to driving are: identification, judgment and execution. Among them, execution is especially important and deeply related to causes of an accident.",
     "answer": false,
     "description": "Identification and judgment are especially important and deeply related to causes of an accident.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q099",
+    "id": "s1-099",
     "removed": true,
     "question": "Where there is a traffic sign as shown in the figure, vehicles must stop immediately before the sign and check for safety.",
     "image": "img/stop.avif",
@@ -658,7 +658,7 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q100",
+    "id": "s1-100",
     "question": "The pavement marking shown in the figure indicates that there is an intersection ahead.",
     "image": "img/pedestrian-crossing-bicycle-crossing.png",
     "answer": false,
@@ -666,7 +666,7 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q101",
+    "id": "s1-101",
     "question": "In the situation shown in the figure, the vehicle must slow down at the point shown by △.",
     "image": "img/C108-4.gif",
     "answer": true,
@@ -674,21 +674,21 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q102",
+    "id": "s1-102",
     "question": "On a road where the road and the sidewalks are not separated, vehicles must slow down when passing near a pedestrian.",
     "answer": false,
     "description": "Vehicles do not need to slow down when there is enough clearance from a pedestrian.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q103",
+    "id": "s1-103",
     "question": "Passing too close to or cutting in front of a regular vehicle that is displaying a sign indicating a novice driver, senior driver, learner driver or physically disabled driver is, in principle, prohibited.",
     "answer": true,
     "description": "Such actions are prohibited unless these actions are necessary in order to avoid danger.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q104",
+    "id": "s1-104",
     "question": "A road where there are traffic signs as shown in the figure is closed to trucks with a maximum loading capacity of 2 tons or more and special heavy equipment.",
     "image": "img/A305-4.gif",
     "answer": true,
@@ -696,28 +696,28 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q105",
+    "id": "s1-105",
     "question": "When executing a right turn on a one-way street, an automobile must initially approach the right edge of the road and slow down inside the center point of the intersection (following arrow markings, if there are any)(Except roundabout.).",
     "answer": true,
     "description": "An automobile is required to proceed this way in order to make a safe and smooth right turn on a one-way street.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q106",
+    "id": "s1-106",
     "question": "When there is a streetcar stopped on the road, a vehicle may pass it if there are no passengers getting on or off the streetcar in a safety zone.",
     "answer": false,
     "description": "A vehicle must slow down in a safety zone where a streetcar is stopped even when there are no passengers getting on or off in the zone.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q107",
+    "id": "s1-107",
     "question": "Overtaking a vehicle that is attempting to overtake a general moped is double overtaking.",
     "answer": false,
     "description": "Overtaking a vehicle ahead that is attempting to overtake a general moped is not double overtaking.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q108",
+    "id": "s1-108",
     "question": "A vehicle proceeding towards a signal as shown in the figure may proceed straight through and execute a left or right turn.",
     "image": "img/C001.gif",
     "answer": false,
@@ -725,49 +725,49 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q109",
+    "id": "s1-109",
     "question": "A driver must carry his or her driver’s license or Individual Number Card with driver's license information record (collectively referred to as driver's licenses) while driving. He or she, therefore, must not drive a vehicle on the grounds that they simply forgot to carry it.",
     "answer": true,
     "description": "Driving without carrying driver’s license and equivalent is a violation of traffic regulations.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q110",
+    "id": "s1-110",
     "question": "Overtaking a regular motor vehicle that is attempting to overtake a general moped is not prohibited double overtaking.",
     "answer": true,
     "description": "Vehicles are subject to double overtaking, excluding general mopeds.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q111",
+    "id": "s1-111",
     "question": "When approaching a pedestrian crossing, a vehicle must sufficiently reduce speed to be able to stop immediately before the pedestrian crossing, even when it is clear that there are no people crossing the road.",
     "answer": false,
     "description": "When there are apparently no pedestrians, a vehicle does not have to reduce speed so as to be able to stop.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q112",
+    "id": "s1-112",
     "question": "When a road is congested, vehicles may proceed by crossing the centerline into the right side of the road.",
     "answer": false,
     "description": "Traffic congestion does not provide an exception to driving on the left side of the road.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q113",
+    "id": "s1-113",
     "question": "Using side mirrors allow a driver to visually gauge the distance between his or her vehicle and the vehicle behind better than using a rearview mirror.",
     "answer": false,
     "description": "Things look smaller on side mirrors than their actual size, so it is difficult to gauge the distance.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q114",
+    "id": "s1-114",
     "question": "When a police officer holds his or her arms straight out to the sides horizontally, this has the same meaning as a red light for traffic proceeding in the direction that is parallel to the officer's arms.",
     "answer": false,
     "description": "This hand signal has the same meaning as the green light of a traffic signal.",
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q115",
+    "id": "s1-115",
     "question": "In the situation shown in the figure, when vehicle X passes on the side of stopped vehicle Y, vehicle X must stop at position A, even when there are no pedestrians.",
     "image": "img/passing-before-cross.jpg",
     "answer": true,
@@ -775,7 +775,7 @@
     "createdDate": "2026-04-16"
   },
   {
-    "id": "Q116",
+    "id": "s1-116",
     "question": "Where there is a traffic sign as shown in the figure. vehicles must stop immediately before the sign and check for safety.",
     "image": "img/stop.avif",
     "answer": false,
@@ -783,7 +783,7 @@
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q117",
+    "id": "s1-117",
     "question": "At a traffic signal as shown in the figure, automobiles and general mopeds may execute a right turn (unless a two-step right turn is designated for general mopeds)",
     "image": "img/green-arrow-right.png",
     "answer": true,
@@ -791,70 +791,70 @@
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q118",
+    "id": "s1-118",
     "question": "When a traffic signal ahead is yellow, a vehicle may proceed while paying attention to other traffic.",
     "answer": false,
     "description": "A vehicle must stop at the position to stop, but may proceed if the vehicle is not able to stop safely.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q119",
+    "id": "s1-119",
     "question": "On a road with two lanes in each direction, regular motor vehicles must proceed in the right hand lane.",
     "answer": false,
     "description": "Any type of vehicle, in principle, must proceed in the left-hand lane.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q120",
+    "id": "s1-120",
     "question": "When there is a streetcar stopped on the road, a vehicle may pass it if there are no passengers getting on or off the streetcar in a safety zone.",
     "answer": false,
     "description": "A vehicle must slow down in a safety zone where a streetcar is stopped even when there are no passengers getting on or off in the zone.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q121",
+    "id": "s1-121",
     "question": "The lap belt should be tightly wrapped around the driver’s pelvis rather than the abdomen.",
     "answer": true,
     "description": "The lap belt should be tightly wrapped around the driver’s pelvis. Wearing the lap belt around the abdomen may cause internal organ rupture in an accident.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q122",
+    "id": "s1-122",
     "question": "Even when it looks as though there will be a head-on collision with an oncoming vehicle, the driver should not give up but should try to avoid the vehicle, even if just a little, by using the brake or steering wheel",
     "answer": true,
     "description": "A slow speed would result in less damage and increase the possibility of avoiding the collision",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q123",
+    "id": "s1-123",
     "question": "When intending to overtake on a road with vehicular lanes, a driver must use the vehicular lane immediately to the right of the lane he or she is currently driving in.",
     "answer": true,
     "description": "Drivers should overtake in a manner not to disturb other traffic flows.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q124",
+    "id": "s1-124",
     "question": "A vehicle must not cross the road or make a U-turn even where there are no \"no U-turn\" or \"nc vehicle crossing\" signs, when it might hinder the normal progress of pedestrians or other vehicles.",
     "answer": true,
     "description": "Actions that hinder safe and smooth traffic are prohibited.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q125",
+    "id": "s1-125",
     "question": "When the signal ahead is a red light and a green arrow pointing to the left at the same time automobiles and general mopeds may proceed in the direction indicated by the arrow, but specified small mopeds and light vehicles may not proceed.",
     "answer": false,
     "description": "Specified small mopeds and light vehicles may also execute a left turn when the green arrow points to the left",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q126",
+    "id": "s1-126",
     "question": "A general moped executing a two-step right turn must keep its right turn signal on until it has proceeded straight ahead to the place at which it turns right.",
     "answer": true,
     "description": "A general moped should inform other traffic early of the two-step right turn.",
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q127",
+    "id": "s1-127",
     "question": "On a road where there is a traffic sign as shown in Figure, mopeds may not proceed but large or regular motorcycles may proceed regardless of engine displacement",
     "image": "img/car-ind.jpg",
     "answer": false,
@@ -862,7 +862,7 @@
     "createdDate": "2026-04-17"
   },
   {
-    "id": "Q128",
+    "id": "s1-128",
     "question": "Where there is a traffic sign as shown in Figure on the road, a driver must proceed as indicated by the red arrow",
     "image": "img/must-left.jpg",
     "answer": false,
@@ -870,15 +870,14 @@
     "createdDate": "2026-04-18"
   },
   {
-    "id": "Q129",
+    "id": "s1-129",
     "question": "A person who obtains a large vehicle driver's license may drive medium vehicles, semi-medium vehicles, regular motor vehicles, special heavy equipment, special light equipment, and general mopeds in addition to large vehicles",
-
     "answer": false,
     "description": "Driving special heavy equipment with a large vehicle license is not allowed.",
     "createdDate": "2026-04-18"
   },
   {
-    "id": "Q130",
+    "id": "s1-130",
     "question": "The three auxiliary signs shown in Figure express the same meaning.",
     "image": "img/start-here-stop-here.jpg",
     "answer": false,
@@ -886,7 +885,7 @@
     "createdDate": "2026-04-18"
   },
   {
-    "id": "Q131",
+    "id": "s1-131",
     "question": "In a time-limited parking zone where there is a traffic sign as shown in Figure, vehicles are not permitted to park for more than 1 hour between 8:00 a.m. and 8:00 p.m. after the driver has operated a parking meter or been issued a parking ticket",
     "image": "img/park-8-20-60.jpg",
     "answer": true,
@@ -894,7 +893,7 @@
     "createdDate": "2026-04-18"
   },
   {
-    "id": "Q132",
+    "id": "s1-132",
     "question": "At an intersection where there is a pavement marking as shown in Figure, an automobile making a right turn must slow down outside the center of the intersection",
     "image": "img/center-star.jpg",
     "answer": false,
@@ -902,63 +901,63 @@
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q133",
+    "id": "s1-133",
     "question": "Automatic transmission vehicles never need to change the position of the gear shift from \"D\" (drive) while driving, even on long or steep downward slopes",
     "answer": false,
     "description": "Driving onlong or steep downward slopes would be dangerous unless the position ofthe gear shift is in \"L\"or \"2\"",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q134",
+    "id": "s1-134",
     "question": "Vehicles that cannot reach a speed of 50 km/h or higher because of their construction or performance should not use national expressways.",
     "answer": true,
     "description": "The minimum speed limit is 50 km/h, so vehicles that cannot reach the speed limit may not use national expressways.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q135",
+    "id": "s1-135",
     "question": "Overtaking is prohibited within 30m before and after a bus stop.",
     "answer": false,
     "description": "Overtaking is not prohibited at bus stops. However, parking or stopping is prohibited within 10 meters of a bus stop sign during its hours of operation.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q136",
+    "id": "s1-136",
     "question": "When a bus signals to pull out from a stop, vehicles behind must not hinder its movement by speeding up or passing.",
     "answer": true,
     "description": "When a bus signals to re-enter the flow of traffic, other drivers must not obstruct it, unless doing so would require sudden braking or steering.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q137",
+    "id": "s1-137",
     "question": "During a flashing red light, pedestrians can proceed while paying attention to the surrounding traffic.",
     "answer": true,
     "description": "A flashing red light requires vehicles to stop, but for pedestrians, it carries the same meaning as a flashing yellow light: they may proceed with caution.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q138",
+    "id": "s1-138",
     "question": "When an emergency vehicle approaches while you are in an intersection, you must exit the intersection and pull over to the left side of the road.",
     "answer": true,
     "description": "Drivers must avoid obstructing emergency vehicles. If inside an intersection, you must exit it first and then pull over to the left (or right on one-way streets) and stop.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q139",
+    "id": "s1-139",
     "question": "When a 'Left Turn Permitted' sign is posted, you can turn left even if the signal is red, but you must not obstruct pedestrians.",
     "answer": true,
     "description": "A 'Left Turn Permitted' sign allows left turns at any time, but drivers must yield to pedestrians and other traffic moving with the green light.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q140",
+    "id": "s1-140",
     "question": "The method for a motor vehicle to turn right is the same as the Square right turn method used by motorized bicycles.",
     "answer": false,
     "description": "Automobiles must move toward the center of the road to turn right. Only motorized bicycles (50cc or less) are required to use the two-step right turn method at specific intersections.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q141",
+    "id": "s1-141",
     "question": "The road sign shown in Fiaure No.1 refers that the road is closed to motor vehicles including motorcycles and general motorized bicycles",
     "image": "img/fig1.jpg",
     "answer": true,
@@ -966,7 +965,7 @@
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q142",
+    "id": "s1-142",
     "question": "The road sian shown in Figure No.2 indicates \"Closed to all vehicles\".",
     "image": "img/fig2.jpg",
     "answer": false,
@@ -974,84 +973,84 @@
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q143",
+    "id": "s1-143",
     "question": "Vehicles crossing a side walk to enter the road side facilities must slow down when there are pedestrians.",
     "answer": false,
     "description": "Under traffic law, drivers must come to a complete stop (temporary stop) before crossing a sidewalk, regardless of whether pedestrians are present.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q144",
+    "id": "s1-144",
     "question": "The special light equipment and general motorized bicycle as well as regular motor vehicle can be driven with regular motor vehicle license.",
     "answer": true,
     "description": "A standard regular driver's license automatically includes permissions to operate motorized bicycles (50cc or less) and small special equipment.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q145",
+    "id": "s1-145",
     "question": "When there are three or more vehicle lanes in each direction, the far right lane should be left open for overtaking and vehicles may in any vehicle lane other than the far right hand lane.",
     "answer": false,
     "description": "Drivers are required to keep the rightmost lane open for overtaking, but they must still distribute themselves according to speed, generally keeping to the leftmost lanes available.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q146",
+    "id": "s1-146",
     "question": "When making a right turn at an intersection, a driver should anticipate a motorcycle behind the motor vehicles approaching in the opposite direction.",
     "answer": true,
     "description": "Drivers must be cautious of motorcycles that may be hidden behind oncoming cars to prevent 'right-turn' accidents (the 'Oh-it-was-there' syndrome).",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q147",
+    "id": "s1-147",
     "question": "When an emergency vehicle is approaching from behind other than on or near the intersection, a driver must pull over to the left hand side of the and yield.",
     "answer": false,
     "description": "While you must move to the left to clear the path, coming to a complete stop is only legally mandatory at or near intersections.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q148",
+    "id": "s1-148",
     "question": "The timing of a signal to slow down or stop is 3 seconds before the action.",
     "answer": false,
     "description": "Signals for slowing down or stopping must be given immediately when the action begins. The '3-second rule' applies to lane changes and turns.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q149",
+    "id": "s1-149",
     "question": "You must stop before crossing a priority road at the intersection without traffic light.",
     "answer": false,
     "description": "Vehicles must yield and proceed without obstructing traffic on the priority road, but a full stop is only required if a 'Stop' sign is present.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q150",
+    "id": "s1-150",
     "question": "If a cross street is a road with right of way or it is wider, a vehicle must slow down and, depending on the situation, it may have to stop so as not to obstruct the progress of vehicles proceeding on the cross street.",
     "answer": true,
     "description": "One should not obey the rules superficially but should ensure safetv for oneself.",
     "createdDate": "2026-04-19"
   },
   {
-    "id": "Q151",
+    "id": "s1-151",
     "question": "Drivers and passengers must fasten their seatbelt at any situation.",
     "answer": false,
     "description": "While generally mandatory, there are specific exemptions under the Road Traffic Act, such as when backing up, for medical reasons, or for certain emergency/postal delivery tasks.",
     "createdDate": "2026-04-20"
   },
   {
-    "id": "Q152",
+    "id": "s1-152",
     "question": "When turning right at an uncontrolled intersection with three or more vehicle lanes, general motorized bicycles must use square right turn method.",
     "answer": false,
     "description": "General motorized bicycles (mopeds) must use the 'two-stage' (square) right turn method at intersections with three or more lanes ONLY where traffic is controlled by signals or police officers. The rule does not apply to uncontrolled intersections.",
     "createdDate": "2026-04-20"
   },
   {
-    "id": "Q153",
+    "id": "s1-153",
     "question": "When driving on a steep upgrade or steep downgrade, drivers must slow down.",
     "answer": false,
     "description": "According to Article 42, drivers must slow down specifically on steep 'downgrades.' While caution is needed on steep 'upgrades,' slowing down is not a legal requirement mandated by that specific safety rule.",
     "createdDate": "2026-04-20"
   },
   {
-    "id": "Q154",
+    "id": "s1-154",
     "question": "The road sign in Figure 3 indicates closed to large-sized trucks, specific middle-sized trucks and special heavy equipment.",
     "image": "img/fig3.jpg",
     "answer": true,
@@ -1059,21 +1058,21 @@
     "createdDate": "2026-04-20"
   },
   {
-    "id": "Q155",
+    "id": "s1-155",
     "question": "When the traffic signal turns amber, pedestrians and vehicles are not allowed to proceed but the streetcars are allowed.",
     "answer": false,
     "description": "An amber signal means stop; however, vehicles and streetcars may proceed if they are at a point where they cannot stop safely. Streetcars do not have a blanket 'allowance' to proceed over other vehicles.",
     "createdDate": "2026-04-20"
   },
   {
-    "id": "Q156",
+    "id": "s1-156",
     "question": "All drivers who are age of 70 or older must display a senior driver's sign when driving a regular motor vehicle.",
     "answer": false,
     "description": "Drivers aged 70 or older are 'encouraged' (duty to make an effort) to display the sign, but it is not a strict legal requirement. It only becomes a mandatory duty (for those over 75) in specific legislative contexts, but for 'all' over 70, it is False.",
     "createdDate": "2026-04-20"
   },
   {
-    "id": "Q157",
+    "id": "s1-157",
     "question": "When towing a broken down vehicle by rope or crane, towing license is not required regardless of the total vehicle weight of the broken down vehicle.",
     "answer": true,
     "description": "A towing license is required for towing trailers or vehicles exceeding 750kg, but an exception is made under the Road Traffic Act when towing a broken-down vehicle using a rope or crane.",

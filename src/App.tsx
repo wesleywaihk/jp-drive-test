@@ -1,6 +1,6 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
-import questionsData from './questions.json'
-import specialQuestionsData from './special-questions.json'
+import stage1Data from './stage-1.json'
+import stage2Data from './stage-2.json'
 import { Question } from './types'
 import { useBookmarks } from './useBookmarks'
 import { useHistory, TestRecord, TestType } from './useHistory'
@@ -13,6 +13,7 @@ import HistoryScreen from './components/HistoryScreen'
 
 type UserAnswer = { question: Question; userAnswer: boolean }
 type AppState = 'start' | 'quiz' | 'result' | 'bookmarks' | 'questions' | 'history' | 'history-detail'
+export type Stage = 'stage1' | 'stage2'
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
@@ -31,16 +32,16 @@ function getRouteFromHash(): AppState {
   return 'start'
 }
 
-const normalQuestions = (questionsData as Question[]).filter(q => !q.removed)
-const specialQuestions = (specialQuestionsData as Question[]).filter(q => !q.removed)
-const allQuestions = [...normalQuestions, ...specialQuestions]
+const stage1Questions = (stage1Data as Question[]).filter(q => !q.removed)
+const stage2Questions = (stage2Data as Question[]).filter(q => !q.removed)
 // Includes removed questions so history detail can still show them
 const allQuestionsForHistory = new Map(
-  [...(questionsData as Question[]), ...(specialQuestionsData as Question[])].map(q => [q.id, q])
+  [...(stage1Data as Question[]), ...(stage2Data as Question[])].map(q => [q.id, q])
 )
 
 export default function App() {
   const [appState, setAppState] = useState<AppState>(() => getRouteFromHash())
+  const [stage, setStage] = useState<Stage>('stage2')
   const [questions, setQuestions] = useState<Question[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<UserAnswer[]>([])
@@ -49,10 +50,12 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState(0)
   const [timesUp, setTimesUp] = useState(false)
   const [selectedRecord, setSelectedRecord] = useState<TestRecord | null>(null)
-  const activeIds = new Set(allQuestions.map(q => q.id))
-  const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks(activeIds)
+  const allActiveIds = new Set([...stage1Questions, ...stage2Questions].map(q => q.id))
+  const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks(allActiveIds)
   const { records: historyRecords, addRecord } = useHistory()
   const resultSaved = useRef(false)
+
+  const activeQuestions = stage === 'stage1' ? stage1Questions : stage2Questions
 
   useEffect(() => {
     const handler = () => {
@@ -100,23 +103,23 @@ export default function App() {
   }, [appState, answers, quizType, addRecord])
 
   const startQuiz = useCallback((count: number) => {
-    setQuestions(shuffle(allQuestions).slice(0, count))
+    setQuestions(shuffle(activeQuestions).slice(0, count))
     setCurrentIndex(0)
     setAnswers([])
     setQuizType('practice')
     setAppState('quiz')
-  }, [])
+  }, [activeQuestions])
 
   const startBookmarked = useCallback((level?: 2) => {
     const pool = level
-      ? allQuestions.filter((q) => getLevel(q.id) === level)
-      : allQuestions.filter((q) => getLevel(q.id) >= 1)
+      ? activeQuestions.filter((q) => getLevel(q.id) === level)
+      : activeQuestions.filter((q) => getLevel(q.id) >= 1)
     setQuestions(shuffle(pool))
     setCurrentIndex(0)
     setAnswers([])
     setQuizType(level === 2 ? 'important' : 'bookmarked')
     setAppState('quiz')
-  }, [getLevel])
+  }, [activeQuestions, getLevel])
 
   const handleAnswer = useCallback((userAnswer: boolean) => {
     const question = questions[currentIndex]
@@ -130,7 +133,7 @@ export default function App() {
   }, [questions, currentIndex, answers])
 
   const startMock = useCallback(() => {
-    setQuestions(shuffle(allQuestions).slice(0, 50))
+    setQuestions(shuffle(activeQuestions).slice(0, 50))
     setCurrentIndex(0)
     setAnswers([])
     setIsMock(true)
@@ -138,7 +141,7 @@ export default function App() {
     setTimesUp(false)
     setTimeLeft(30 * 60)
     setAppState('quiz')
-  }, [])
+  }, [activeQuestions])
 
   const restart = useCallback(() => {
     setIsMock(false)
@@ -181,8 +184,8 @@ export default function App() {
   if (appState === 'questions') {
     return (
       <QuestionsScreen
-        normalQuestions={normalQuestions}
-        specialQuestions={specialQuestions}
+        stage1Questions={stage1Questions}
+        stage2Questions={stage2Questions}
         getLevel={getLevel}
         onCycleBookmark={cycle}
         onBack={goBack}
@@ -193,7 +196,7 @@ export default function App() {
   if (appState === 'bookmarks') {
     return (
       <BookmarkScreen
-        questions={allQuestions}
+        questions={[...stage1Questions, ...stage2Questions]}
         getLevel={getLevel}
         onCycleBookmark={cycle}
         onRemoveBookmark={remove}
@@ -236,7 +239,9 @@ export default function App() {
   if (appState === 'start') {
     return (
       <StartScreen
-        totalAvailable={allQuestions.length}
+        stage={stage}
+        onStageChange={setStage}
+        totalAvailable={activeQuestions.length}
         totalBookmarked={totalBookmarked}
         importantCount={countByLevel(2)}
         historyCount={historyRecords.length}

@@ -1,4 +1,8 @@
+import { Stage } from '../App'
+
 interface Props {
+  stage: Stage
+  onStageChange: (stage: Stage) => void
   totalAvailable: number
   totalBookmarked: number
   importantCount: number
@@ -12,7 +16,7 @@ interface Props {
   onViewHistory: () => void
 }
 
-export default function StartScreen({ totalAvailable, totalBookmarked, importantCount, historyCount, onStart, onStartMock, onStartBookmarked, onStartImportant, onViewBookmarks, onViewQuestions, onViewHistory }: Props) {
+export default function StartScreen({ stage, onStageChange, totalAvailable, totalBookmarked, importantCount, historyCount, onStart, onStartMock, onStartBookmarked, onStartImportant, onViewBookmarks, onViewQuestions, onViewHistory }: Props) {
   const options = [5, 10, 15, 25].filter((n, i, arr) => n <= totalAvailable && arr.indexOf(n) === i)
 
   return (
@@ -20,7 +24,31 @@ export default function StartScreen({ totalAvailable, totalBookmarked, important
       <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md text-center">
         <div className="text-6xl mb-4">🚗</div>
         <h1 className="text-2xl font-bold text-gray-800 mb-2">Japan Driving License</h1>
-        <p className="text-gray-500 mb-8">True / False Quiz</p>
+        <p className="text-gray-500 mb-6">True / False Quiz</p>
+
+        {/* Stage toggle */}
+        <div className="flex gap-1 bg-gray-100 rounded-xl p-1 mb-6">
+          <button
+            onClick={() => onStageChange('stage1')}
+            className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-colors ${
+              stage === 'stage1'
+                ? 'bg-white text-gray-800 shadow-sm'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            Stage 1
+          </button>
+          <button
+            onClick={() => onStageChange('stage2')}
+            className={`flex-1 py-2 px-3 rounded-lg text-sm font-semibold transition-colors ${
+              stage === 'stage2'
+                ? 'bg-white text-gray-800 shadow-sm'
+                : 'text-gray-500 hover:text-gray-700'
+            }`}
+          >
+            Stage 2
+          </button>
+        </div>
 
         <button
           onClick={onStartMock}
