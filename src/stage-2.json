@@ -1,105 +1,162 @@
 [
   {
     "id": "s2-001",
-    "question": "Traffic signs are divided into four categories: regulatory signs, supplementary signs, warning signs, and guide signs.",
+    "question": "In the situation shown in Figure, when vehicle A passes the point indicated by X, it must slow down.",
+    "image": "img/s2-001.jpg",
     "answer": false,
-    "description": "The correct four types are: regulatory, instruction, warning, and guide signs."
+    "description": "Vehicle A doesn't have to slow down because it has the right of way.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-002",
-    "question": "The four main types of traffic signs are regulatory signs, instruction signs, caution signs, and guide signs.",
+    "question": "When driving down a long downward slope, drivers of four-wheeled vehicles should mainly apply the foot brake and drivers of two-wheeled vehicles should mainly apply the brakes on the front and back wheels. Engine braking should be used as an auxiliary.",
     "answer": false,
-    "description": "The correct four types are: regulatory, instruction, warning, and guide signs. 'Caution signs' is not an official category."
+    "description": "Drivers should use mainly engine braking and apply the foot brake as an auxiliary.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-003",
-    "question": "Japan classifies traffic signs into four groups: regulatory signs, instruction signs, warning signs, and guide signs.",
-    "answer": true,
-    "description": "These are the official four categories."
+    "question": "When parking or stopping a regular motor vehicle on a general road at night, even if the driver positions an emergency warning reflector device at the rear of the vehicle, he or she must turn on the hazard lights, parking lights, or tail lamps.",
+    "answer": false,
+    "description": "The hazard lights, parking lights, or tail lamps are not necessary when an emergency reflector device is positioned.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-004",
-    "question": "Regulatory signs, instruction signs, warning signs, and guide signs make up the four main types of traffic signs.",
-    "answer": true,
-    "description": "All four listed categories are correct."
+    "question": "The owner of an automobile (excluding two-wheeled motor vehicles) must obtain a personal parking place for it that is not on a road and is within 5 kilometers of the address or other base position from which the automobile will be used.",
+    "answer": false,
+    "description": "The personal parking place must be within 2 km.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-005",
-    "question": "The four main types of traffic signs are regulatory signs, instruction signs, warning signs, and guide signs.",
-    "answer": true,
-    "description": "All four listed categories are correct."
+    "question": "Parking and stopping are permitted in tunnels with vehicular lanes.",
+    "answer": false,
+    "description": "Neither parking nor stopping a vehicle is allowed in tunnels with and without vehicular lanes.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-006",
-    "question": "Stopping distance is the total of the reaction distance and the braking distance.",
+    "question": "Where there is a traffic sign as shown in Figure, vehicles must not change lanes or pass on the side in order to overtake automobiles or general mopeds.",
+    "image": "img/no-overtake.jpg",
     "answer": true,
-    "description": "Correct: stopping distance = reaction distance + braking distance."
+    "description": "In a no overtaking zone, vehicles must not change lanes in order to overtake automobiles or general mopeds.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-007",
-    "question": "Braking distance is the sum of the reaction distance and the stopping distance.",
+    "question": "The method of passing around the curve as shown in Figure is correct.",
+    "image": "img/s2-007.jpg",
     "answer": false,
-    "description": "Incorrect. Correct formula: stopping distance = reaction distance + braking distance."
+    "description": "Drivers should slow down before the curve and accelerate at the end of the curve.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-008",
-    "question": "Reaction distance is calculated by adding the braking distance to the stopping distance.",
-    "answer": false,
-    "description": "Incorrect. Reaction distance is only the distance traveled before braking begins. Correct formula: stopping distance = reaction distance + braking distance."
+    "question": "When a vehicle attempts to overtake the vehicle ahead, the vehicle ahead may not notice and begin to change to the right lane. If the driver of the overtaking vehicle senses danger, he or she may sound the horn.",
+    "answer": true,
+    "description": "The horn can be used when needed to avoid danger.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-009",
-    "question": "Stopping distance is the distance traveled after the brakes take effect.",
+    "question": "Parking is prohibited within 5 meters of a fire hydrant, a place where firefighting equipment is stored, or a fire alarm.",
     "answer": false,
-    "description": "Incorrect. That describes braking distance. Correct formula: stopping distance = reaction distance + braking distance."
+    "description": "Parking is prohibited within 1 meter of a fire alarm.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-010",
+    "question": "Vehicles other than large-size trucks loaded with cargo may not use the slower traffic lane of an expressway.",
+    "answer": false,
+    "description": "Any vehicles that cannot satisfy the minimum speed limit are allowed to use it.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-011",
-    "question": "Reaction distance and stopping distance together make up the braking distance.",
+    "question": "Where there is a traffic sign as shown in Figure, vehicles loaded with cargo of a height of up to 3.3 meters from the cargo bed may proceed.",
+    "image": "img/3_3m.jpg",
     "answer": false,
-    "description": "Incorrect. Correct formula: stopping distance = reaction distance + braking distance."
+    "description": "Only vehicles with a total aboveground height of up to 3.3 meters may proceed.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-012",
-    "question": "Stopping distance is the distance traveled before the driver reacts.",
+    "question": "When there are passengers getting on and off a streetcar, a driver must stop until all of the passengers or other people finish crossing the road, regardless of whether there is a safety zone or not.",
     "answer": false,
-    "description": "Incorrect. That describes reaction distance. Correct formula: stopping distance = reaction distance + braking distance."
+    "description": "Vehicles may proceed at a low speed when passing a safety zone.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-013",
-    "question": "With an ordinary driver's license, you may drive a vehicle with a gross vehicle weight of 3,800 kg as long as the maximum payload is under 2,000 kg.",
-    "answer": false,
-    "description": "Even if the maximum payload is under 2,000 kg, the gross vehicle weight must also be less than 3,500 kg. A vehicle weighing 3,800 kg exceeds this limit, so it cannot be driven with an ordinary license."
+    "question": "The traffic sign shown in Figure designates a national expressway or a motorway.",
+    "image": "img/car-ind.jpg",
+    "answer": true,
+    "description": "This is a sign designating motor vehicles only, and is placed on a national expressway or a motorway.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-014",
-    "question": "A vehicle with a maximum payload of 1,500 kg and seating for 12 people can be driven with an ordinary driver's license.",
-    "answer": false,
-    "description": "Although the payload is within the limit, the seating capacity must be 10 people or fewer (including the driver). A 12‑seat vehicle exceeds this limit."
+    "question": "An automobile may stop for ten minutes on a road where there is less than 3.5 meters of space between the right side of the vehicle and the right side of the road while the driver stands beside the vehicle and gives instructions for the loading of cargo.",
+    "answer": true,
+    "description": "Drivers are allowed to park when loading or unloading cargo and the driver is immediately available to drive.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-015",
-    "removed": true,
-    "question": "If a truck has a gross vehicle weight of 3,400 kg and a maximum payload of 1,900 kg, it can be driven with an ordinary license.",
+    "question": "When tires wear down, the frictional resistance between the road surface and the tires decreases. Braking distance increases but reaction distance is not affected.",
     "answer": true,
-    "description": "Both conditions are satisfied: gross vehicle weight under 3,500 kg and maximum payload under 2,000 kg. Therefore, it can be driven with an ordinary license."
+    "description": "The reaction distance has nothing to do with worn tires because the brakes don't start to operate at the reaction distance.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-016",
-    "question": "A truck with a maximum payload of exactly 2,000 kg can be driven with an ordinary driver's license.",
-    "answer": false,
-    "description": "The legal requirement is 'less than 2,000 kg.' A payload of exactly 2,000 kg does not meet this condition."
+    "question": "When a vehicle collides with an object at rest, if it can decrease its speed to half, the kinetic energy at the time of impact will be just about one-quarter of that generated when speed is not deceased.",
+    "answer": true,
+    "description": "The kinetic energy at the time of a collision is proportional to the square of speed. 1/2 x 1/2 = 1/4.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-017",
-    "question": "Even if a vehicle's gross weight is under 3,500 kg, it cannot be driven with an ordinary license if the maximum payload exceeds 2,000 kg.",
-    "answer": true,
-    "description": "Both conditions must be satisfied. If the maximum payload is 2,000 kg or more, the vehicle cannot be driven with an ordinary license."
+    "question": "The use of a child seat is not required for a preschool child less than six years of age riding in the rear seat of a four-wheeled vehicle.",
+    "answer": false,
+    "description": "The use of a child seat is required on the rear seat as well.",
+    "createdDate": "2026-04-23"
   },
   {
     "id": "s2-018",
-    "question": "A vehicle with seating for 10 people, a gross weight of 3,600 kg, and a payload of 1,000 kg can be driven with an ordinary license.",
+    "question": "If loading cargo that cannot be divided as shown in Figure, a driver need not obtain a permit from the police chief having jurisdiction over the place of departure.",
+    "image": "img/s2-018.jpg",
     "answer": false,
-    "description": "Although the seating capacity and payload meet the requirements, the gross vehicle weight must be less than 3,500 kg. A weight of 3,600 kg exceeds the limit."
+    "description": "A permit must be obtained because the total length extends beyond more than 1/10th of the length behind the automobile.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-019",
+    "question": "The hydroplaning phenomenon, which occurs while driving at high speed, is the 'standing wave' phenomenon that occurs when tire pressure is low.",
+    "answer": false,
+    "description": "Wave shaped ripples on the tire are called the standing wave phenomenon.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-020",
+    "question": "The seating capacity noted on the motor vehicle inspection certificate does not include the driver.",
+    "answer": false,
+    "description": "The driver is included in the seating capacity.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-021",
+    "question": "When the hand brake of a four-wheeled vehicle is pulled all the way, there should not be any room to pull it further.",
+    "answer": false,
+    "description": "There should be room to pull it further. Otherwise the brake doesn't operate well.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-022",
+    "question": "Centrifugal force increases proportionally to the square of speed, and also increases as the radius of the curve decreases.",
+    "answer": true,
+    "description": "This is a law of nature (law of physics). One must be fully aware of it when driving on a curved road.",
+    "createdDate": "2026-04-23"
   }
 ]
