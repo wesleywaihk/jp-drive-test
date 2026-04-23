@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { Question } from "../types";
+import { AnyQuestion, Question, isScenarioQuestion } from "../types";
 import { BookmarkLevel } from "../useBookmarks";
 import QuestionIdBadge from "./QuestionIdBadge";
 
 interface Props {
-  question: Question;
+  question: AnyQuestion;
   current: number;
   total: number;
-  onAnswer: (answer: boolean) => void;
+  onAnswer: (answer: boolean, subAnswers?: boolean[]) => void;
   getLevel: (id: string) => BookmarkLevel;
   onCycleBookmark: (id: string) => void;
   onQuit: () => void;
@@ -42,8 +42,12 @@ export default function QuizScreen({
   const [scenarioSubAnswers, setScenarioSubAnswers] = useState<boolean[]>([]);
   const [subSelected, setSubSelected] = useState<boolean | null>(null);
 
+  const sq = isScenarioQuestion(question) ? question : null;
+  const nq = sq === null ? (question as Question) : null;
+  const subQuestions = sq ? sq.questions.slice(0, 3) : [];
+
   const progress = (current / total) * 100;
-  const isCorrect = selected === question.answer;
+  const isCorrect = nq !== null && selected === nq.answer;
   const level = getLevel(question.id);
 
   useEffect(() => {
@@ -67,10 +71,6 @@ export default function QuizScreen({
     setSelected(null);
     onAnswer(answer);
   }
-
-  const subQuestions = question.isScenario
-    ? (question.scenarioQuestions ?? []).slice(0, 3)
-    : [];
   const currentSubQ = subQuestions[scenarioSubIndex];
   const isSubCorrect =
     subSelected !== null &&
@@ -88,7 +88,7 @@ export default function QuizScreen({
         const allCorrect = newSubAnswers.every(
           (ans, i) => ans === subQuestions[i].answer,
         );
-        onAnswer(allCorrect);
+        onAnswer(allCorrect, newSubAnswers);
       }
     } else {
       setSubSelected(value);
@@ -103,14 +103,14 @@ export default function QuizScreen({
         (ans, i) => ans === subQuestions[i].answer,
       );
       setSubSelected(null);
-      onAnswer(allCorrect);
+      onAnswer(allCorrect, scenarioSubAnswers);
     } else {
       setScenarioSubIndex((s) => s + 1);
       setSubSelected(null);
     }
   }
 
-  const isScenario = question.isScenario && subQuestions.length > 0;
+  const isScenario = sq !== null && subQuestions.length > 0;
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
@@ -164,7 +164,7 @@ export default function QuizScreen({
               </span>
             </div>
             <p className="text-gray-700 text-base leading-relaxed mb-4">
-              {question.scenario}
+              {sq?.scenario}
             </p>
             {question.image && (
               <div className="mb-4 rounded-xl overflow-hidden bg-gray-100">
@@ -192,7 +192,7 @@ export default function QuizScreen({
               </p>
             </div>
             <p className="text-gray-800 text-lg leading-relaxed">
-              {question.question}
+              {nq?.question}
             </p>
 
             {question.image && (
@@ -358,7 +358,7 @@ export default function QuizScreen({
                 <p className="text-sm text-gray-600 mb-2">
                   Correct answer:{" "}
                   <span className="font-semibold">
-                    {question.answer ? "True ⭕" : "False ✕"}
+                    {nq?.answer ? "True ⭕" : "False ✕"}
                   </span>
                 </p>
               )}
@@ -368,7 +368,7 @@ export default function QuizScreen({
               </p>
               <p
                 className="text-lg text-gray-700"
-                dangerouslySetInnerHTML={{ __html: question.description }}
+                dangerouslySetInnerHTML={{ __html: nq?.description ?? "" }}
               />
             </div>
 

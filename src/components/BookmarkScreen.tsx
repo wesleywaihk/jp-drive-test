@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Question } from "../types";
+import { AnyQuestion, isScenarioQuestion } from "../types";
 import { BookmarkLevel } from "../useBookmarks";
 import QuestionIdBadge from "./QuestionIdBadge";
 
 interface Props {
-  questions: Question[];
+  questions: AnyQuestion[];
   getLevel: (id: string) => BookmarkLevel;
   onCycleBookmark: (id: string) => void;
   onRemoveBookmark: (id: string) => void;
@@ -176,9 +176,9 @@ export default function BookmarkScreen({
                     </div>
                   </div>
 
-                  {/* Question */}
+                  {/* Question / Scenario text */}
                   <p className="text-gray-800 text-lg font-medium leading-relaxed mb-3">
-                    {question.question}
+                    {isScenarioQuestion(question) ? question.scenario : question.question}
                   </p>
 
                   {/* Image */}
@@ -192,23 +192,41 @@ export default function BookmarkScreen({
                     </div>
                   )}
 
-                  {/* Answer */}
-                  <div
-                    className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold mb-3 ${question.answer ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
-                  >
-                    {question.answer ? "⭕ True" : "✕ False"}
-                  </div>
+                  {/* Answer / Explanation — normal questions only; sub-questions for scenarios */}
+                  {isScenarioQuestion(question) ? (
+                    <div className="space-y-2">
+                      {question.questions.map((sub, j) => (
+                        <div key={j} className="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs font-semibold text-purple-600">Q{j + 1}</span>
+                            <span className={`text-xs font-semibold px-1.5 py-0.5 rounded ${sub.answer ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+                              {sub.answer ? "⭕ True" : "✕ False"}
+                            </span>
+                          </div>
+                          <p className="text-gray-800 text-sm font-medium mb-1">{sub.question}</p>
+                          <p className="text-xs text-gray-500">{sub.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <>
+                      <div
+                        className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm font-semibold mb-3 ${question.answer ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}
+                      >
+                        {question.answer ? "⭕ True" : "✕ False"}
+                      </div>
 
-                  {/* Explanation */}
-                  <div className="bg-blue-50 rounded-lg px-3 py-2">
-                    <p className="text-xs font-semibold text-blue-600 mb-1">
-                      Explanation
-                    </p>
-                    <p
-                      className="text-lg text-gray-700"
-                      dangerouslySetInnerHTML={{ __html: question.description }}
-                    />
-                  </div>
+                      <div className="bg-blue-50 rounded-lg px-3 py-2">
+                        <p className="text-xs font-semibold text-blue-600 mb-1">
+                          Explanation
+                        </p>
+                        <p
+                          className="text-lg text-gray-700"
+                          dangerouslySetInnerHTML={{ __html: question.description }}
+                        />
+                      </div>
+                    </>
+                  )}
                 </div>
               ))}
             </div>
@@ -232,7 +250,7 @@ export default function BookmarkScreen({
             <p className="text-sm text-gray-500 mb-1 font-mono">{confirmId}</p>
             {confirmQuestion && (
               <p className="text-gray-700 text-sm mb-6 line-clamp-2">
-                {confirmQuestion.question}
+                {isScenarioQuestion(confirmQuestion) ? confirmQuestion.scenario : confirmQuestion.question}
               </p>
             )}
             <div className="grid grid-cols-2 gap-3">

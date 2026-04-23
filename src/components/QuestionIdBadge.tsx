@@ -1,4 +1,4 @@
-import { Question } from "../types";
+import { QuestionMeta } from "../types";
 
 function getDateLabel(isoDate: string): string | null {
   const now = new Date();
@@ -10,7 +10,7 @@ function getDateLabel(isoDate: string): string | null {
 }
 
 interface Props {
-  question: Pick<Question, "id" | "createdDate">;
+  question: Pick<QuestionMeta, "id" | "createdDate">;
 }
 
 export default function QuestionIdBadge({ question }: Props) {

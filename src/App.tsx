@@ -1,7 +1,8 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import stage1Data from './stage-1.json'
 import stage2Data from './stage-2.json'
-import { Question } from './types'
+import scenarioData from './scenario.json'
+import { Question, ScenarioQuestion, AnyQuestion, isScenarioQuestion } from './types'
 import { useBookmarks } from './useBookmarks'
 import { useHistory, TestRecord, TestType } from './useHistory'
 import QuizScreen from './components/QuizScreen'
@@ -11,7 +12,7 @@ import BookmarkScreen from './components/BookmarkScreen'
 import QuestionsScreen from './components/QuestionsScreen'
 import HistoryScreen from './components/HistoryScreen'
 
-type UserAnswer = { question: Question; userAnswer: boolean }
+type UserAnswer = { question: AnyQuestion; userAnswer: boolean; subAnswers?: boolean[] }
 type AppState = 'start' | 'quiz' | 'result' | 'bookmarks' | 'questions' | 'history' | 'history-detail'
 export type Stage = 'stage1' | 'stage2'
 
@@ -34,15 +35,17 @@ function getRouteFromHash(): AppState {
 
 const stage1Questions = (stage1Data as Question[]).filter(q => !q.removed)
 const stage2Questions = (stage2Data as Question[]).filter(q => !q.removed)
-// Includes removed questions so history detail can still show them
-const allQuestionsForHistory = new Map(
-  [...(stage1Data as Question[]), ...(stage2Data as Question[])].map(q => [q.id, q])
+const scenarioQuestions = (scenarioData as ScenarioQuestion[]).filter(q => !q.removed)
+const stage2AllQuestions: AnyQuestion[] = [...stage2Questions, ...scenarioQuestions]
+
+const allQuestionsForHistory = new Map<string, AnyQuestion>(
+  [...(stage1Data as Question[]), ...(stage2Data as Question[]), ...(scenarioData as ScenarioQuestion[])].map(q => [q.id, q])
 )
 
 export default function App() {
   const [appState, setAppState] = useState<AppState>(() => getRouteFromHash())
   const [stage, setStage] = useState<Stage>('stage2')
-  const [questions, setQuestions] = useState<Question[]>([])
+  const [questions, setQuestions] = useState<AnyQuestion[]>([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const [answers, setAnswers] = useState<UserAnswer[]>([])
   const [isMock, setIsMock] = useState(false)
@@ -50,7 +53,8 @@ export default function App() {
   const [timeLeft, setTimeLeft] = useState(0)
   const [timesUp, setTimesUp] = useState(false)
   const [selectedRecord, setSelectedRecord] = useState<TestRecord | null>(null)
-  const activeQuestions = stage === 'stage1' ? stage1Questions : stage2Questions
+
+  const activeQuestions: AnyQuestion[] = stage === 'stage1' ? stage1Questions : stage2AllQuestions
   const activeIds = new Set(activeQuestions.map(q => q.id))
   const { cycle, remove, getLevel, countByLevel, totalBookmarked } = useBookmarks(activeIds, stage)
   const { records: historyRecords, addRecord } = useHistory(stage)
@@ -83,21 +87,21 @@ export default function App() {
     return () => clearInterval(id)
   }, [appState, isMock])
 
-  // Save result to history when transitioning to result screen
   useEffect(() => {
     if (appState === 'result' && !resultSaved.current && answers.length > 0) {
       resultSaved.current = true
       const score = answers.reduce((sum, a) => {
-        const pts = a.question.isScenario ? 2 : 1
-        return sum + (a.userAnswer === a.question.answer ? pts : 0)
+        const pts = isScenarioQuestion(a.question) ? 2 : 1
+        const correct = isScenarioQuestion(a.question) ? a.userAnswer : a.userAnswer === a.question.answer
+        return sum + (correct ? pts : 0)
       }, 0)
-      const questionCount = answers.reduce((sum, a) => sum + (a.question.isScenario ? 2 : 1), 0)
+      const questionCount = answers.reduce((sum, a) => sum + (isScenarioQuestion(a.question) ? 2 : 1), 0)
       addRecord({
         dateTime: new Date().toISOString(),
         type: quizType,
         questionCount,
         score,
-        answers: answers.map(a => ({ questionId: a.question.id, userAnswer: a.userAnswer })),
+        answers: answers.map(a => ({ questionId: a.question.id, userAnswer: a.userAnswer, subAnswers: a.subAnswers })),
       })
     }
     if (appState !== 'result') {
@@ -106,12 +110,24 @@ export default function App() {
   }, [appState, answers, quizType, addRecord])
 
   const startQuiz = useCallback((count: number) => {
-    setQuestions(shuffle(activeQuestions).slice(0, count))
+    let picked: AnyQuestion[]
+    if (stage === 'stage2') {
+      const pool = stage2AllQuestions
+      if (pool.length >= count) {
+        picked = shuffle(pool).slice(0, count)
+      } else {
+        const extra = shuffle(stage1Questions).slice(0, count - pool.length)
+        picked = shuffle([...pool, ...extra])
+      }
+    } else {
+      picked = shuffle(activeQuestions).slice(0, count)
+    }
+    setQuestions(picked)
     setCurrentIndex(0)
     setAnswers([])
     setQuizType('practice')
     setAppState('quiz')
-  }, [activeQuestions])
+  }, [stage, stage2AllQuestions, activeQuestions])
 
   const startBookmarked = useCallback((level?: 2) => {
     const pool = level
@@ -124,9 +140,9 @@ export default function App() {
     setAppState('quiz')
   }, [activeQuestions, getLevel])
 
-  const handleAnswer = useCallback((userAnswer: boolean) => {
+  const handleAnswer = useCallback((userAnswer: boolean, subAnswers?: boolean[]) => {
     const question = questions[currentIndex]
-    const newAnswers = [...answers, { question, userAnswer }]
+    const newAnswers = [...answers, { question, userAnswer, subAnswers }]
     setAnswers(newAnswers)
     if (currentIndex + 1 < questions.length) {
       setCurrentIndex(currentIndex + 1)
@@ -136,14 +152,17 @@ export default function App() {
   }, [questions, currentIndex, answers])
 
   const startMock = useCallback(() => {
-    let picked: Question[]
+    let picked: AnyQuestion[]
     if (stage === 'stage2') {
-      const normalQs = activeQuestions.filter(q => !q.isScenario)
-      const scenarioQs = activeQuestions.filter(q => q.isScenario)
-      picked = [
-        ...shuffle(normalQs).slice(0, 90),
-        ...shuffle(scenarioQs).slice(0, 5),
-      ]
+      let regularPicked: AnyQuestion[]
+      if (stage2Questions.length >= 90) {
+        regularPicked = shuffle(stage2Questions).slice(0, 90)
+      } else {
+        const extra = shuffle(stage1Questions).slice(0, 90 - stage2Questions.length)
+        regularPicked = shuffle([...stage2Questions, ...extra])
+      }
+      const scenarioPicked = shuffle(scenarioQuestions).slice(0, 5)
+      picked = [...regularPicked, ...scenarioPicked]
     } else {
       picked = shuffle(activeQuestions).slice(0, 50)
     }
@@ -199,7 +218,7 @@ export default function App() {
     return (
       <QuestionsScreen
         stage1Questions={stage1Questions}
-        stage2Questions={stage2Questions}
+        stage2Questions={stage2AllQuestions}
         getLevel={getLevel}
         onCycleBookmark={cycle}
         onBack={goBack}
@@ -210,7 +229,7 @@ export default function App() {
   if (appState === 'bookmarks') {
     return (
       <BookmarkScreen
-        questions={[...stage1Questions, ...stage2Questions]}
+        questions={[...stage1Questions, ...stage2Questions, ...scenarioQuestions]}
         getLevel={getLevel}
         onCycleBookmark={cycle}
         onRemoveBookmark={remove}

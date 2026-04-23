@@ -6,6 +6,7 @@ export type TestType = 'mock' | 'practice' | 'bookmarked' | 'important'
 export interface AnswerRecord {
   questionId: string
   userAnswer: boolean
+  subAnswers?: boolean[]
 }
 
 export interface TestRecord {

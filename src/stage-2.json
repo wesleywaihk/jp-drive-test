@@ -179,5 +179,19 @@
     "answer": false,
     "description": "Attach a white cloth not a red cloth.",
     "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-026",
+    "question": "When an oncoming vehicle is crossing the centerline to overtake another vehicle, a driver has no choice except to cut in front of a vehicle that is displaying a novice driver sign.",
+    "answer": true,
+    "description": "Such an action cannot be helped to avoid a head-on collision.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-027",
+    "question": "Correct driving posture enables reliable driving performance and reduces fatigue, so drivers should not relax their driving posture by tilting their body or driving with their elbow resting on the window ledge.",
+    "answer": true,
+    "description": "It is important to maintain a posture that allows the driver to correctly operate the steering wheel or pedals in case of an emergency.",
+    "createdDate": "2026-04-23"
   }
 ]

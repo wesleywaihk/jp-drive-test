@@ -1,14 +1,10 @@
 [
   {
-    "id": "mock-scenario-001",
-    "isScenario": true,
-    "question": "Scenario: Approaching a pedestrian crossing at night",
+    "id": "scenario-001",
     "scenario": "You are driving at night on a two-lane road. As you approach a pedestrian crossing, you notice a pedestrian on the sidewalk who appears to be about to cross. There are no traffic signals at this crossing.",
     "image": "img/pedestrian-crossing-bicycle-crossing.png",
-    "answer": true,
-    "description": "In a scenario, the overall score is based on all sub-question answers.",
     "createdDate": "2026-04-23",
-    "scenarioQuestions": [
+    "questions": [
       {
         "question": "You must slow down and be prepared to stop before the pedestrian crossing.",
         "answer": true,
@@ -27,15 +23,11 @@
     ]
   },
   {
-    "id": "mock-scenario-002",
-    "isScenario": true,
-    "question": "Scenario: Merging onto an expressway",
+    "id": "scenario-002",
     "scenario": "You are about to enter an expressway via an on-ramp. Traffic on the expressway is travelling at approximately 100 km/h. Your current speed on the ramp is 60 km/h. There is a dashed white line marking the merge zone.",
     "image": "img/s2-001.jpg",
-    "answer": true,
-    "description": "In a scenario, the overall score is based on all sub-question answers.",
     "createdDate": "2026-04-23",
-    "scenarioQuestions": [
+    "questions": [
       {
         "question": "You should accelerate on the on-ramp to match the speed of expressway traffic before merging.",
         "answer": true,
@@ -54,15 +46,11 @@
     ]
   },
   {
-    "id": "mock-scenario-003",
-    "isScenario": true,
-    "question": "Scenario: Following a large truck on a narrow road",
+    "id": "scenario-003",
     "scenario": "You are driving behind a large truck on a narrow two-lane mountain road. The truck is travelling at 30 km/h and frequently brakes. Visibility ahead is limited due to the truck's size. A sign indicates a sharp curve 200 m ahead.",
     "image": "img/no-overtake.jpg",
-    "answer": true,
-    "description": "In a scenario, the overall score is based on all sub-question answers.",
     "createdDate": "2026-04-23",
-    "scenarioQuestions": [
+    "questions": [
       {
         "question": "You should maintain a greater following distance than usual because the truck blocks your view ahead.",
         "answer": true,
