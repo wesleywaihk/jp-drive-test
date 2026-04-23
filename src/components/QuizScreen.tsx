@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Question } from "../types";
 import { BookmarkLevel } from "../useBookmarks";
 import QuestionIdBadge from "./QuestionIdBadge";
@@ -38,10 +38,20 @@ export default function QuizScreen({
   isMock,
 }: Props) {
   const [selected, setSelected] = useState<boolean | null>(null);
-  const progress = (current / total) * 100;
+  const [scenarioSubIndex, setScenarioSubIndex] = useState(0);
+  const [scenarioSubAnswers, setScenarioSubAnswers] = useState<boolean[]>([]);
+  const [subSelected, setSubSelected] = useState<boolean | null>(null);
 
+  const progress = (current / total) * 100;
   const isCorrect = selected === question.answer;
   const level = getLevel(question.id);
+
+  useEffect(() => {
+    setSelected(null);
+    setScenarioSubIndex(0);
+    setScenarioSubAnswers([]);
+    setSubSelected(null);
+  }, [question.id]);
 
   function handleSelect(value: boolean) {
     if (selected !== null) return;
@@ -57,6 +67,50 @@ export default function QuizScreen({
     setSelected(null);
     onAnswer(answer);
   }
+
+  const subQuestions = question.isScenario
+    ? (question.scenarioQuestions ?? []).slice(0, 3)
+    : [];
+  const currentSubQ = subQuestions[scenarioSubIndex];
+  const isSubCorrect =
+    subSelected !== null &&
+    currentSubQ != null &&
+    subSelected === currentSubQ.answer;
+
+  function handleSubAnswer(value: boolean) {
+    if (subSelected !== null) return;
+    const newSubAnswers = [...scenarioSubAnswers, value];
+
+    if (isMock) {
+      if (scenarioSubIndex + 1 < subQuestions.length) {
+        setScenarioSubIndex((s) => s + 1);
+      } else {
+        const allCorrect = newSubAnswers.every(
+          (ans, i) => ans === subQuestions[i].answer,
+        );
+        onAnswer(allCorrect);
+      }
+    } else {
+      setSubSelected(value);
+      setScenarioSubAnswers(newSubAnswers);
+    }
+  }
+
+  function handleSubNext() {
+    const isLastSub = scenarioSubIndex + 1 >= subQuestions.length;
+    if (isLastSub) {
+      const allCorrect = scenarioSubAnswers.every(
+        (ans, i) => ans === subQuestions[i].answer,
+      );
+      setSubSelected(null);
+      onAnswer(allCorrect);
+    } else {
+      setScenarioSubIndex((s) => s + 1);
+      setSubSelected(null);
+    }
+  }
+
+  const isScenario = question.isScenario && subQuestions.length > 0;
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
@@ -99,65 +153,189 @@ export default function QuizScreen({
         </div>
 
         {/* Question card */}
-        <div className="bg-white rounded-2xl shadow-md p-6 mb-4">
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-xs font-semibold text-red-600 uppercase tracking-wide">
-              Question
-            </p>
-          </div>
-          <p className="text-gray-800 text-lg leading-relaxed">
-            {question.question}
-          </p>
-
-          {question.image && (
-            <div className="mt-4 rounded-xl overflow-hidden bg-gray-100">
-              <img
-                src={import.meta.env.BASE_URL + question.image}
-                alt="Question illustration"
-                className="w-full object-contain max-h-48"
-              />
+        {isScenario ? (
+          <div className="bg-white rounded-2xl shadow-md p-6 mb-4">
+            <div className="flex items-center justify-between mb-3">
+              <p className="text-xs font-semibold text-purple-600 uppercase tracking-wide">
+                Scenario
+              </p>
+              <span className="text-xs font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">
+                {scenarioSubIndex + 1} / {subQuestions.length}
+              </span>
             </div>
-          )}
-        </div>
+            <p className="text-gray-700 text-base leading-relaxed mb-4">
+              {question.scenario}
+            </p>
+            {question.image && (
+              <div className="mb-4 rounded-xl overflow-hidden bg-gray-100">
+                <img
+                  src={import.meta.env.BASE_URL + question.image}
+                  alt="Scenario illustration"
+                  className="w-full object-contain max-h-48"
+                />
+              </div>
+            )}
+            <div className="border-t border-gray-100 pt-4">
+              <p className="text-xs font-semibold text-red-600 uppercase tracking-wide mb-2">
+                Question {scenarioSubIndex + 1}
+              </p>
+              <p className="text-gray-800 text-lg leading-relaxed">
+                {currentSubQ?.question}
+              </p>
+            </div>
+          </div>
+        ) : (
+          <div className="bg-white rounded-2xl shadow-md p-6 mb-4">
+            <div className="flex items-center justify-between mb-3">
+              <p className="text-xs font-semibold text-red-600 uppercase tracking-wide">
+                Question
+              </p>
+            </div>
+            <p className="text-gray-800 text-lg leading-relaxed">
+              {question.question}
+            </p>
+
+            {question.image && (
+              <div className="mt-4 rounded-xl overflow-hidden bg-gray-100">
+                <img
+                  src={import.meta.env.BASE_URL + question.image}
+                  alt="Question illustration"
+                  className="w-full object-contain max-h-48"
+                />
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Answer buttons */}
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          <button
-            onClick={() => handleSelect(true)}
-            disabled={selected !== null}
-            className={`font-bold py-5 rounded-2xl text-xl shadow-md transition-colors
-              ${
-                selected === null
-                  ? "bg-green-500 hover:bg-green-600 active:bg-green-700 text-white"
-                  : selected === true
-                    ? isCorrect
-                      ? "bg-green-500 text-white ring-4 ring-green-300"
-                      : "bg-green-200 text-green-700"
-                    : "bg-gray-100 text-gray-400"
-              }`}
-          >
-            ⭕ True
-          </button>
-          <button
-            onClick={() => handleSelect(false)}
-            disabled={selected !== null}
-            className={`font-bold py-5 rounded-2xl text-xl shadow-md transition-colors
-              ${
-                selected === null
-                  ? "bg-red-500 hover:bg-red-600 active:bg-red-700 text-white"
-                  : selected === false
-                    ? isCorrect
-                      ? "bg-red-500 text-white ring-4 ring-red-300"
-                      : "bg-red-200 text-red-700"
-                    : "bg-gray-100 text-gray-400"
-              }`}
-          >
-            ✕ False
-          </button>
-        </div>
+        {isScenario ? (
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <button
+              onClick={() => handleSubAnswer(true)}
+              disabled={subSelected !== null}
+              className={`font-bold py-5 rounded-2xl text-xl shadow-md transition-colors
+                ${
+                  subSelected === null
+                    ? "bg-green-500 hover:bg-green-600 active:bg-green-700 text-white"
+                    : subSelected === true
+                      ? isSubCorrect
+                        ? "bg-green-500 text-white ring-4 ring-green-300"
+                        : "bg-green-200 text-green-700"
+                      : "bg-gray-100 text-gray-400"
+                }`}
+            >
+              ⭕ True
+            </button>
+            <button
+              onClick={() => handleSubAnswer(false)}
+              disabled={subSelected !== null}
+              className={`font-bold py-5 rounded-2xl text-xl shadow-md transition-colors
+                ${
+                  subSelected === null
+                    ? "bg-red-500 hover:bg-red-600 active:bg-red-700 text-white"
+                    : subSelected === false
+                      ? isSubCorrect
+                        ? "bg-red-500 text-white ring-4 ring-red-300"
+                        : "bg-red-200 text-red-700"
+                      : "bg-gray-100 text-gray-400"
+                }`}
+            >
+              ✕ False
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <button
+              onClick={() => handleSelect(true)}
+              disabled={selected !== null}
+              className={`font-bold py-5 rounded-2xl text-xl shadow-md transition-colors
+                ${
+                  selected === null
+                    ? "bg-green-500 hover:bg-green-600 active:bg-green-700 text-white"
+                    : selected === true
+                      ? isCorrect
+                        ? "bg-green-500 text-white ring-4 ring-green-300"
+                        : "bg-green-200 text-green-700"
+                      : "bg-gray-100 text-gray-400"
+                }`}
+            >
+              ⭕ True
+            </button>
+            <button
+              onClick={() => handleSelect(false)}
+              disabled={selected !== null}
+              className={`font-bold py-5 rounded-2xl text-xl shadow-md transition-colors
+                ${
+                  selected === null
+                    ? "bg-red-500 hover:bg-red-600 active:bg-red-700 text-white"
+                    : selected === false
+                      ? isCorrect
+                        ? "bg-red-500 text-white ring-4 ring-red-300"
+                        : "bg-red-200 text-red-700"
+                      : "bg-gray-100 text-gray-400"
+                }`}
+            >
+              ✕ False
+            </button>
+          </div>
+        )}
 
-        {/* Answer feedback */}
-        {selected !== null && !isMock && (
+        {/* Scenario sub-question feedback (practice mode) */}
+        {isScenario && subSelected !== null && !isMock && (
+          <div className="space-y-3">
+            <div
+              className={`rounded-2xl p-4 ${isSubCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"}`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <p
+                  className={`font-bold text-lg ${isSubCorrect ? "text-green-700" : "text-red-700"}`}
+                >
+                  {isSubCorrect ? "⭕ Correct!" : "❌ Incorrect"}
+                </p>
+                {scenarioSubIndex + 1 >= subQuestions.length && (
+                  <button
+                    onClick={() => onCycleBookmark(question.id)}
+                    className="text-2xl leading-none transition-transform active:scale-90"
+                    title={BOOKMARK_TITLE[level]}
+                  >
+                    {BOOKMARK_ICON[level]}
+                  </button>
+                )}
+              </div>
+              {!isSubCorrect && (
+                <p className="text-sm text-gray-600 mb-2">
+                  Correct answer:{" "}
+                  <span className="font-semibold">
+                    {currentSubQ?.answer ? "True ⭕" : "False ✕"}
+                  </span>
+                </p>
+              )}
+              <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-1">
+                Explanation
+              </p>
+              <p
+                className="text-lg text-gray-700"
+                dangerouslySetInnerHTML={{
+                  __html: currentSubQ?.description ?? "",
+                }}
+              />
+            </div>
+
+            <button
+              onClick={handleSubNext}
+              className="w-full bg-gray-800 hover:bg-gray-900 active:bg-black text-white font-bold py-4 rounded-2xl text-lg shadow-md transition-colors"
+            >
+              {scenarioSubIndex + 1 < subQuestions.length
+                ? `Next Sub-question (${scenarioSubIndex + 2}/${subQuestions.length}) →`
+                : current < total
+                  ? "Next Question →"
+                  : "See Results"}
+            </button>
+          </div>
+        )}
+
+        {/* Normal question feedback (practice mode) */}
+        {!isScenario && selected !== null && !isMock && (
           <div className="space-y-3">
             <div
               className={`rounded-2xl p-4 ${isCorrect ? "bg-green-50 border border-green-200" : "bg-red-50 border border-red-200"}`}

@@ -87,11 +87,15 @@ export default function App() {
   useEffect(() => {
     if (appState === 'result' && !resultSaved.current && answers.length > 0) {
       resultSaved.current = true
-      const score = answers.filter(a => a.userAnswer === a.question.answer).length
+      const score = answers.reduce((sum, a) => {
+        const pts = a.question.isScenario ? 2 : 1
+        return sum + (a.userAnswer === a.question.answer ? pts : 0)
+      }, 0)
+      const questionCount = answers.reduce((sum, a) => sum + (a.question.isScenario ? 2 : 1), 0)
       addRecord({
         dateTime: new Date().toISOString(),
         type: quizType,
-        questionCount: answers.length,
+        questionCount,
         score,
         answers: answers.map(a => ({ questionId: a.question.id, userAnswer: a.userAnswer })),
       })
@@ -132,7 +136,18 @@ export default function App() {
   }, [questions, currentIndex, answers])
 
   const startMock = useCallback(() => {
-    setQuestions(shuffle(activeQuestions).slice(0, 50))
+    let picked: Question[]
+    if (stage === 'stage2') {
+      const normalQs = activeQuestions.filter(q => !q.isScenario)
+      const scenarioQs = activeQuestions.filter(q => q.isScenario)
+      picked = [
+        ...shuffle(normalQs).slice(0, 90),
+        ...shuffle(scenarioQs).slice(0, 5),
+      ]
+    } else {
+      picked = shuffle(activeQuestions).slice(0, 50)
+    }
+    setQuestions(picked)
     setCurrentIndex(0)
     setAnswers([])
     setIsMock(true)
@@ -140,7 +155,7 @@ export default function App() {
     setTimesUp(false)
     setTimeLeft(30 * 60)
     setAppState('quiz')
-  }, [activeQuestions])
+  }, [activeQuestions, stage])
 
   const restart = useCallback(() => {
     setIsMock(false)

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "mock-scenario-001",
+    "isScenario": true,
+    "question": "Scenario: Approaching a pedestrian crossing at night",
+    "scenario": "You are driving at night on a two-lane road. As you approach a pedestrian crossing, you notice a pedestrian on the sidewalk who appears to be about to cross. There are no traffic signals at this crossing.",
+    "image": "img/pedestrian-crossing-bicycle-crossing.png",
+    "answer": true,
+    "description": "In a scenario, the overall score is based on all sub-question answers.",
+    "createdDate": "2026-04-23",
+    "scenarioQuestions": [
+      {
+        "question": "You must slow down and be prepared to stop before the pedestrian crossing.",
+        "answer": true,
+        "description": "Drivers must slow down and be prepared to stop whenever a pedestrian is present at or near an uncontrolled crossing."
+      },
+      {
+        "question": "It is acceptable to pass through quickly if the pedestrian has not yet stepped off the curb.",
+        "answer": false,
+        "description": "Even if the pedestrian has not yet stepped into the road, you must slow down and yield if they intend to cross. Passing quickly is dangerous and illegal."
+      },
+      {
+        "question": "You should switch from high beams to low beams when the pedestrian is visible ahead.",
+        "answer": true,
+        "description": "High beams can blind pedestrians and make it harder for them to judge oncoming traffic. Switch to low beams when a pedestrian is visible."
+      }
+    ]
+  },
+  {
+    "id": "mock-scenario-002",
+    "isScenario": true,
+    "question": "Scenario: Merging onto an expressway",
+    "scenario": "You are about to enter an expressway via an on-ramp. Traffic on the expressway is travelling at approximately 100 km/h. Your current speed on the ramp is 60 km/h. There is a dashed white line marking the merge zone.",
+    "image": "img/s2-001.jpg",
+    "answer": true,
+    "description": "In a scenario, the overall score is based on all sub-question answers.",
+    "createdDate": "2026-04-23",
+    "scenarioQuestions": [
+      {
+        "question": "You should accelerate on the on-ramp to match the speed of expressway traffic before merging.",
+        "answer": true,
+        "description": "To merge safely, you must accelerate to match the flow of expressway traffic. Merging at a significantly lower speed creates a hazard for vehicles already on the expressway."
+      },
+      {
+        "question": "Vehicles already on the expressway must yield to vehicles entering from the on-ramp.",
+        "answer": false,
+        "description": "Merging vehicles must yield to traffic already on the expressway. It is the responsibility of the entering vehicle to find a safe gap and merge smoothly."
+      },
+      {
+        "question": "If there is no safe gap to merge, you should stop at the end of the on-ramp and wait.",
+        "answer": false,
+        "description": "Stopping on an expressway on-ramp is extremely dangerous. You should slow down to create time to find a gap, but stopping is prohibited except in an emergency."
+      }
+    ]
+  },
+  {
+    "id": "mock-scenario-003",
+    "isScenario": true,
+    "question": "Scenario: Following a large truck on a narrow road",
+    "scenario": "You are driving behind a large truck on a narrow two-lane mountain road. The truck is travelling at 30 km/h and frequently brakes. Visibility ahead is limited due to the truck's size. A sign indicates a sharp curve 200 m ahead.",
+    "image": "img/no-overtake.jpg",
+    "answer": true,
+    "description": "In a scenario, the overall score is based on all sub-question answers.",
+    "createdDate": "2026-04-23",
+    "scenarioQuestions": [
+      {
+        "question": "You should maintain a greater following distance than usual because the truck blocks your view ahead.",
+        "answer": true,
+        "description": "When following a large vehicle that obstructs your forward view, increase your following distance so you have more time to react to hazards hidden by the truck."
+      },
+      {
+        "question": "It is safe to overtake the truck before the curve if the opposite lane appears clear.",
+        "answer": false,
+        "description": "Overtaking before a curve is prohibited because you cannot see oncoming traffic. Even if the lane looks clear, a vehicle could appear from around the curve at any moment."
+      },
+      {
+        "question": "When the truck brakes suddenly, your extended following distance gives you additional stopping time.",
+        "answer": true,
+        "description": "A greater following distance provides more reaction time and stopping distance if the vehicle ahead brakes suddenly, which is especially important on mountain roads."
+      }
+    ]
+  }
+]

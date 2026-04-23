@@ -35,10 +35,11 @@ export default function ResultScreen({
   timesUp,
   restartLabel = 'Try Again',
 }: Props) {
-  const score = answers.filter(
-    (a) => a.userAnswer === a.question.answer,
-  ).length;
-  const total = answers.length;
+  const score = answers.reduce((sum, a) => {
+    const pts = a.question.isScenario ? 2 : 1
+    return sum + (a.userAnswer === a.question.answer ? pts : 0)
+  }, 0)
+  const total = answers.reduce((sum, a) => sum + (a.question.isScenario ? 2 : 1), 0)
   const percentage = Math.round((score / total) * 100);
 
   const passed = percentage >= 90;
