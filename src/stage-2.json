@@ -158,5 +158,26 @@
     "answer": true,
     "description": "This is a law of nature (law of physics). One must be fully aware of it when driving on a curved road.",
     "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-023",
+    "question": "When there is enough passing clearance on the left side of the vehicle ahead, a vehicle may overtake the vehicle ahead by passing on the left side.",
+    "answer": false,
+    "description": "When overtaking, a vehicle, in principle, must pass on the right side of the vehicle overtaken.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-024",
+    "question": "If a vehicle’s center of gravity becomes high and it leans to one side it is likely to turn over, so cargo must be loaded as low as possible and distributed to the left and right rather than on one side.",
+    "answer": true,
+    "description": "The vehicle would not be stable unless the center of gravity is low and evenly balanced in the middle of the vehicle.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-025",
+    "question": "When towing a broken-down vehicle using a towing rope, the distance between vehicles must be 5 meters or less and a red cloth with an area of 0.3 square meters or more must be attached to the center of the rope.",
+    "answer": false,
+    "description": "Attach a white cloth not a red cloth.",
+    "createdDate": "2026-04-23"
   }
 ]
