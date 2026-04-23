@@ -55,7 +55,9 @@ export default function StartScreen({ stage, onStageChange, totalAvailable, tota
           className="w-full bg-gray-800 hover:bg-gray-900 active:black text-white font-bold py-4 rounded-xl text-lg transition-colors mb-4 flex items-center justify-center gap-2"
         >
           📝 Mock Exam
-          <span className="text-sm font-normal opacity-70">50 questions · 30 min</span>
+          <span className="text-sm font-normal opacity-70">
+            {stage === 'stage2' ? '95 questions · 50 min' : '50 questions · 30 min'}
+          </span>
         </button>
 
         <p className="text-sm text-gray-600 mb-4">Select the number of questions</p>

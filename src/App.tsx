@@ -172,7 +172,7 @@ export default function App() {
     setIsMock(true)
     setQuizType('mock')
     setTimesUp(false)
-    setTimeLeft(30 * 60)
+    setTimeLeft(stage === 'stage2' ? 50 * 60 : 30 * 60)
     setAppState('quiz')
   }, [activeQuestions, stage])
 

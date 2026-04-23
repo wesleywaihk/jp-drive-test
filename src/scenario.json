@@ -1,1 +1,87 @@
-[]
+[
+  {
+    "id": "scenario-placeholder-001",
+    "scenario": "[PLACEHOLDER] This is a placeholder scenario question. Replace with a real scenario before publishing.",
+    "createdDate": "2026-04-23",
+    "questions": [
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 1 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      },
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 2 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      }
+    ]
+  },
+  {
+    "id": "scenario-placeholder-002",
+    "scenario": "[PLACEHOLDER] This is a placeholder scenario question. Replace with a real scenario before publishing.",
+    "createdDate": "2026-04-23",
+    "questions": [
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 1 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      },
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 2 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      }
+    ]
+  },
+  {
+    "id": "scenario-placeholder-003",
+    "scenario": "[PLACEHOLDER] This is a placeholder scenario question. Replace with a real scenario before publishing.",
+    "createdDate": "2026-04-23",
+    "questions": [
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 1 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      },
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 2 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      }
+    ]
+  },
+  {
+    "id": "scenario-placeholder-004",
+    "scenario": "[PLACEHOLDER] This is a placeholder scenario question. Replace with a real scenario before publishing.",
+    "createdDate": "2026-04-23",
+    "questions": [
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 1 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      },
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 2 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      }
+    ]
+  },
+  {
+    "id": "scenario-placeholder-005",
+    "scenario": "[PLACEHOLDER] This is a placeholder scenario question. Replace with a real scenario before publishing.",
+    "createdDate": "2026-04-23",
+    "questions": [
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 1 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      },
+      {
+        "question": "[PLACEHOLDER] Placeholder sub-question 2 — answer is true.",
+        "answer": true,
+        "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true."
+      }
+    ]
+  }
+]
