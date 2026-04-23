@@ -3,12 +3,12 @@ export interface QuestionMeta {
   image?: string;
   createdDate?: string;
   removed?: boolean;
+  description: string;
 }
 
 export type QuestionData = {
   question: string;
   answer: boolean;
-  description: string;
 };
 
 export interface Question extends QuestionData, QuestionMeta {}
@@ -21,5 +21,5 @@ export interface ScenarioQuestion extends QuestionMeta {
 export type AnyQuestion = Question | ScenarioQuestion;
 
 export function isScenarioQuestion(q: AnyQuestion): q is ScenarioQuestion {
-  return 'scenario' in q;
+  return "scenario" in q;
 }

@@ -193,5 +193,181 @@
     "answer": true,
     "description": "It is important to maintain a posture that allows the driver to correctly operate the steering wheel or pedals in case of an emergency.",
     "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-028",
+    "question": "Where there is a pavement marking as shown in Figure, vehicles are permitted to proceed but must not stop within it.",
+    "image": "img/no-stoping.jpg",
+    "answer": true,
+    "description": "This marking designates a 'no stopping zone' where vehicles must not stop.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-029",
+    "question": "When a driver is being overtaken by another vehicle, it is not particularly necessary for the driver to give way in their lane, as long as he or she does not accelerate, and even if there is not enough room between his or her vehicle and the vehicle in front.",
+    "image": null,
+    "answer": false,
+    "description": "Drivers should give way to the overtaking vehicle by moving over to the left as much as possible.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-030",
+    "question": "If the pressure of the front right tire is lower than that of the front left tire, the steering wheel will pull to the left.",
+    "image": null,
+    "answer": false,
+    "description": "The steering wheel will pull to the right because it is pulled to the side with a lower pressure tire.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-031",
+    "question": "If a person applying for a renewal of license and equivalent is the age of 65 or over at the renewal period expiration date, that person must take a senior driver's course within six months of the expiration date.",
+    "image": null,
+    "answer": false,
+    "description": "A person who is the age of 70 or over must take a senior driver's course.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-032",
+    "question": "When overtaking, it is advisable for a driver to give a signal by turning on the direction indicator, then after about 3 seconds, change the lane while gradually accelerating.",
+    "image": null,
+    "answer": false,
+    "description": "A driver must give a signal 3 seconds before changing lanes, change the lane gradually and avoid swerving.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-033",
+    "question": "The traffic sign shown in Figure designates that vehicles may park if the road is at least 6 meters wide.",
+    "image": "img/no-parking-6m-left.jpg",
+    "answer": false,
+    "description": "The sign designates that vehicles may not park unless they leave an open space of 6 meters or more to the right of the vehicle.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-034",
+    "question": "In the situation shown in Figure, vehicle A must not overtake vehicle B, even if it is safe ahead and to the rear.",
+    "image": "img/s2-034.jpg",
+    "answer": false,
+    "description": "Vehicle A may overtake vehicle B if it is safe because the road they are traveling on has right of way.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-035",
+    "question": "When the signal ahead is a red light and a green arrow pointing to the left at the same time, automobiles and general mopeds may proceed in the direction indicated by the arrow, but specified small mopeds and light vehicles may not proceed.",
+    "image": null,
+    "answer": false,
+    "description": "Specified small mopeds and light vehicles may also execute a left turn when the green arrow points to the left.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-036",
+    "question": "When checking the chain of a two-wheeled vehicle by pressing the middle of the chain with one's finger, there should be no slack and it should be tight.",
+    "image": null,
+    "answer": false,
+    "description": "The chain requires a proper amount of slack.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-037",
+    "question": "When depressing the brake pedal of a four-wheeled vehicle all the way, it is best if there is a little space between the pedal and the floorboard (pedal reserve distance).",
+    "image": null,
+    "answer": false,
+    "description": "The brake doesn't function well and it is dangerous when there is little space between the pedal and the floorboard.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-038",
+    "question": "When driving in fog, snowstorms or similar conditions, turn on fog lamps and headlights early, use the centerline, guard rail, and tail lamps of vehicles ahead as a guide, reduce speed, and if necessary sound the horn.",
+    "image": null,
+    "answer": true,
+    "description": "Invisibility is the most dangerous factor when driving. Pay the utmost attention to safety.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-039",
+    "question": "Carrying cargo in the cargo bed in such a manner that it obstructs a clear view of the vehicle's direction indicators, tail lamps, brake lights, license plate, etc. is permitted if a person to observe the cargo rides along.",
+    "image": null,
+    "answer": false,
+    "description": "Driving under such conditions is dangerous and should be avoided even if a person to observe the cargo rides along.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-040",
+    "question": "Daily checks include not only those performed when the vehicle is stopped, but also those performed during driving.",
+    "image": null,
+    "answer": true,
+    "description": "Brake effectiveness and engine performances are also checked during driving.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-041",
+    "question": "When leaving a main through lane, reduce speed sufficiently while in the main through lane before entering the deceleration lane.",
+    "image": null,
+    "answer": false,
+    "description": "It is dangerous to reduce speed too much in the main through lane. Reduce speed sufficiently after entering the deceleration lane.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-042",
+    "question": "When intending to overtake another vehicle, a vehicle should reduce the clearance between it and the vehicle to be overtaken as much as possible in order to avoid a head-on collision with an oncoming vehicle.",
+    "image": null,
+    "answer": false,
+    "description": "The driver must ensure that there is a safe passing clearance in order not to hit the side of the vehicle to be overtaken.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-043",
+    "question": "The frictional resistance between tires and the road surface has a strong relationship to reaction distance.",
+    "image": null,
+    "answer": false,
+    "description": "It has a relationship to braking distance but not to reaction distance.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-044",
+    "question": "On a snow-covered road, the wheel prints made by previous vehicles are extremely slick, so drivers must avoid the prints as much as possible.",
+    "image": null,
+    "answer": false,
+    "description": "It is safer and easier to drive on the ruts made by previous vehicles.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-045",
+    "question": "When there is a side strip designated by a single white line, a vehicle may enter the side strip to stop and park if there is 0.75 meters or more of space on the left side of the vehicle.",
+    "image": null,
+    "answer": true,
+    "description": "Vehicles may enter the side strip to stop or park only if it is wide enough to leave 0.75 meters or more space.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-046",
+    "question": "In the situation shown in Figure, vehicle A may cross to the right to a minimum extent and overtake vehicle B.",
+    "image": "img/s2-046.jpg",
+    "answer": false,
+    "description": "Vehicle A may not cross to the right in order to overtake vehicle B unless the width is less than 6 meters (e.g. 5.99 meters or less).",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-047",
+    "question": "Overtaking is prohibited along steep downward slopes, but not steep upward slopes.",
+    "image": null,
+    "answer": true,
+    "description": "Overtaking is not prohibited along steep upward slopes because some vehicles are not able to maintain the required speed.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-049",
+    "question": "When passing around a curve it is advisable to reduce speed just before the curve and enter it slowly, and then gradually accelerate slightly before completing the turn around the curve.",
+    "image": null,
+    "answer": true,
+    "description": "This is a useful method for passing around a curve readily and safely.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-050",
+    "question": "When driving a regular motor vehicle, if the vehicle cannot be driven further on an expressway due to a breakdown, etc. the driver must place an emergency warning reflector device to the rear of the vehicle. At night (or during the day when visibility is 200 meters or less), in addition to putting out an emergency warning reflector device the driver must also turn on the hazard lights, parking lights, or tail lamps.",
+    "image": null,
+    "answer": true,
+    "description": "The driver must display something highly visible to other traffic approaching at a high speed.",
+    "createdDate": "2026-04-23"
   }
 ]

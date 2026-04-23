@@ -316,7 +316,7 @@ export default function QuizScreen({
               <p
                 className="text-lg text-gray-700"
                 dangerouslySetInnerHTML={{
-                  __html: currentSubQ?.description ?? "",
+                  __html: question.description,
                 }}
               />
             </div>

@@ -119,10 +119,13 @@ function QuestionCard({
                   {sub.answer ? "⭕ True" : "✕ False"}
                 </span>
               </div>
-              <p className="text-gray-800 text-sm font-medium mb-1">{sub.question}</p>
-              <p className="text-xs text-gray-500">{sub.description}</p>
+              <p className="text-gray-800 text-sm font-medium">{sub.question}</p>
             </div>
           ))}
+          <div className="bg-blue-50 rounded-lg px-3 py-2">
+            <p className="text-xs font-semibold text-blue-600 mb-1">Explanation</p>
+            <p className="text-lg text-gray-700" dangerouslySetInnerHTML={{ __html: question.description }} />
+          </div>
         </div>
       ) : (
         <>
