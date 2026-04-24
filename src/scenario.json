@@ -22,20 +22,21 @@
   },
   {
     "id": "scenario-placeholder-002",
-    "scenario": "[PLACEHOLDER] This is a placeholder scenario question. Replace with a real scenario before publishing.",
+    "scenario": "You are driving along at 30 km/h. What kinds of things should you be careful of?",
+    "image": "img/sq-002.jpg",
     "createdDate": "2026-04-23",
-    "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true.",
+    "description": "The driver should keep enough distance from the vehicle ahead and drive on the ruts made by previous vehicles.",
     "questions": [
       {
-        "question": "[PLACEHOLDER] Placeholder sub-question 1 — answer is true.",
-        "answer": true
+        "question": "It would be dangerous to suddenly swerve away from an oncoming vehicle, so I'll drive as closely as possible to the left edge of the road.",
+        "answer": false
       },
       {
-        "question": "[PLACEHOLDER] Placeholder sub-question 2 — answer is true.",
-        "answer": true
+        "question": "Where other vehicles have passed the snow is packed and slippery, so I'll drive where the soft snow has accumulated.",
+        "answer": false
       },
       {
-        "question": "[PLACEHOLDER] Placeholder sub-question 3 — answer is true.",
+        "question": "My vehicle has studless tires and tire chains, so I'll drive just as I would in regular road conditions.",
         "answer": true
       }
     ]

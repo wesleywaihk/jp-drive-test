@@ -205,7 +205,6 @@
   {
     "id": "s2-029",
     "question": "When a driver is being overtaken by another vehicle, it is not particularly necessary for the driver to give way in their lane, as long as he or she does not accelerate, and even if there is not enough room between his or her vehicle and the vehicle in front.",
-    "image": null,
     "answer": false,
     "description": "Drivers should give way to the overtaking vehicle by moving over to the left as much as possible.",
     "createdDate": "2026-04-23"
@@ -213,7 +212,6 @@
   {
     "id": "s2-030",
     "question": "If the pressure of the front right tire is lower than that of the front left tire, the steering wheel will pull to the left.",
-    "image": null,
     "answer": false,
     "description": "The steering wheel will pull to the right because it is pulled to the side with a lower pressure tire.",
     "createdDate": "2026-04-23"
@@ -221,7 +219,6 @@
   {
     "id": "s2-031",
     "question": "If a person applying for a renewal of license and equivalent is the age of 65 or over at the renewal period expiration date, that person must take a senior driver's course within six months of the expiration date.",
-    "image": null,
     "answer": false,
     "description": "A person who is the age of 70 or over must take a senior driver's course.",
     "createdDate": "2026-04-23"
@@ -229,7 +226,6 @@
   {
     "id": "s2-032",
     "question": "When overtaking, it is advisable for a driver to give a signal by turning on the direction indicator, then after about 3 seconds, change the lane while gradually accelerating.",
-    "image": null,
     "answer": false,
     "description": "A driver must give a signal 3 seconds before changing lanes, change the lane gradually and avoid swerving.",
     "createdDate": "2026-04-23"
@@ -253,7 +249,6 @@
   {
     "id": "s2-035",
     "question": "When the signal ahead is a red light and a green arrow pointing to the left at the same time, automobiles and general mopeds may proceed in the direction indicated by the arrow, but specified small mopeds and light vehicles may not proceed.",
-    "image": null,
     "answer": false,
     "description": "Specified small mopeds and light vehicles may also execute a left turn when the green arrow points to the left.",
     "createdDate": "2026-04-23"
@@ -261,7 +256,6 @@
   {
     "id": "s2-036",
     "question": "When checking the chain of a two-wheeled vehicle by pressing the middle of the chain with one's finger, there should be no slack and it should be tight.",
-    "image": null,
     "answer": false,
     "description": "The chain requires a proper amount of slack.",
     "createdDate": "2026-04-23"
@@ -269,7 +263,6 @@
   {
     "id": "s2-037",
     "question": "When depressing the brake pedal of a four-wheeled vehicle all the way, it is best if there is a little space between the pedal and the floorboard (pedal reserve distance).",
-    "image": null,
     "answer": false,
     "description": "The brake doesn't function well and it is dangerous when there is little space between the pedal and the floorboard.",
     "createdDate": "2026-04-23"
@@ -277,7 +270,6 @@
   {
     "id": "s2-038",
     "question": "When driving in fog, snowstorms or similar conditions, turn on fog lamps and headlights early, use the centerline, guard rail, and tail lamps of vehicles ahead as a guide, reduce speed, and if necessary sound the horn.",
-    "image": null,
     "answer": true,
     "description": "Invisibility is the most dangerous factor when driving. Pay the utmost attention to safety.",
     "createdDate": "2026-04-23"
@@ -285,7 +277,6 @@
   {
     "id": "s2-039",
     "question": "Carrying cargo in the cargo bed in such a manner that it obstructs a clear view of the vehicle's direction indicators, tail lamps, brake lights, license plate, etc. is permitted if a person to observe the cargo rides along.",
-    "image": null,
     "answer": false,
     "description": "Driving under such conditions is dangerous and should be avoided even if a person to observe the cargo rides along.",
     "createdDate": "2026-04-23"
@@ -293,7 +284,6 @@
   {
     "id": "s2-040",
     "question": "Daily checks include not only those performed when the vehicle is stopped, but also those performed during driving.",
-    "image": null,
     "answer": true,
     "description": "Brake effectiveness and engine performances are also checked during driving.",
     "createdDate": "2026-04-23"
@@ -301,7 +291,6 @@
   {
     "id": "s2-041",
     "question": "When leaving a main through lane, reduce speed sufficiently while in the main through lane before entering the deceleration lane.",
-    "image": null,
     "answer": false,
     "description": "It is dangerous to reduce speed too much in the main through lane. Reduce speed sufficiently after entering the deceleration lane.",
     "createdDate": "2026-04-23"
@@ -309,7 +298,6 @@
   {
     "id": "s2-042",
     "question": "When intending to overtake another vehicle, a vehicle should reduce the clearance between it and the vehicle to be overtaken as much as possible in order to avoid a head-on collision with an oncoming vehicle.",
-    "image": null,
     "answer": false,
     "description": "The driver must ensure that there is a safe passing clearance in order not to hit the side of the vehicle to be overtaken.",
     "createdDate": "2026-04-23"
@@ -317,7 +305,6 @@
   {
     "id": "s2-043",
     "question": "The frictional resistance between tires and the road surface has a strong relationship to reaction distance.",
-    "image": null,
     "answer": false,
     "description": "It has a relationship to braking distance but not to reaction distance.",
     "createdDate": "2026-04-23"
@@ -325,7 +312,6 @@
   {
     "id": "s2-044",
     "question": "On a snow-covered road, the wheel prints made by previous vehicles are extremely slick, so drivers must avoid the prints as much as possible.",
-    "image": null,
     "answer": false,
     "description": "It is safer and easier to drive on the ruts made by previous vehicles.",
     "createdDate": "2026-04-23"
@@ -333,7 +319,6 @@
   {
     "id": "s2-045",
     "question": "When there is a side strip designated by a single white line, a vehicle may enter the side strip to stop and park if there is 0.75 meters or more of space on the left side of the vehicle.",
-    "image": null,
     "answer": true,
     "description": "Vehicles may enter the side strip to stop or park only if it is wide enough to leave 0.75 meters or more space.",
     "createdDate": "2026-04-23"
@@ -349,7 +334,6 @@
   {
     "id": "s2-047",
     "question": "Overtaking is prohibited along steep downward slopes, but not steep upward slopes.",
-    "image": null,
     "answer": true,
     "description": "Overtaking is not prohibited along steep upward slopes because some vehicles are not able to maintain the required speed.",
     "createdDate": "2026-04-23"
@@ -357,7 +341,6 @@
   {
     "id": "s2-049",
     "question": "When passing around a curve it is advisable to reduce speed just before the curve and enter it slowly, and then gradually accelerate slightly before completing the turn around the curve.",
-    "image": null,
     "answer": true,
     "description": "This is a useful method for passing around a curve readily and safely.",
     "createdDate": "2026-04-23"
@@ -365,7 +348,6 @@
   {
     "id": "s2-050",
     "question": "When driving a regular motor vehicle, if the vehicle cannot be driven further on an expressway due to a breakdown, etc. the driver must place an emergency warning reflector device to the rear of the vehicle. At night (or during the day when visibility is 200 meters or less), in addition to putting out an emergency warning reflector device the driver must also turn on the hazard lights, parking lights, or tail lamps.",
-    "image": null,
     "answer": true,
     "description": "The driver must display something highly visible to other traffic approaching at a high speed.",
     "createdDate": "2026-04-23"
@@ -381,7 +363,6 @@
   {
     "id": "s2-052",
     "question": "When overtaking, it is advisable for a driver to check the safety to the right and behind to the right using a rearview mirror, as well as to check the situation in front.",
-    "image": null,
     "answer": false,
     "description": "Overtaking is a dangerous driving operation. It is necessary to thoroughly check safety.",
     "createdDate": "2026-04-24"
@@ -389,9 +370,94 @@
   {
     "id": "s2-053",
     "question": "When checking tires, check the tire pressure and tread depth and make sure that there are no cracks or any other damage, nails, stones, or any other foreign objects lodged in the tire, or abnormal wear.",
-    "image": null,
     "answer": true,
     "description": "Checking these items is necessary because they may cause flat tires or influence the braking distance.",
     "createdDate": "2026-04-24"
+  },
+  {
+    "id": "s2-054",
+    "question": "When driving an automobile past a safety zone, drivers must slow down whether or not pedestrians are present.",
+    "answer": false,
+    "description": "Drivers don't have to slow down unless pedestrians are present.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-055",
+    "question": "At night, when approaching intersections or curves with poor visibility, a driver should use the high beams or flash them to warn other drivers or pedestrians of the approach of the vehicle.",
+    "answer": true,
+    "description": "Drivers should effectively utilize the headlights at night or when visibility is poor.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-056",
+    "question": "Parking and stopping are prohibited near the top of an uphill slope or on a steep downhill slope, but not on a steep uphill slope.",
+    "answer": false,
+    "description": "Parking and stopping are prohibited on a steep uphill slope, too.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-057",
+    "question": "When passing oncoming traffic on narrow roads that have a cliff on one side with a dangerous drop, the vehicle on the side opposite from the cliff side should stop initially and allow the vehicle on the cliff side to go ahead.",
+    "answer": false,
+    "description": "The vehicle on the cliff side is in more danger. It should stop initially and allow the oncoming traffic to pass.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-058",
+    "question": "The two traffic signs shown in Figure express the same meaning for all vehicles moving in the direction facing the signs.",
+    "image": "img/close2v-no-emtry.jpg",
+    "answer": true,
+    "description": "They are signs to designate 'closed to all vehicles' and 'no entry for vehicles' respectively, expressing the same meaning for all vehicles moving in the direction facing the signs.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-059",
+    "question": "In the situation shown in Figure, the regular motor vehicle must yield the road to the streetcar.",
+    "image": "img/s2-059.jpg",
+    "answer": false,
+    "description": "The vehicle on the wider street has right of way. If the cross street is the same width, the vehicle may not obstruct the progress of the streetcar.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-060",
+    "question": "When intending to overtake on a road with vehicular lanes, a driver must use the vehicular lane immediately to the right of the lane he or she is currently driving in.",
+    "answer": true,
+    "description": "Drivers should overtake in a manner not to disturb other traffic flows.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-061",
+    "question": "When turning the steering wheel while traveling around a corner or curve, if speed increases three times centrifugal force increases six times.",
+    "answer": false,
+    "description": "Centrifugal force is proportional to the square of speed. When speed increases three times, its centrifugal force increases nine times.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-062",
+    "question": "Changing lanes or moving alongside an automobile or general moped in order to overtake is prohibited at or within 30 meters before an intersection (excluding intersections of roads with right of way), railway crossing, pedestrian crossing, or bicycle crossing.",
+    "answer": true,
+    "description": "These areas are all extremely dangerous places. Overtaking is prohibited in these areas because it requires acceleration.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-063",
+    "question": "A passenger vehicle with a seating capacity of 5 people may carry, in addition to the driver, 1 adult and 4 children under 12 years of age.",
+    "answer": true,
+    "description": "This is within the seating capacity since three children under 12 years of age are counted as two adults.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-064",
+    "question": "The maximum permitted cargo height for regular motor vehicles (excluding three-wheeled vehicles and vehicles with an engine displacement of 660 cc or less) is, in principle, 3.8 meters from the cargo bed.",
+    "answer": false,
+    "description": "Maximum permitted cargo height is 3.8 meters from the ground, not from the cargo bed.",
+    "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-065",
+    "question": "Drivers of four-wheeled vehicles perceive two-wheeled vehicles to be closer and moving at a faster speed than they actually are.",
+    "answer": false,
+    "description": "The distance to and speed of two-wheeled vehicles tend to be misjudged because they are small in size.",
+    "createdDate": "2026-04-23"
   }
 ]

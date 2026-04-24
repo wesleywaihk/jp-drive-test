@@ -2,6 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(node -e ' *)"
+    ],
+    "additionalDirectories": [
+      "/home/wesleywai/repos/jp-drive-test/src"
     ]
   }
 }
