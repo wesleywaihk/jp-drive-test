@@ -369,5 +369,29 @@
     "answer": true,
     "description": "The driver must display something highly visible to other traffic approaching at a high speed.",
     "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-051",
+    "question": "The traffic sign shown in Figure designates a bicycle path or a dedicated road for bicycles.",
+    "image": "img/picicle-crossing.jpg",
+    "answer": false,
+    "description": "This sign designates a bicycle crossing.",
+    "createdDate": "2026-04-24"
+  },
+  {
+    "id": "s2-052",
+    "question": "When overtaking, it is advisable for a driver to check the safety to the right and behind to the right using a rearview mirror, as well as to check the situation in front.",
+    "image": null,
+    "answer": false,
+    "description": "Overtaking is a dangerous driving operation. It is necessary to thoroughly check safety.",
+    "createdDate": "2026-04-24"
+  },
+  {
+    "id": "s2-053",
+    "question": "When checking tires, check the tire pressure and tread depth and make sure that there are no cracks or any other damage, nails, stones, or any other foreign objects lodged in the tire, or abnormal wear.",
+    "image": null,
+    "answer": true,
+    "description": "Checking these items is necessary because they may cause flat tires or influence the braking distance.",
+    "createdDate": "2026-04-24"
   }
 ]
