@@ -22,21 +22,21 @@
   },
   {
     "id": "scenario-placeholder-002",
-    "scenario": "You are driving along at 30 km/h. What kinds of things should you be careful of?",
+    "scenario": "You are driving along at 50 km/h. What kinds of things should you be careful of?",
     "image": "img/sq-002.jpg",
     "createdDate": "2026-04-23",
     "description": "The driver should keep enough distance from the vehicle ahead and drive on the ruts made by previous vehicles.",
     "questions": [
       {
-        "question": "It would be dangerous to suddenly swerve away from an oncoming vehicle, so I'll drive as closely as possible to the left edge of the road.",
+        "question": "If I fail to negotiate the curve I might hit the guardrail, so I'll drive near the center line.",
         "answer": false
       },
       {
-        "question": "Where other vehicles have passed the snow is packed and slippery, so I'll drive where the soft snow has accumulated.",
+        "question": "An oncoming vehicle might cross over the center line, so I'll sound my horn to warn any approaching drivers and continue traveling at this speed.",
         "answer": false
       },
       {
-        "question": "My vehicle has studless tires and tire chains, so I'll drive just as I would in regular road conditions.",
+        "question": "The view is limited and I can't see around the curve, so I'll reduce speed and travel near the left of the road.",
         "answer": true
       }
     ]

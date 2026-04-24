@@ -226,7 +226,7 @@
   {
     "id": "s2-032",
     "question": "When overtaking, it is advisable for a driver to give a signal by turning on the direction indicator, then after about 3 seconds, change the lane while gradually accelerating.",
-    "answer": false,
+    "answer": true,
     "description": "A driver must give a signal 3 seconds before changing lanes, change the lane gradually and avoid swerving.",
     "createdDate": "2026-04-23"
   },
@@ -363,7 +363,7 @@
   {
     "id": "s2-052",
     "question": "When overtaking, it is advisable for a driver to check the safety to the right and behind to the right using a rearview mirror, as well as to check the situation in front.",
-    "answer": false,
+    "answer": true,
     "description": "Overtaking is a dangerous driving operation. It is necessary to thoroughly check safety.",
     "createdDate": "2026-04-24"
   },
