@@ -1,6 +1,9 @@
 import { AnyQuestion, isScenarioQuestion } from "../types";
 import { BookmarkLevel } from "../useBookmarks";
 import QuestionIdBadge from "./QuestionIdBadge";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import StarIcon from "@mui/icons-material/Star";
 
 interface UserAnswer {
   question: AnyQuestion;
@@ -17,11 +20,11 @@ interface Props {
   restartLabel?: string;
 }
 
-const BOOKMARK_ICON: Record<BookmarkLevel, string> = {
-  0: "🏷️",
-  1: "🔖",
-  2: "⭐",
-};
+function bookmarkIcon(level: BookmarkLevel) {
+  if (level === 1) return <BookmarkIcon sx={{ color: "#eab308", fontSize: 24 }} />;
+  if (level === 2) return <StarIcon sx={{ color: "#f97316", fontSize: 24 }} />;
+  return <BookmarkBorderIcon sx={{ color: "#9ca3af", fontSize: 24 }} />;
+}
 const BOOKMARK_TITLE: Record<BookmarkLevel, string> = {
   0: "Bookmark",
   1: "Mark as very important",
@@ -97,7 +100,7 @@ export default function ResultScreen({
                     className="text-xl leading-none transition-transform active:scale-90"
                     title={BOOKMARK_TITLE[level]}
                   >
-                    {BOOKMARK_ICON[level]}
+                    {bookmarkIcon(level)}
                   </button>
                 </div>
 

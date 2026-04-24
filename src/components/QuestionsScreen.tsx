@@ -2,6 +2,9 @@ import { useState } from "react";
 import { AnyQuestion, isScenarioQuestion } from "../types";
 import { BookmarkLevel } from "../useBookmarks";
 import QuestionIdBadge from "./QuestionIdBadge";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import StarIcon from "@mui/icons-material/Star";
 
 interface Props {
   stage1Questions: AnyQuestion[];
@@ -11,11 +14,11 @@ interface Props {
   onBack: () => void;
 }
 
-const BOOKMARK_ICON: Record<BookmarkLevel, string> = {
-  0: "🏷️",
-  1: "🔖",
-  2: "⭐",
-};
+function bookmarkIcon(level: BookmarkLevel) {
+  if (level === 1) return <BookmarkIcon sx={{ color: "#eab308", fontSize: 24 }} />;
+  if (level === 2) return <StarIcon sx={{ color: "#f97316", fontSize: 24 }} />;
+  return <BookmarkBorderIcon sx={{ color: "#9ca3af", fontSize: 24 }} />;
+}
 const BOOKMARK_TITLE: Record<BookmarkLevel, string> = {
   0: "Bookmark",
   1: "Mark as very important",
@@ -91,7 +94,7 @@ function QuestionCard({
           className="text-2xl leading-none transition-transform active:scale-90"
           title={BOOKMARK_TITLE[level]}
         >
-          {BOOKMARK_ICON[level]}
+          {bookmarkIcon(level)}
         </button>
       </div>
 
