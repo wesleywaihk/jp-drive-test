@@ -459,5 +459,26 @@
     "answer": false,
     "description": "The distance to and speed of two-wheeled vehicles tend to be misjudged because they are small in size.",
     "createdDate": "2026-04-23"
+  },
+  {
+    "id": "s2-066",
+    "question": "When making a right turn from a one-way street. an automobile must initially approach the center of the road and proceed inside the center point of the intersection while slowing down, (Except roundabout.)",
+    "answer": false,
+    "description": "In order to make a right turn from a one-way street, a driver should initially approach the right edge of the road.",
+    "createdDate": "2026-05-01"
+  },
+  {
+    "id": "s2-067",
+    "question": "When a vehicle's rear wheels slip sideways to the right, it is best to turn the steering wheel to the left.",
+    "answer": false,
+    "description": "The driver should turn the steering wheel to the right because it is necessary to turn it to the direction where the wheels slip sideways.",
+    "createdDate": "2026-05-01"
+  },
+  {
+    "id": "s2-068",
+    "question": "Stopping is permitted within 10 meters of the signboard marker post) of a bus stop or streetcar stop, even during business hours if it is to let passengers get in or out.",
+    "answer": false,
+    "description": "Stopping or parking is not permitted in this area during business hours. One should not stop even to let passengers get in and out of the vehicle",
+    "createdDate": "2026-05-01"
   }
 ]
