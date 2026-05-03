@@ -480,5 +480,98 @@
     "answer": false,
     "description": "Stopping or parking is not permitted in this area during business hours. One should not stop even to let passengers get in and out of the vehicle",
     "createdDate": "2026-05-01"
+  },
+  {
+    "id": "s2-069",
+    "question": "Vehicles do not need to slow down along a steep upward slope, but must slow down along a steep downward slope.",
+    "answer": true,
+    "description": "Vehicles must slow down along a steep downward slope where they are accelerated and the brakes do not work effectively.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-070",
+    "question": "Drinking alcohol causes one’s sense of judgment and alertness to diminish and one’s ability to drive deteriorates, so people must not drive after drinking alcohol, however little they drink.",
+    "answer": true,
+    "description": "Driving when intoxicated is the most dangerous. One must not drive a vehicle after drinking alcohol.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-071",
+    "question": "If a police officer is making the hand signal for “stop” at an intersection, vehicles should stop one meter before the police officer.",
+    "answer": false,
+    "description": "Drivers should stop immediately before the intersection. ",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-072",
+    "question": "At an intersection that has no traffic control as shown in Figure, the regular motor vehicle approaching from the left of the general moped has the right of way. ",
+    "image": "img/s2-072.png",
+    "answer": false,
+    "description": "The wider street has the right of way, so the general moped may proceed through the intersection before the regular motor vehicle.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-073",
+    "question": "Throwing rubbish such as cigarette butts, paper scraps, or empty cans out of a vehicle is prohibited, as is putting any part of one’s body or any object outside a vehicle while it is moving.",
+    "answer": true,
+    "description": "A good driver should not be engaged in actions against public morals or that could be considered dangerous.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-074",
+    "question": "Even if there is danger of a head-on collision, vehicles must not leave the road.",
+    "answer": false,
+    "description": "One should not hesitate to leave the road to avoid a head-on collision as long as it is safe.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-075",
+    "question": "If a four-wheeled vehicle’s engine stalls or won’t start inside a railway crossing, intersection, or similar, the driver should move the vehicle by shifting to a low gear and using the starter motor without depressing the clutch pedal as an emergency measure. (This does not apply to automatic transmission vehicles or manual transmission vehicles equipped with a clutch start switch.)",
+    "answer": true,
+    "description": "It is best to perform this method at a railway crossing after notifying train drivers.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-076",
+    "question": "On parts of national expressways where main through lanes traveling in opposite directions are not separated by a physical divider, the maximum speed limit is the same as on general roads.",
+    "answer": true,
+    "description": "The speed limit is the same as on general roads because it is a dangerous place where there is no physical divider.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-077",
+    "question": "In the main through lanes of national expressways, the maximum speed limit for all regular motor vehicles is 100 km/h.",
+    "answer": false,
+    "description": "The maximum speed limit for three-wheeled vehicles and towing vehicles is 80 km/h.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-078",
+    "question": "When a vehicle slips on a rainy day after the brakes are applied, the driver should think that the brakes are not working properly and apply them forcefully once more. ",
+    "answer": false,
+    "description": "This action is dangerous and may result in further skidding. The driver should avoid pressing the brake pedal forcefully. ",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-079",
+    "question": "When a police officer is holding both of his or her arms straight up vertically at an intersection, this has the same meaning as a red light for traffic crossing the path of traffic proceeding parallel to the stance of the police officer. ",
+    "answer": true,
+    "description": "For the traffic proceeding towards the front or back of the police officer, this hand signal has the same meaning as a red light.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-080",
+    "question": "Overtaking is prohibited at a pedestrian crossing or bicycle crossing or within 30 meters before and after one. ",
+    "answer": false,
+    "description": "Overtaking is prohibited within 30 meters before a pedestrian crossing or bicycle crossing, but not after one.",
+    "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-081",
+    "question": "The traffic sign shown in Figure prohibits right turns for large-size trucks, specified medium vehicles, and special heavy equipment, so other vehicles may turn right.",
+    "image": "img/load2t-left-front.png",
+    "answer": false,
+    "description": "Any trucks with a maximum load of 2 tons or more may not execute a right turn.",
+    "createdDate": "2026-05-03"
   }
 ]

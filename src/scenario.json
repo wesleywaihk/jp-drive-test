@@ -43,20 +43,21 @@
   },
   {
     "id": "scenario-placeholder-003",
-    "scenario": "[PLACEHOLDER] This is a placeholder scenario question. Replace with a real scenario before publishing.",
-    "createdDate": "2026-04-23",
-    "description": "[PLACEHOLDER] This is a placeholder description. All placeholder answers are set to true.",
+    "scenario": "You are driving along at 40 km/h. What kinds of things should you be careful of?",
+    "image": "img/sq-003.jpg",
+    "createdDate": "2026-05-03",
+    "description": "The driver should pay attention to vehicles that might proceed without noticing the motorcycle.",
     "questions": [
       {
-        "question": "[PLACEHOLDER] Placeholder sub-question 1 — answer is true.",
+        "question": "The vehicle approaching from the right may not yield the road to me, so before I get near I’ll reduce speed so that I can stop at any time.",
         "answer": true
       },
       {
-        "question": "[PLACEHOLDER] Placeholder sub-question 2 — answer is true.",
+        "question": "If the vehicle approaching from the right comes out it could be dangerous, so I’ll switch my headlights up and down several times to warn the other driver that my vehicle is getting near and reduce speed.",
         "answer": true
       },
       {
-        "question": "[PLACEHOLDER] Placeholder sub-question 3 — answer is true.",
+        "question": "The vehicle approaching from the right might come out without noticing my vehicle, so I’ll drive at a speed at which I can stop at any time.",
         "answer": true
       }
     ]
