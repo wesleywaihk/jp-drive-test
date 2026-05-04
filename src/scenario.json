@@ -21,7 +21,7 @@
     ]
   },
   {
-    "id": "scenario-placeholder-002",
+    "id": "scenario-002",
     "scenario": "You are driving along at 50 km/h. What kinds of things should you be careful of?",
     "image": "img/sq-002.jpg",
     "createdDate": "2026-04-23",
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "id": "scenario-placeholder-003",
+    "id": "scenario-003",
     "scenario": "You are driving along at 40 km/h. What kinds of things should you be careful of?",
     "image": "img/sq-003.jpg",
     "createdDate": "2026-05-03",
