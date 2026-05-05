@@ -576,9 +576,9 @@
   },
   {
     "id": "s2-082",
-    "question": "When there is a streetcar stoppec on the road, a vehicle may pass it if there are no passengers getting on or off the streetcar in a safety zone.",
+    "question": "When there is a streetcar stopped on the road, a vehicle may pass it if there are no passengers getting on or off the streetcar in a safety zone.",
     "answer": false,
-    "description": "A vehicle must slow down in a safetv zone where a streetcar is stopped even when there are no passengers getting on or off in the zone",
+    "description": "A vehicle must slow down in a safety zone where a streetcar is stopped even when there are no passengers getting on or off in the zone",
     "createdDate": "2026-05-06"
   },
   {
