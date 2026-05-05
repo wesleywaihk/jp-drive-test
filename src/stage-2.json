@@ -573,5 +573,19 @@
     "answer": false,
     "description": "Any trucks with a maximum load of 2 tons or more may not execute a right turn.",
     "createdDate": "2026-05-03"
+  },
+  {
+    "id": "s2-082",
+    "question": "When there is a streetcar stoppec on the road, a vehicle may pass it if there are no passengers getting on or off the streetcar in a safety zone.",
+    "answer": false,
+    "description": "A vehicle must slow down in a safetv zone where a streetcar is stopped even when there are no passengers getting on or off in the zone",
+    "createdDate": "2026-05-06"
+  },
+  {
+    "id": "s2-0813",
+    "question": "If a driver is unavoidably forced to park on an expressway because the vehicle cannot be driven due to a breakdown, etc., the driver must park on a sufficiently wide shoulder or side strip",
+    "answer": true,
+    "description": "Park the car in a place where it doesn't impede the progress of other vehicles",
+    "createdDate": "2026-05-06"
   }
 ]
