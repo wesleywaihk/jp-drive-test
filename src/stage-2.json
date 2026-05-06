@@ -582,10 +582,31 @@
     "createdDate": "2026-05-06"
   },
   {
-    "id": "s2-0813",
+    "id": "s2-083",
     "question": "If a driver is unavoidably forced to park on an expressway because the vehicle cannot be driven due to a breakdown, etc., the driver must park on a sufficiently wide shoulder or side strip",
     "answer": true,
     "description": "Park the car in a place where it doesn't impede the progress of other vehicles",
+    "createdDate": "2026-05-06"
+  },
+  {
+    "id": "s2-084",
+    "question": "If an emergency vehicle is approaching a location other than near an intersection and a driver yields the road by moving to the left side of the road, it is not absolutely necessary for the driver to come to a stop (except for on one-way streets).",
+    "answer": true,
+    "description": "In a location not near an intersection, vehicles may yield the road to approaching emergency vehicles by moving to the left side of the road.",
+    "createdDate": "2026-05-06"
+  },
+  {
+    "id": "s2-085",
+    "question": "There are many dangerous places on busy urban roads at night, so drivers should always use the high beams and pay careful attention to what is ahead as they proceed.",
+    "answer": false,
+    "description": "Drivers should switch the headlight to low beams to avoid disturbing other traffic.",
+    "createdDate": "2026-05-06"
+  },
+  {
+    "id": "s2-086",
+    "question": "When moving into the lane to the right while traveling straight ahead, a driver should signal 30 meters before reaching the point at which he or she intends to change lanes.",
+    "answer": false,
+    "description": "Start signaling three seconds before changing lanes.",
     "createdDate": "2026-05-06"
   }
 ]
