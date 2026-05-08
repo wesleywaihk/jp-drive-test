@@ -608,5 +608,12 @@
     "answer": false,
     "description": "Start signaling three seconds before changing lanes.",
     "createdDate": "2026-05-06"
+  },
+  {
+    "id": "s2-087",
+    "question": "A vehicle must slow down when passing a pedestrian that is in a safety zone.",
+    "answer": true,
+    "description": "A vehicle is obliged to slow down for pedestrians’ safety.",
+    "createdDate": "2026-05-08"
   }
 ]
