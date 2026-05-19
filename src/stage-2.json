@@ -615,5 +615,12 @@
     "answer": true,
     "description": "A vehicle is obliged to slow down for pedestrians’ safety.",
     "createdDate": "2026-05-08"
+  },
+  {
+    "id": "s2-088",
+    "question": "Overtaking general mopeds is permitted, even where overtaking other vehicles is prohibited.",
+    "answer": false,
+    "description": "A vehicle must not overtake general mopeds either.",
+    "createdDate": "2026-05-08"
   }
 ]
